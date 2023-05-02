@@ -582,7 +582,7 @@ enableGitInfo = true
       Mix = false
     #  评论系统设置
     [params.page.comment]
-      enable = false
+      enable = true
       #  Artalk 评论系统设置 (https://artalk.js.org/)
       [params.page.comment.artalk]
         enable = false
