@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Hugo - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/hugo/</link>
+    <description>Hugo - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Thu, 29 Sep 2022 19:17:40 &#43;0800</lastBuildDate><atom:link href="https://clearsky.me/tags/hugo/" rel="self" type="application/rss+xml" /><item>
+  <title>GitHub Action 自动部署 Hugo 到 GitHub Pages</title>
+  <link>https://clearsky.me/github-action-auto-build-deploy/</link>
+  <pubDate>Thu, 29 Sep 2022 19:17:40 &#43;0800</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/github-action-auto-build-deploy/</guid>
+  <description><![CDATA[原因 自从换到 Hugo 以来，都是本地运行 Hugo 命令生成生成静态网页 .public目录，然后推送到 GitHub Pages 项目仓库，感觉每次发布还要切换目录来上一堆 Git 操作： 1]]></description>
+</item>
+</channel>
+</rss>

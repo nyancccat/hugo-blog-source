@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>软件 - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/%E8%BD%AF%E4%BB%B6/</link>
+    <description>软件 - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Sat, 27 Apr 2013 00:51:30 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/%E8%BD%AF%E4%BB%B6/" rel="self" type="application/rss+xml" /><item>
+  <title>重装系统&#43;常用软件清单</title>
+  <link>https://clearsky.me/reinstall-and-lists-of-software/</link>
+  <pubDate>Sat, 27 Apr 2013 00:51:30 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/reinstall-and-lists-of-software/</guid>
+  <description><![CDATA[win7误操作造成系统文件丢失，没备份，懒得折腾了，干脆重装了。 没系统盘，箱子翻出一个u盘做了个u盘启动安装的，一开始在y480bios里还]]></description>
+</item>
+</channel>
+</rss>
