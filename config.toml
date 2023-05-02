@@ -698,7 +698,7 @@ enableGitInfo = false
         visitor = true
         commentCount = true
         #  启用 lightgallery 支持
-        lightgallery = true
+        lightgallery = false
         #  启用 Katex 支持
         katex = true
       #  Giscus 评论系统设置
