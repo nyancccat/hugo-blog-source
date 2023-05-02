@@ -9,7 +9,7 @@ hasCJKLanguage = true
 
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "FixIt"
-enableGitInfo = true
+enableGitInfo = false
 [menu]
   [[menu.main]]
     identifier = "home"
@@ -289,7 +289,7 @@ enableGitInfo = true
     rss = 10
     #  最近更新文章设置
     [params.section.recentlyUpdated]
-      enable = true
+      enable = false
       rss = false
       days = 30
       maxCount = 4
@@ -838,7 +838,7 @@ enableGitInfo = true
     # CDN 数据文件名称，默认不启用 ["jsdelivr.yml", "unpkg.yml", ...]
     # 位于 "themes/FixIt/assets/data/cdn/" 目录
     # 可以在你的项目下相同路径存放你自己的数据文件："assets/data/cdn/"
-    # data = "unpkg.yml"
+    data = "jsdelivr.yml"
 
   #  兼容性设置
   [params.compatibility]
