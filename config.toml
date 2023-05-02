@@ -499,7 +499,7 @@ enableGitInfo = true
       #  是否显示代码块的编辑按钮
       edit = true
       # 默认展开显示的代码行数
-      maxShownLines = 9999
+      maxShownLines = 80
     #  文章编辑
     [params.page.edit]
       enable = false
@@ -934,7 +934,20 @@ enableGitInfo = true
       table = true
       taskList = true
       typographer = true
+
+
+    [markup.goldmark.parser]
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+      wrapStandAloneImageWithinParagraph = true
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
     [markup.goldmark.renderer]
+      # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
+      # 默认情况下，Goldmark 会忽略段落中的换行符。设置为 true 将换行符呈现为 <br> 元素。
+      hardWraps = false
+      # whether to use HTML tags directly in the document
       # 是否在文档中直接使用 HTML 标签
       unsafe = true
   # 目录设置
