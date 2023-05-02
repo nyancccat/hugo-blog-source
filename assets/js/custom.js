@@ -377,3 +377,31 @@ new Ribbons({
     ribbonCount: 5,
     parallaxAmount: -0.99
 });
+
+
+
+L2Dwidget.init({
+    model: {
+        scale: 1,
+        hHeadPos: 0.5,
+        vHeadPos: 0.618,
+        jsonPath: 'https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json',       // xxx.model.json 的路径,换人物修改这个
+    },
+    display: {
+        superSample: 1,     // 超采样等级
+        width: 180,         // canvas的宽度
+        height: 390,        // canvas的高度
+        position: 'left',   // 显示位置：左或右
+        hOffset: 100,         // canvas水平偏移
+        vOffset: -60,         // canvas垂直偏移
+    },
+    mobile: {
+        show: false,         // 是否在移动设备上显示
+        scale: 1,           // 移动设备上的缩放
+        motion: true,       // 移动设备是否开启重力感应
+    },
+    react: {
+        opacityDefault: 1,  // 默认透明度
+        opacityOnHover: 1,  // 鼠标移上透明度
+    },
+});
