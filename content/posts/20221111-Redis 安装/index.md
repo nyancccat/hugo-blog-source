@@ -46,6 +46,7 @@ Redis 基于 C ,先安装所需要的 gcc 依赖，`root `登录 CentOS，安装
 ```bash
 yum install -y gcc tcl
 ```
+
 发文时候官网最新 7.0.5 版本，--> [Download 7.0.5](https://github.com/redis/redis/archive/7.0.5.tar.gz) ，下载后上传放至 CentOS `/usr/local/src` 目录，解压：
 
 ```bash
@@ -149,16 +150,19 @@ systemctl enable redis
 ```bash
 systemctl start redis           # 启动
 ```
-```bash
 
+```bash
 systemctl stop redis            # 停止
 ```
+
 ```bash
 systemctl restart redis         # 重启
 ```
+
 ```bash
 systemctl status redis          # 查看状态
 ```
+
 ### Redis 可视化客户端
 
 一般用的是 Redis Desktop Manager，但是好像要自己编译。
