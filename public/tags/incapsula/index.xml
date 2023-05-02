@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>incapsula - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/incapsula/</link>
+    <description>incapsula - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Sat, 15 Dec 2012 11:15:31 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/incapsula/" rel="self" type="application/rss+xml" /><item>
+  <title>用了Incapsula的CDN加速</title>
+  <link>https://clearsky.me/incapsula/</link>
+  <pubDate>Sat, 15 Dec 2012 11:15:31 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/incapsula/</guid>
+  <description><![CDATA[闲来无事逛逛hostloc，发现有位坛友发了个地址，访问速度还真挺快的。 看下面的回复是用了Incapsula的免费CDN加速，搜了下，这玩意]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR - 晴空小筑</title><meta name="author" content="u0defined">
+<meta name="author-link" content="http://clearsky.me/">
+<meta name="description" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" /><meta name="keywords" content='宝塔, Ubuntu' /><meta itemprop="name" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR">
+<meta itemprop="description" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><meta itemprop="datePublished" content="2018-12-20T20:49:04+00:00" />
+<meta itemprop="dateModified" content="2018-12-20T20:49:04+00:00" />
+<meta itemprop="wordCount" content="490"><meta itemprop="image" content="https://clearsky.me/logo.png"/>
+<meta itemprop="keywords" content="宝塔,Ubuntu," /><meta property="og:title" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" />
+<meta property="og:description" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" /><meta property="og:image" content="https://clearsky.me/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2018-12-20T20:49:04+00:00" />
+<meta property="article:modified_time" content="2018-12-20T20:49:04+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://clearsky.me/logo.png"/>
+
+<meta name="twitter:title" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"/>
+<meta name="twitter:description" content="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"/>
+<meta name="application-name" content="晴空小筑">
+<meta name="apple-mobile-web-app-title" content="晴空小筑"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" /><link rel="prev" href="https://clearsky.me/20180907-%E4%BD%BF%E7%94%A8-csgo-skin-changer-%E6%9B%B4%E6%8D%A2-csgo-%E6%9E%AA%E6%A2%B0%E7%9A%AE%E8%82%A4/" /><link rel="next" href="https://clearsky.me/20181224-breo-isee16-%E5%80%8D%E8%BD%BB%E6%9D%BE%E7%9C%BC%E9%83%A8%E6%8C%89%E6%91%A9%E4%BB%AA/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/clearsky.me\/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr\/"
+    },"genre": "posts","keywords": "宝塔, Ubuntu","wordcount":  490 ,
+    "url": "https:\/\/clearsky.me\/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr\/","datePublished": "2018-12-20T20:49:04+00:00","dateModified": "2018-12-20T20:49:04+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "u0defined"
+      },"description": "Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="晴空小筑"><span class="header-title-pre"><i class='fas fa-code'></i> </span><span id="typeit-header-desktop" class="typeit"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/"
+                
+                
+              ><i class='fas fa-home'></i> 首页</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class='fas fa-clock'></i> 文章 文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class='fas fa-tags'></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class='fas fa-book'></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/links/"
+                
+                
+              ><i class='fas fa-link'></i> 链接</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class='fas fa-user-tie'></i> 关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://github.com/nyancccat/"
+                title="GitHub"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="在这里搜索一下..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="晴空小筑"><span class="header-title-pre"><i class='fas fa-code'></i> </span><span id="typeit-header-title-mobile" class="typeit"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="在这里搜索一下..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/"
+                  
+                  
+                ><i class='fas fa-home'></i> 首页</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class='fas fa-clock'></i> 文章 文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class='fas fa-tags'></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class='fas fa-book'></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/links/"
+                  
+                  
+                ><i class='fas fa-link'></i> 链接</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class='fas fa-user-tie'></i> 关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/nyancccat/"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="晴空小筑">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR</li>
+    </ol>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="http://clearsky.me/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.jpg" srcset="/avatar.jpg, /avatar.jpg 1.5x, /avatar.jpg 2x" sizes="auto" data-title="u0defined" data-alt="u0defined" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;u0defined</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 学习备忘</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2018-12-20 20:49:04"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2018-12-20">2018-12-20</time></span>&nbsp;<span title="更新于 2018-12-20 20:49:04"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2018-12-20">2018-12-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 490 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#手贱">手贱</a></li>
+    <li><a href="#报错-1">报错 1</a></li>
+    <li><a href="#报错-2">报错 2</a></li>
+    <li><a href="#安装魔改版-bbr">安装魔改版 BBR</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content" data-end-flag=" ------------- 文章结束，感谢您的阅读。 ------------- "><div class="details admonition warning open">
+      <div class="details-summary admonition-title">
+        <i class="icon fa-solid fa-exclamation-triangle fa-fw" aria-hidden="true"></i>警告<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="details-content">
+        <div class="admonition-content">本文最后更新于 2018-12-20，文中内容可能已过时。</div>
+      </div>
+    </div><h2 id="手贱">手贱</h2>
+<p>每隔一段时间就有换 VPS 系统的坏毛病，今天看到搬瓦工后台可以直接安装 Ubuntu 18.04 了，环境管理方面这次直接用面板了，用的是宝塔面板。对于个人使用，我觉得怎么方便怎么来吧，系统的话，如果是生产环境，还是建议 CentOS。</p>
+<p>后台安装完成后更新完系统后，安装宝塔面板：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span class="o">&amp;&amp;</span> sudo bash install.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="报错-1">报错 1</h2>
+<p>安装失败，报错：</p>
+<div class="details admonition question open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-question-circle fa-fw" aria-hidden="true"></i>问题<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Pillow installation failed</div>
+    </div>
+  </div>
+<p>搜了下大致与 Python 有关，于是直接安装 <code>python-setuptools</code> 工具：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install python-setuptools
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>完成后再次安装，这次安装成功了，但是状态显示面板一直无法启动。</p>
+<h2 id="报错-2">报错 2</h2>
+<p>搜了下是 Python 版本问题，我更新后 Python 版本是 <code>3.7</code>，而宝塔是 Python 2 写的，不兼容。</p>
+<p>于是移除软连接：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">rm -rf /usr/bin/python
+</span></span><span class="line"><span class="cl">ln -s /usr/bin/python2.7 /usr/bin/python
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再次启动面板</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">service bt restart
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>看到：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">Stopping Bt-Tasks... done
+</span></span><span class="line"><span class="cl">Stopping Bt-Panel... done
+</span></span><span class="line"><span class="cl">Starting Bt-Panel... done
+</span></span><span class="line"><span class="cl">Starting Bt-Tasks... done
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>没问题了！</p>
+<h2 id="安装魔改版-bbr">安装魔改版 BBR</h2>
+<p>Ubuntu 18.04 内核 为 <code>4.15</code>，高于 BBR 内核要求为 <code>4.9</code> 以上，所以不用换内核了。直接使用大佬魔改版本 <a href="https://www.moerats.com/archives/387/"target="_blank" rel="external nofollow noopener noreferrer">BBR+BBR魔改+Lotsever(锐速)一键脚本 for Centos/Debian/Ubuntu</a></p>
+<p>Ubuntu 18.04 使用下面：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget -N --no-check-certificate <span class="s2">&#34;https://raw.githubusercontent.com/chiakge/Linux-NetSpeed/master/tcp.sh&#34;</span>
+</span></span><span class="line"><span class="cl">apt install make gcc -y
+</span></span><span class="line"><span class="cl">sed -i <span class="s1">&#39;s#/usr/bin/gcc-4.9#/usr/bin/gcc#g&#39;</span> <span class="s1">&#39;/root/tcp.sh&#39;</span>
+</span></span><span class="line"><span class="cl">chmod +x tcp.sh <span class="o">&amp;&amp;</span> ./tcp.sh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>完成后按提示选择就行了，如图：</p>
+<p><figure><a class="lightgallery" href="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/mgbbr.jpg" data-thumbnail="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/mgbbr.jpg" data-sub-html="<h2>安装魔改 BBR</h2><p>安装魔改 BBR</p>"><img loading="lazy" src="mgbbr.jpg" srcset="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/mgbbr.jpg, mgbbr.jpg 1.5x, /20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/mgbbr.jpg 2x" sizes="auto" data-title="安装魔改 BBR" data-alt="安装魔改 BBR" width="1148" height="678" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">安装魔改 BBR</figcaption>
+  </figure></p>
+<p>安装过程出现下图：选择 <code>NO</code>。</p>
+<p><figure><a class="lightgallery" href="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/bbraz.png" data-thumbnail="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/bbraz.png" data-sub-html="<h2>安装过程提示</h2><p>安装过程提示</p>"><img loading="lazy" src="bbraz.png" srcset="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/bbraz.png, bbraz.png 1.5x, /20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/bbraz.png 2x" sizes="auto" data-title="安装过程提示" data-alt="安装过程提示" width="1037" height="686" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">安装过程提示</figcaption>
+  </figure></p>
+<p>安装 <code>不可描述软件</code> 之后，喜闻乐见的油管动图测速：</p>
+<p><figure><a class="lightgallery" href="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/ygcs.gif" data-thumbnail="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/ygcs.gif" data-sub-html="<h2>油管水量惊人</h2><p>油管水量惊人</p>"><img loading="lazy" src="ygcs.gif" srcset="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/ygcs.gif, ygcs.gif 1.5x, /20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/ygcs.gif 2x" sizes="auto" data-title="油管水量惊人" data-alt="油管水量惊人" width="1277" height="719" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">油管水量惊人</figcaption>
+  </figure></p>
+<p>油管非高峰期，1440P 下这个速度非常满意了。</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2018-12-20 20:49:04">更新于 2018-12-20&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" data-hashtags="宝塔,Ubuntu"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-hashtag="宝塔"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" data-description="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR" data-description="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://clearsky.me/20181220-ubuntu-18.04-%E5%AE%89%E8%A3%85%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E9%81%87%E5%88%B0%E9%97%AE%E9%A2%98%E5%8F%8A%E5%90%AF%E7%94%A8%E9%AD%94%E6%94%B9-bbr/" data-title="Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/%E5%AE%9D%E5%A1%94/' class="post-tag">宝塔</a><a href='/tags/ubuntu/' class="post-tag">Ubuntu</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/20180907-%E4%BD%BF%E7%94%A8-csgo-skin-changer-%E6%9B%B4%E6%8D%A2-csgo-%E6%9E%AA%E6%A2%B0%E7%9A%AE%E8%82%A4/" class="post-nav-item" rel="prev" title="使用 CSGO Skin Changer 更换 CSGO 枪械皮肤"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>使用 CSGO Skin Changer 更换 CSGO 枪械皮肤</a>
+      <a href="/20181224-breo-isee16-%E5%80%8D%E8%BD%BB%E6%9D%BE%E7%9C%BC%E9%83%A8%E6%8C%89%E6%91%A9%E4%BB%AA/" class="post-nav-item" rel="next" title="Breo isee 16 倍轻松眼部按摩仪">Breo isee 16 倍轻松眼部按摩仪<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.111.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2009 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="http://clearsky.me/"target="_blank" rel="external nofollow noopener noreferrer">u0defined</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/lib/pangu/pangu.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":9999},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"晴空小筑","typeit-header-title-mobile":"晴空小筑"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"pangu":{"enable":true,"selector":"article"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":true,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

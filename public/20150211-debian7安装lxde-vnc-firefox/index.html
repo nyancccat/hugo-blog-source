@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Debian 7 安装 LXDE &#43; VNC &#43; Firefox - 晴空小筑</title><meta name="author" content="u0defined">
+<meta name="author-link" content="http://clearsky.me/">
+<meta name="description" content="Debian7安装LXDE&#43;VNC&#43;Firefox" /><meta name="keywords" content='Debian' /><meta itemprop="name" content="Debian 7 安装 LXDE &#43; VNC &#43; Firefox">
+<meta itemprop="description" content="Debian7安装LXDE&#43;VNC&#43;Firefox"><meta itemprop="datePublished" content="2015-02-11T20:31:41+00:00" />
+<meta itemprop="dateModified" content="2015-02-11T20:31:41+00:00" />
+<meta itemprop="wordCount" content="1356"><meta itemprop="image" content="https://clearsky.me/logo.png"/>
+<meta itemprop="keywords" content="Debian," /><meta property="og:title" content="Debian 7 安装 LXDE &#43; VNC &#43; Firefox" />
+<meta property="og:description" content="Debian7安装LXDE&#43;VNC&#43;Firefox" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" /><meta property="og:image" content="https://clearsky.me/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2015-02-11T20:31:41+00:00" />
+<meta property="article:modified_time" content="2015-02-11T20:31:41+00:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://clearsky.me/logo.png"/>
+
+<meta name="twitter:title" content="Debian 7 安装 LXDE &#43; VNC &#43; Firefox"/>
+<meta name="twitter:description" content="Debian7安装LXDE&#43;VNC&#43;Firefox"/>
+<meta name="application-name" content="晴空小筑">
+<meta name="apple-mobile-web-app-title" content="晴空小筑"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" /><link rel="prev" href="https://clearsky.me/20150128-%E8%BF%9C%E6%96%B9%E7%9A%84%E6%9C%8B%E5%8F%8B/" /><link rel="next" href="https://clearsky.me/20150516-%E6%B7%B1%E5%9C%B3%E5%BE%80%E4%BA%8B/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Debian 7 安装 LXDE + VNC + Firefox",
+    "inLanguage": "zh-CN",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https:\/\/clearsky.me\/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox\/"
+    },"genre": "posts","keywords": "Debian","wordcount":  1356 ,
+    "url": "https:\/\/clearsky.me\/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox\/","datePublished": "2015-02-11T20:31:41+00:00","dateModified": "2015-02-11T20:31:41+00:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "u0defined"
+      },"description": "Debian7安装LXDE+VNC+Firefox"
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/" title="晴空小筑"><span class="header-title-pre"><i class='fas fa-code'></i> </span><span id="typeit-header-desktop" class="typeit"></span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/"
+                
+                
+              ><i class='fas fa-home'></i> 首页</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class='fas fa-clock'></i> 文章 文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class='fas fa-tags'></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class='fas fa-book'></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/links/"
+                
+                
+              ><i class='fas fa-link'></i> 链接</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/about/"
+                
+                
+              ><i class='fas fa-user-tie'></i> 关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://github.com/nyancccat/"
+                title="GitHub"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="在这里搜索一下..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="晴空小筑"><span class="header-title-pre"><i class='fas fa-code'></i> </span><span id="typeit-header-title-mobile" class="typeit"></span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="在这里搜索一下..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              取消
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/"
+                  
+                  
+                ><i class='fas fa-home'></i> 首页</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class='fas fa-clock'></i> 文章 文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class='fas fa-tags'></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class='fas fa-book'></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/links/"
+                  
+                  
+                ><i class='fas fa-link'></i> 链接</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/about/"
+                  
+                  
+                ><i class='fas fa-user-tie'></i> 关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/nyancccat/"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fab fa-github fa-fw'></i> </a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><nav aria-label="breadcrumb" class="breadcrumb-container sticky">
+    <ol class="breadcrumb"><li class="breadcrumb-item"><a href="/" title="晴空小筑">主页</a></li><li class="breadcrumb-item"><a href="/posts/" title="Posts">Posts</a></li><li class="breadcrumb-item active" aria-current="page">Debian 7 安装 LXDE &#43; VNC &#43; Firefox</li>
+    </ol>
+  </nav><main class="container"><aside class="toc" id="toc-auto"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Debian 7 安装 LXDE &#43; VNC &#43; Firefox</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="http://clearsky.me/" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><img loading="lazy" src="/avatar.jpg" srcset="/avatar.jpg, /avatar.jpg 1.5x, /avatar.jpg 2x" sizes="auto" data-title="u0defined" data-alt="u0defined" class="avatar" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>&nbsp;u0defined</a></span>
+          <span class="post-category">收录于 <a href="/categories/%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 学习备忘</a></span></div>
+      <div class="post-meta-line"><span title="发布于 2015-02-11 20:31:41"><i class="fa-regular fa-calendar-alt fa-fw me-1" aria-hidden="true"></i><time datetime="2015-02-11">2015-02-11</time></span>&nbsp;<span title="更新于 2015-02-11 20:31:41"><i class="fa-regular fa-edit fa-fw me-1" aria-hidden="true"></i><time datetime="2015-02-11">2015-02-11</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1356 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#安装lxde桌面">安装LXDE桌面</a></li>
+    <li><a href="#设置开机启动">设置开机启动</a></li>
+    <li><a href="#配置中文环境">配置中文环境</a></li>
+    <li><a href="#安裝firefox中文版">安裝Firefox中文版</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content" data-end-flag=" ------------- 文章结束，感谢您的阅读。 ------------- "><div class="details admonition warning open">
+      <div class="details-summary admonition-title">
+        <i class="icon fa-solid fa-exclamation-triangle fa-fw" aria-hidden="true"></i>警告<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="details-content">
+        <div class="admonition-content">本文最后更新于 2015-02-11，文中内容可能已过时。</div>
+      </div>
+    </div><p>需要搞点挂机的东西，只需要安装firefox + flash支持 + 自动刷新扩展，本来想买个windows挂机宝之类的，后来想想现在用的vps挫是挫了一点，装个桌面环境挂挂机应该还行。</p>
+<p>前几天找了个Gnone一键包，用着还凑合，就是现在用的VPS是在是太挫了，硬盘小，安装完硬盘快爆了，想想还是装点轻量级的。</p>
+<p>说说我的VPS机器配置：</p>
+<p>搬瓦工（bandwagonhost）5G PROMO V2 这款，单核OpenVZ，内存512MB，硬盘5G SSD，系统Debian 7.0 x86 。</p>
+<p>本来已经安装lnmp环境，硬盘还剩差不多3个G，勉强还能试试。</p>
+<h2 id="安装lxde桌面">安装LXDE桌面</h2>
+<p>root登陆，先更新下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装lxde ，当然在，这里肯定是最小化安装，多安装个nano主要是等下要编辑文件，不会vi。。。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install nano xorg lxde-core
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装过程中会弹出一个键盘布局选择，这里直接选默认的就行:</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/ketboard-layout.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/ketboard-layout.png" data-sub-html="<h2>选择默认键盘布局</h2><p>选择默认键盘布局</p>"><img loading="lazy" src="ketboard-layout.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/ketboard-layout.png, ketboard-layout.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/ketboard-layout.png 2x" sizes="auto" data-title="选择默认键盘布局" data-alt="选择默认键盘布局" width="721" height="582" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">选择默认键盘布局</figcaption>
+  </figure></p>
+<p>安装VNC，这里用的是tightvncserver：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install tightvncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装完成后启动VNC:</p>
+<p>tightvncserver :1</p>
+<p>运行后会弹出设置密码，输入<code>两次</code>以便确认，还会提示是否设置一个仅供查看的密码，这里就不需要了，直接输入<code>n</code>，如图：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-password.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-password.png" data-sub-html="<h2>设置密码</h2><p>设置密码</p>"><img loading="lazy" src="vnc-password.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-password.png, vnc-password.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-password.png 2x" sizes="auto" data-title="设置密码" data-alt="设置密码" width="721" height="582" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">设置密码</figcaption>
+  </figure></p>
+<p>接着先暂停VNC：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tightvncserver -kill :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后编辑xstartup文件，如上所说，不会vi，还是用nano。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano ~/.vnc/xstartup
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在最后加上两行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">lxterminal <span class="p">&amp;</span>
+</span></span><span class="line"><span class="cl">/usr/bin/lxsession -s LXDE <span class="p">&amp;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>&lsquo;Ctrl + X&rsquo;输入<code>y</code>回车，保存退出。</p>
+<p>完成后如图：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/xstartup.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/xstartup.png" data-sub-html="<h2>编辑xstartup</h2><p>编辑xstartup</p>"><img loading="lazy" src="xstartup.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/xstartup.png, xstartup.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/xstartup.png 2x" sizes="auto" data-title="编辑xstartup" data-alt="编辑xstartup" width="716" height="416" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">编辑xstartup</figcaption>
+  </figure></p>
+<h2 id="设置开机启动">设置开机启动</h2>
+<p>新建一个文件<code>tightvncserver</code>：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/init.d/tightvncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>里面内容为下面，其中<code>800x600</code>为分辨率，自行修改。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/sh
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1">### BEGIN INIT INFO</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Provides: tightvncserver</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Required-Start: $syslog $remote_fs $network</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Required-Stop: $syslog $remote_fs $network</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Default-Start: 2 3 4 5</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Default-Stop: 0 1 6</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Short-Description: Starts VNC Server on system start.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Description: Starts tight VNC Server. Script written by James Swineson.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### END INIT INFO</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># /etc/init.d/tightvncserver</span>
+</span></span><span class="line"><span class="cl"><span class="nv">VNCUSER</span><span class="o">=</span><span class="s1">&#39;root&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="k">case</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> in
+</span></span><span class="line"><span class="cl">start<span class="o">)</span>
+</span></span><span class="line"><span class="cl">su <span class="nv">$VNCUSER</span> -c <span class="s1">&#39;/usr/bin/tightvncserver -geometry 800x600 -depth 24 :1&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Starting TightVNC Server for </span><span class="nv">$VNCUSER</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span>
+</span></span><span class="line"><span class="cl">stop<span class="o">)</span>
+</span></span><span class="line"><span class="cl">pkill Xtightvnc
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;TightVNC Server stopped&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span>
+</span></span><span class="line"><span class="cl">*<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;Usage: /etc/init.d/tightvncserver {start|stop}&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span> <span class="m">1</span>
+</span></span><span class="line"><span class="cl"><span class="p">;;</span>
+</span></span><span class="line"><span class="cl"><span class="k">esac</span>
+</span></span><span class="line"><span class="cl"><span class="nb">exit</span> 0<span class="sb">`</span>&lt;/pre&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存后，加权限：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">chmod <span class="m">755</span> /etc/init.d/tightvncserver
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">update-rc.d tightvncserver defaults
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>再次重启VNC：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tightvncserver :1
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>到这里可以用TightVNC Viewer或者VNC-Viewer等VNC软件连接了。</p>
+<p>我这里用的是VNC-Viewer, 可以点<a href="http://www.realvnc.com/download/viewer/" title="Download VNC® Viewer"target="_blank" rel="external nofollow noopener noreferrer">这里</a>下载:</p>
+<p>地址填上你的<code>ip:1</code>，如图：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-view.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-view.png" data-sub-html="<h2>VNC-Viewer</h2><p>VNC-Viewer</p>"><img loading="lazy" src="vnc-view.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-view.png, vnc-view.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-view.png 2x" sizes="auto" data-title="VNC-Viewer" data-alt="VNC-Viewer" width="420" height="216" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">VNC-Viewer</figcaption>
+  </figure></p>
+<p>接着输入上面设置的密码后进入桌面，试着打开浏览器看看，一堆“麻将字”，很显然还需要设置中文环境。</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-lm.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-lm.png" data-sub-html="<h2>中文乱码</h2><p>中文乱码</p>"><img loading="lazy" src="vnc-lm.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-lm.png, vnc-lm.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-lm.png 2x" sizes="auto" data-title="中文乱码" data-alt="中文乱码" width="816" height="639" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">中文乱码</figcaption>
+  </figure></p>
+<h2 id="配置中文环境">配置中文环境</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">dpkg-reconfigure locales
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/locales.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/locales.png" data-sub-html="<h2>设置语言区域</h2><p>设置语言区域</p>"><img loading="lazy" src="locales.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/locales.png, locales.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/locales.png 2x" sizes="auto" data-title="设置语言区域" data-alt="设置语言区域" width="721" height="582" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">设置语言区域</figcaption>
+  </figure></p>
+<p>拖到下面，<code>空格</code>选中<code>zh_CN.UTF-8</code>，回车。</p>
+<p>安装中文字体:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install ttf-arphic-ukai ttf-arphic-uming ttf-arphic-gbsn00lp ttf-arphic-bkai00mp ttf-arphic-bsmi00lp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>重启系统一次，再次连接看看，已经是中文了：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-zh.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-zh.png" data-sub-html="<h2>中文支持</h2><p>中文支持</p>"><img loading="lazy" src="vnc-zh.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-zh.png, vnc-zh.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/vnc-zh.png 2x" sizes="auto" data-title="中文支持" data-alt="中文支持" width="816" height="639" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">中文支持</figcaption>
+  </figure></p>
+<h2 id="安裝firefox中文版">安裝Firefox中文版</h2>
+<p>安装桌面环境后自带iceweasel浏览器，这是重新编译后的firefox，也兼容大部分firefox插件，但是还是喜欢看着熟悉的firefox。但是默认系统源里面没有没有firefox，于是，源列表中增加Linuxmint的Debian源。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/apt/sources.list
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最后面增加一行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">deb http://mirrors.ustc.edu.cn/linuxmint/ debian import
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/linuxmint-debian.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/linuxmint-debian.png" data-sub-html="<h2>添加linuxmint源</h2><p>添加linuxmint源</p>"><img loading="lazy" src="linuxmint-debian.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/linuxmint-debian.png, linuxmint-debian.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/linuxmint-debian.png 2x" sizes="auto" data-title="添加linuxmint源" data-alt="添加linuxmint源" width="674" height="439" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">添加linuxmint源</figcaption>
+  </figure></p>
+<p>保存后安装linuxmint的公钥：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">wget http://mirrors.ustc.edu.cn/linuxmint/pool/main/l/
+</span></span><span class="line"><span class="cl">linuxmint-keyring/linuxmint-keyring_2009.04.29_all.deb
+</span></span><span class="line"><span class="cl">dpkg -i linuxmint-keyring_2009.04.29_all.deb
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新源：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get update
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>也可以移除iceweasel：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get remove iceweasel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装firefox中文版：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install firefox firefox-l10n-zh
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安裝Flash支持：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get install flashplugin-nonfree
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>大功告成，试试，如图：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/firefox-zh.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/firefox-zh.png" data-sub-html="<h2>中文版firefox</h2><p>中文版firefox]</p>"><img loading="lazy" src="firefox-zh.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/firefox-zh.png, firefox-zh.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/firefox-zh.png 2x" sizes="auto" data-title="中文版firefox]" data-alt="中文版firefox" width="816" height="639" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">中文版firefox</figcaption>
+  </figure></p>
+<p>挂机需要个自动刷新插件，个人喜好是reloadevery扩展：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/reloadevery.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/reloadevery.png" data-sub-html="<h2>reloadevery扩展</h2><p>reloadevery扩展</p>"><img loading="lazy" src="reloadevery.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/reloadevery.png, reloadevery.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/reloadevery.png 2x" sizes="auto" data-title="reloadevery扩展" data-alt="reloadevery扩展" width="816" height="639" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">reloadevery扩展</figcaption>
+  </figure></p>
+<p>最后清理缓存：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">apt-get autoremove <span class="o">&amp;&amp;</span> apt-get clean
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>最好<code>reboot</code>一次，重启之后看看搬瓦工的后台，还行，够用：</p>
+<p><figure><a class="lightgallery" href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/bandwagon-cp.png" data-thumbnail="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/bandwagon-cp.png" data-sub-html="<h2>搬瓦工后台</h2><p>搬瓦工后台</p>"><img loading="lazy" src="bandwagon-cp.png" srcset="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/bandwagon-cp.png, bandwagon-cp.png 1.5x, /20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/bandwagon-cp.png 2x" sizes="auto" data-title="搬瓦工后台" data-alt="搬瓦工后台" width="654" height="465" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">搬瓦工后台</figcaption>
+  </figure></p>
+<p>完，睡觉！</p>
+</div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2015-02-11 20:31:41">更新于 2015-02-11&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"><span><a href="/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox" data-hashtags="Debian"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-hashtag="Debian"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox" data-web><i class="fa-brands fa-whatsapp fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox"><i data-svg-src="/lib/simple-icons/icons/line.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox" data-description="Debian7安装LXDE&#43;VNC&#43;Firefox"><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox" data-description="Debian7安装LXDE&#43;VNC&#43;Firefox"><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://clearsky.me/20150211-debian7%E5%AE%89%E8%A3%85lxde-vnc-firefox/" data-title="Debian 7 安装 LXDE &#43; VNC &#43; Firefox"><i class="fa-brands fa-evernote fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/debian/' class="post-tag">Debian</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/20150128-%E8%BF%9C%E6%96%B9%E7%9A%84%E6%9C%8B%E5%8F%8B/" class="post-nav-item" rel="prev" title="远方的朋友"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>远方的朋友</a>
+      <a href="/20150516-%E6%B7%B1%E5%9C%B3%E5%BE%80%E4%BA%8B/" class="post-nav-item" rel="next" title="深圳往事">深圳往事<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.111.3">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.2.18"><img class="fixit-icon" src="/fixit.min.svg" alt="FixIt logo" />&nbsp;FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2009 - 2023</span><span class="author" itemprop="copyrightHolder">
+              <a href="http://clearsky.me/"target="_blank" rel="external nofollow noopener noreferrer">u0defined</a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div><div class="footer-line statistics"></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">FixIt 主题在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/typeit/index.umd.js" defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/lib/pangu/pangu.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"autoBookmark":true,"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":9999},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"data":{"typeit-header-desktop":"晴空小筑","typeit-header-title-mobile":"晴空小筑"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"pangu":{"enable":true,"selector":"article"},"search":{"distance":100,"findAllMatches":false,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":true,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"没有找到结果","snippetLength":50,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"twemoji":true,"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"typeit-header-desktop":["typeit-header-desktop"],"typeit-header-title-mobile":["typeit-header-title-mobile"]},"duration":-1,"loop":false,"speed":100}};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

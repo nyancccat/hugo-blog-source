@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>VPS - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/vps/</link>
+    <description>VPS - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/vps/" rel="self" type="application/rss+xml" /><item>
+  <title>Hexo 部署到搬瓦工 VPS</title>
+  <link>https://clearsky.me/hexo-deploy-to-vps/</link>
+  <pubDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-deploy-to-vps/</guid>
+  <description><![CDATA[环境设定 信息 搬瓦工年付最便宜 $19.99 10G VPS，KVM 架构。 VPS 操作系统 Ubuntu 16.04.2 LTS ，已开启 Gooole TCP BBR。 本地系统 Windows_NT 10.0.15063 win32 x64，已安装 Hexo 3.3.7，Node.]]></description>
+</item>
+<item>
+  <title>Ubuntu 开启 BBR 拥塞控制算法加速 TCP</title>
+  <link>https://clearsky.me/ubuntu-bbr/</link>
+  <pubDate>Sun, 18 Jun 2017 00:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/ubuntu-bbr/</guid>
+  <description><![CDATA[系统更新 昨天 前天（打字的时候过 0 点了）买的搬瓦工 VPS，默认系统是 CentOS 6.8，后台重装先换成 Ubuntu 16.04，为什么？我懒啊，图方便。 然后 root 登录，]]></description>
+</item>
+<item>
+  <title>入了个年付 $19.99 搬瓦工 VPS</title>
+  <link>https://clearsky.me/fuck-bandwagonhost-again/</link>
+  <pubDate>Fri, 16 Jun 2017 23:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/fuck-bandwagonhost-again/</guid>
+  <description><![CDATA[序言 本来没想买，一直部署在 coding 挺好的，省事，这两天看到 @skywing 换了 VPS，或许是很久不碰这种东西，手痒，还是入了个 搬瓦工 来玩玩。不过估计没多少时间来]]></description>
+</item>
+<item>
+  <title>搬家到 Bandwagonhost</title>
+  <link>https://clearsky.me/move-to-bandwagonhost/</link>
+  <pubDate>Sun, 10 Aug 2014 20:29:39 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/move-to-bandwagonhost/</guid>
+  <description><![CDATA[这货限制CPU太严格了，安装环境编译过程中超限制被锁定的话，速度简直龟速，入手需谨慎！ 又换地方了，原来的VPS近段时间，特别是晚上，实在是抽]]></description>
+</item>
+<item>
+  <title>VPS 压力测试工具 siege 和 httpbench</title>
+  <link>https://clearsky.me/webserver-test/</link>
+  <pubDate>Sat, 12 Jul 2014 11:58:21 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/webserver-test/</guid>
+  <description><![CDATA[闲 闲得没事对所用VPS来个压力测试。现在所用的VPS是去年年付的一个，配置挺低的： 内存256MB且无突发，硬盘30G，月流量500G，操作系]]></description>
+</item>
+<item>
+  <title>搬家到 AcrosVM</title>
+  <link>https://clearsky.me/move-to-acrosvm/</link>
+  <pubDate>Mon, 02 Dec 2013 01:39:18 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/move-to-acrosvm/</guid>
+  <description><![CDATA[虚拟主机还有3个月到期了，登陆到控制面板里面看了下，去年买的小容量虚拟主机，大小200MB，目前空间用了54%。 本来想升级个套餐的，因为vp]]></description>
+</item>
+<item>
+  <title>AMH面板安装反向代理模块</title>
+  <link>https://clearsky.me/amh-amproxy/</link>
+  <pubDate>Sat, 23 Feb 2013 10:19:45 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/amh-amproxy/</guid>
+  <description><![CDATA[过年的时候在vps上安装了amh面板，之后只是简单绑定了一个域名，和用它的备份功能做了下备份，之后的这段时间沉迷于《死亡空间3》和《杀手5》]]></description>
+</item>
+<item>
+  <title>装个 AMH 面板</title>
+  <link>https://clearsky.me/amh/</link>
+  <pubDate>Sat, 09 Feb 2013 15:54:38 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/amh/</guid>
+  <description><![CDATA[今天年三十，年夜饭时前玩一会电脑，发现原来的那台vps恢复了，不抽风了。 这里肯定是继续留在这个虚拟主机上了，不会再搬回去了。那vps就留着时]]></description>
+</item>
+<item>
+  <title>精简了一下vps系统</title>
+  <link>https://clearsky.me/debian-lite/</link>
+  <pubDate>Wed, 16 Jan 2013 11:03:20 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/debian-lite/</guid>
+  <description><![CDATA[现在用的这个vps性能太挫，前段时间从contos换到debian，据说debian能省点内存。 其实省不省内存我无所谓，本来就是拿来用的，留]]></description>
+</item>
+<item>
+  <title>VPS 命令备忘</title>
+  <link>https://clearsky.me/vps-memo/</link>
+  <pubDate>Tue, 30 Oct 2012 12:17:35 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/vps-memo/</guid>
+  <description><![CDATA[添加低权限ssh账号 1 2 useradd username -s /sbin/nologin echo username:password | chpasswd`&lt;/pre&gt; 调整时区 1 2 rm -rf /etc/localtime ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 修改ssh端口 1 vi /etc/ssh/sshd_config 把端口22随意改，然后 1 service sshd restart 常用ssh命令，来自vp]]></description>
+</item>
+</channel>
+</rss>

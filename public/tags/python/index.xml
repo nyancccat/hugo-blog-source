@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Python - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/python/</link>
+    <description>Python - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Tue, 08 May 2018 20:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/python/" rel="self" type="application/rss+xml" /><item>
+  <title>使用 Python 爬虫自动登陆京东抢购华为 P20 Pro 手机</title>
+  <link>https://clearsky.me/jd-autobuy/</link>
+  <pubDate>Tue, 08 May 2018 20:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/jd-autobuy/</guid>
+  <description><![CDATA[原因 目前使用的 iPhone 6s plus 慢慢的有点卡了，低电量降频的时候更加严重，升级到 ios 11.3.1 后不强制降频了，不卡了，但是本来掉得快的电量掉得更快了，我是不习惯有]]></description>
+</item>
+</channel>
+</rss>

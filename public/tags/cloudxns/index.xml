@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>CloudXNS - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/cloudxns/</link>
+    <description>CloudXNS - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Mon, 22 Jun 2015 09:46:41 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/cloudxns/" rel="self" type="application/rss+xml" /><item>
+  <title>DNS 解析换到 CloudXNS</title>
+  <link>https://clearsky.me/cloudxns/</link>
+  <pubDate>Mon, 22 Jun 2015 09:46:41 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/cloudxns/</guid>
+  <description><![CDATA[一直以来用的都是DNSPod（好像现在被鹅厂收购了），期间有过几次服务不稳定，速度慢的情况，但是本来就是小博客，无所谓，能用就行，也没打算换]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Hexo - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/hexo/</link>
+    <description>Hexo - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Wed, 23 Aug 2017 22:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/hexo/" rel="self" type="application/rss+xml" /><item>
+  <title>Hexo 使用 APlayer 插入音乐</title>
+  <link>https://clearsky.me/hexo-aplayer/</link>
+  <pubDate>Wed, 23 Aug 2017 22:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-aplayer/</guid>
+  <description><![CDATA[来源 刚开始一直用网易云音乐官方外链播放器 iframe 方法给文章插入音乐，后来嫌不支持 https 就换成网上找到的一个外链接口，用着还可以，最近几个月一直没怎么给]]></description>
+</item>
+<item>
+  <title>Hexo 部署到搬瓦工 VPS</title>
+  <link>https://clearsky.me/hexo-deploy-to-vps/</link>
+  <pubDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-deploy-to-vps/</guid>
+  <description><![CDATA[环境设定 信息 搬瓦工年付最便宜 $19.99 10G VPS，KVM 架构。 VPS 操作系统 Ubuntu 16.04.2 LTS ，已开启 Gooole TCP BBR。 本地系统 Windows_NT 10.0.15063 win32 x64，已安装 Hexo 3.3.7，Node.]]></description>
+</item>
+<item>
+  <title>Hexo 永久链接管理</title>
+  <link>https://clearsky.me/hexo-permalinks/</link>
+  <pubDate>Sat, 17 Jun 2017 18:36:04 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-permalinks/</guid>
+  <description><![CDATA[起因 Hexo 官方文档关于永久链接（Permalinks）是这样定义的。 您可以在 _config.yml 配置中调整网站的永久链接或者在每篇文章的 Front-matter 中指定。 变量 描述 :year 文章的]]></description>
+</item>
+<item>
+  <title>Hexo 升级 3.2.2 遇到的问题</title>
+  <link>https://clearsky.me/hexo-upgrade-to-3.2.2/</link>
+  <pubDate>Sun, 24 Jul 2016 11:33:38 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-upgrade-to-3.2.2/</guid>
+  <description><![CDATA[蛋疼 悲剧值班的周末，翻了下 Hexo 官方，看到许多人都升级到 v3.2.2 了，虽然明知道每次升级都很坑，但是值班本来也无聊，于是折腾开始了。 开始 鉴于以前每次升级]]></description>
+</item>
+<item>
+  <title>使用 gulp 压缩 hexo 静态资源</title>
+  <link>https://clearsky.me/hexo-gulp-compres/</link>
+  <pubDate>Wed, 20 Jul 2016 00:00:00 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-gulp-compres/</guid>
+  <description><![CDATA[前言 前两天把博客托管到 Coding，相比以前放在 Github 访问速度有了不错的提升。 今天休息没事，想着再优化下，查看页面源码发现代码未压缩，于是到 Hexo 插]]></description>
+</item>
+<item>
+  <title>Hexo 多部署--同时使用 Coding 和 Github 托管博客</title>
+  <link>https://clearsky.me/hexo-deploy/</link>
+  <pubDate>Mon, 18 Jul 2016 23:44:21 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hexo-deploy/</guid>
+  <description><![CDATA[由于八达岭内网络环境的复杂性，使得部署在 Github 的博客时常抽风，访问体验不是那么的好，所以想想还是放在 Coding Pages 上好了。部署的时候同时部署到 Github]]></description>
+</item>
+<item>
+  <title>Hello Hexo</title>
+  <link>https://clearsky.me/hello-hexo/</link>
+  <pubDate>Fri, 01 Jan 2016 20:46:25 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/hello-hexo/</guid>
+  <description><![CDATA[换到 Hexo，新的开始！ 博客托管在 GitHub，有时候会抽风，无所谓了，毕竟大部分是给自己看的。 第一次用 Markdown 写东西，慢慢学。好多文章格式还要调]]></description>
+</item>
+</channel>
+</rss>

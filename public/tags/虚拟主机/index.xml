@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>虚拟主机 - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/</link>
+    <description>虚拟主机 - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (u0defined)</managingEditor>
+      <webMaster>theqee@gmail.com (u0defined)</webMaster><lastBuildDate>Tue, 16 Jul 2013 01:29:21 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA/" rel="self" type="application/rss+xml" /><item>
+  <title>更换服务器遇到的问题</title>
+  <link>https://clearsky.me/blog-moving-problem/</link>
+  <pubDate>Tue, 16 Jul 2013 01:29:21 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/blog-moving-problem/</guid>
+  <description><![CDATA[收到邮件，所在虚拟主机所在的台湾的服务器故障了，迁移到香港服务器。 域名解析A到新的ip后能访问了，不过有点小问题，一是后台编辑时高级选项和附]]></description>
+</item>
+<item>
+  <title>博客再次搬家</title>
+  <link>https://clearsky.me/blog-moving-again/</link>
+  <pubDate>Sun, 03 Feb 2013 12:40:13 &#43;0000</pubDate>
+  <author>u0defined</author>
+  <guid>https://clearsky.me/blog-moving-again/</guid>
+  <description><![CDATA[原来所在的vps抽搐得厉害，ssh连接3分钟内必断开，受不了了，不折腾了~ 真心觉得个人博客用虚拟主机舒服，什么都不用管，所以年付了一个搬过来]]></description>
+</item>
+</channel>
+</rss>
