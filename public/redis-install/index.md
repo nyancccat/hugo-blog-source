@@ -36,31 +36,31 @@ Redis 官网：  https://redis.io/
 
 Redis 基于 C ,先安装所需要的 gcc 依赖，`root `登录 CentOS，安装依赖:
 
-```bash
+```
 yum install -y gcc tcl
 ```
 
 发文时候官网最新 7.0.5 版本，--> [Download 7.0.5](https://github.com/redis/redis/archive/7.0.5.tar.gz) ，下载后上传放至 CentOS `/usr/local/src` 目录，解压：
 
-```bash
+```
 tar -zxvf redis-7.0.5.tar.gz
 ```
 
 进入`redis-7.0.5`目录：
 
-```bash
+```
 cd redis-7.0.5
 ```
 
 编译：
 
-```bash
+```
 make && make install
 ```
 
 完成安装，默认的安装路径是在`/usr/local/bin`目录下，运行：
 
-```bash
+```
 redis-server
 ```
 ![安装完成启动 Redis](redis.jpg "安装完成启动 Redis")
@@ -70,7 +70,7 @@ redis-server
 
 当前目录：`redis-7.0.5` 下，配置文件为 `redis.conf`。
 
-```bash
+```
 vi redis.conf
 ```
 
@@ -100,7 +100,7 @@ requirepass pass
 
 ### Redis 自启动
 
-```bash
+```
 vi /etc/systemd/system/redis.service
 ```
 
@@ -122,37 +122,37 @@ WantedBy=multi-user.target
 
 重载系统服务：
 
-```bash
+```
 systemctl daemon-reload
 ```
 
 CentOS 修改防火墙设置，通过 `6379` 端口：
 
-```bash
+```
 firewall-cmd --zone=public --permanent --add-port=6379/tcp
 ```
 
 设置开机启动：
 
-```bash
+```
 systemctl enable redis
 ```
 
 可以用下面命令来操作 redis ：
 
-```bash
+```
 systemctl start redis           # 启动
 ```
 
-```bash
+```
 systemctl stop redis            # 停止
 ```
 
-```bash
+```
 systemctl restart redis         # 重启
 ```
 
-```bash
+```
 systemctl status redis          # 查看状态
 ```
 

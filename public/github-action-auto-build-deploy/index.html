@@ -214,9 +214,9 @@
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">git add .
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git status
-</span></span><span class="line"><span class="cl">git commit -m &#34;xxx&#34;
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;xxx&#34;</span>
 </span></span><span class="line"><span class="cl">git push
 </span></span></code></pre></td></tr></table>
 </div>
@@ -343,15 +343,15 @@
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#!/bin/
-</span></span><span class="line"><span class="cl">echo -e &#34;Deploying...&#34;
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="nb">echo</span> -e <span class="s2">&#34;Deploying...&#34;</span>
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">git status
-</span></span><span class="line"><span class="cl">read -p &#34;Enter git commit message: &#34; msg
-</span></span><span class="line"><span class="cl">if [ -z $msg ];then
-</span></span><span class="line"><span class="cl">  msg=&#34;update $(date +&#39;%F %a %T&#39;)&#34;
-</span></span><span class="line"><span class="cl">fi
-</span></span><span class="line"><span class="cl">git commit -m &#34;$msg&#34;
+</span></span><span class="line"><span class="cl"><span class="nb">read</span> -p <span class="s2">&#34;Enter git commit message: &#34;</span> msg
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="o">[</span> -z <span class="nv">$msg</span> <span class="o">]</span><span class="p">;</span><span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">msg</span><span class="o">=</span><span class="s2">&#34;update </span><span class="k">$(</span>date +<span class="s1">&#39;%F %a %T&#39;</span><span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;</span><span class="nv">$msg</span><span class="s2">&#34;</span>
 </span></span><span class="line"><span class="cl">git push
 </span></span></code></pre></td></tr></table>
 </div>
@@ -361,7 +361,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">sh deploy.sh
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sh deploy.sh
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>输入 git- commit 信息即可。</p>

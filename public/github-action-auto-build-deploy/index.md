@@ -5,7 +5,7 @@
 
 自从换到 Hugo 以来，都是本地运行 Hugo 命令生成生成静态网页 `.public`目录，然后推送到 GitHub Pages 项目仓库，感觉每次发布还要切换目录来上一堆 Git 操作：
 
-```
+```bash
 git add .
 git status
 git commit -m "xxx"
@@ -84,8 +84,8 @@ jobs:
 
 为了方便，几个命令打包个简单部署脚本：
 
-```
-#!/bin/
+```bash
+#!/bin/bash
 echo -e "Deploying..."
 git add .
 git status
@@ -99,7 +99,7 @@ git push
 
 保存为 deploy.sh ，终端切换到博客目录 
 
-```
+```bash
 sh deploy.sh
 ```
 

@@ -245,7 +245,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">yum install -y gcc tcl
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">yum install -y gcc tcl
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>发文时候官网最新 7.0.5 版本，&ndash;&gt; <a href="https://github.com/redis/redis/archive/7.0.5.tar.gz"target="_blank" rel="external nofollow noopener noreferrer">Download 7.0.5</a> ，下载后上传放至 CentOS <code>/usr/local/src</code> 目录，解压：</p>
@@ -254,7 +254,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">tar -zxvf redis-7.0.5.tar.gz
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">tar -zxvf redis-7.0.5.tar.gz
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>进入<code>redis-7.0.5</code>目录：</p>
@@ -263,7 +263,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">cd</span> redis-7.0.5
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">cd redis-7.0.5
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>编译：</p>
@@ -272,7 +272,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make <span class="o">&amp;&amp;</span> make install
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">make &amp;&amp; make install
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>完成安装，默认的安装路径是在<code>/usr/local/bin</code>目录下，运行：</p>
@@ -281,7 +281,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">redis-server
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">redis-server
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><figure><a class="lightgallery" href="/redis-install/redis.jpg" data-thumbnail="/redis-install/redis.jpg" data-sub-html="<h2>安装完成启动 Redis</h2><p>安装完成启动 Redis</p>"><img loading="lazy" src="redis.jpg" srcset="/redis-install/redis.jpg, redis.jpg 1.5x, /redis-install/redis.jpg 2x" sizes="auto" data-title="安装完成启动 Redis" data-alt="安装完成启动 Redis" width="1429" height="788" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">安装完成启动 Redis</figcaption>
@@ -293,7 +293,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vi redis.conf
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vi redis.conf
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改这些：</p>
@@ -320,7 +320,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">vi /etc/systemd/system/redis.service
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">vi /etc/systemd/system/redis.service
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>写入内容如下，注意路径。</p>
@@ -358,7 +358,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl daemon-reload
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl daemon-reload
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>CentOS 修改防火墙设置，通过 <code>6379</code> 端口：</p>
@@ -367,7 +367,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">firewall-cmd --zone<span class="o">=</span>public --permanent --add-port<span class="o">=</span>6379/tcp
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">firewall-cmd --zone=public --permanent --add-port=6379/tcp
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>设置开机启动：</p>
@@ -376,7 +376,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> redis
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl enable redis
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>可以用下面命令来操作 redis ：</p>
@@ -385,7 +385,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl start redis           <span class="c1"># 启动</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl start redis           # 启动
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -393,7 +393,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl stop redis            <span class="c1"># 停止</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl stop redis            # 停止
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -401,7 +401,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl restart redis         <span class="c1"># 重启</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl restart redis         # 重启
 </span></span></code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
@@ -409,7 +409,7 @@
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl status redis          <span class="c1"># 查看状态</span>
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">systemctl status redis          # 查看状态
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="redis-可视化客户端">Redis 可视化客户端</h3>
