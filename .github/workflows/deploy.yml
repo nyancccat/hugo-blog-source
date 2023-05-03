@@ -32,8 +32,6 @@ jobs:
           publish_dir: ./public # 静态网页路径
           commit_message: ${{ github.event.head_commit.message }}
 
-          
-jobs:
   generate:
     runs-on: ubuntu-latest
     timeout-minutes: 10
