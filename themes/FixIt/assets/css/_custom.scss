@@ -23,15 +23,23 @@ a:hover {
 .home.posts .summary .content,
 .home .home-profile .home-disclaimer,
 .single .post-meta
- {
+    {
     color: #4d4d4d;
- }
+    }
 
- .home.posts .summary {
+.home.posts .summary {
     border-bottom: 3px dashed #f0f0f0;
     padding-bottom: 0;
 }
 
 .single .post-footer {
     margin: 1rem 0;
+}
+.home .home-profile .home-avatar {
+    background-size: 100% 150%;
+    padding: 0.5rem;
+    background-image: url(/github-user-contribution.svg);
+    [data-theme='dark'] & {
+    background-image: url(/github-user-contribution-dark.svg);
+    }
 }
