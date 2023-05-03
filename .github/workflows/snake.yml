@@ -1,17 +1,10 @@
 name: Generate Animation
 
-on:
-  # run automatically every Monday
-  schedule:
-    - cron: "0 0 * * 1"
-  
-  # allows to manually run the job at any time
-  workflow_dispatch:
-  
-  # run on every push on the main branch
-  push:
-    branches:
-      - main
+on: 
+    push:
+    workflow_dispatch:
+    schedule:
+        - cron: "0 1 * * *"
 
 
 
