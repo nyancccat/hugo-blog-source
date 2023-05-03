@@ -12,15 +12,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
-
-      - name: Generate Snake
-        uses: Platane/snk@master
-        id: snake-gif
+        uses: Platane/snk@v2
         with:
-          github_user_name: nyancccat
-          gif_out_path: ./assets/github-contribution-grid-snake.gif
-          svg_out_path: ./assets111/github-contribution-grid-snake.svg
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
 
       # - name: Push to GitHub
       #   uses: EndBug/add-and-commit@v7.2.1
