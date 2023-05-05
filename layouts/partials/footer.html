@@ -16,11 +16,11 @@
           | 托管于 <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
         </div>
       {{- end -}}
-
       {{- if .Site.Params.footer.copyright | or .Site.Params.footer.author | or .Site.Params.footer.license -}}
         <div class="footer-line copyright{{ with .Site.Params.footer.order.copyright }} order-{{ . }}{{ end }}" itemscope itemtype="http://schema.org/CreativeWork">
           {{- /* Copyright year */ -}}
           {{- if ne .Site.Params.footer.copyright false -}}
+            <a href="https://ipw.cn/ssl/?site=clearsky.me" title="本站支持SSL安全访问" target='_blank' class="icon_ip" rel="noopener noreferrer">SSL</a>
             {{ dict "Class" "fa-regular fa-copyright fa-fw" | partial "plugin/icon.html" }}
             {{ with .Site.Params.footer.since -}}
               <span itemprop="copyrightYear">

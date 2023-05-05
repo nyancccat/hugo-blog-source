@@ -44,3 +44,20 @@ a:hover {
     background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake-dark.svg);
     }
 }
+
+.icon_ip {
+    border: 1px solid #161209;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
+    margin-left: 2px;
+    line-height: 1;
+    [data-theme='dark'] & {
+    border: 1px solid #a9a9b3;
+    border-radius: 4px;
+    padding: 4px;
+    display: inline-block;
+    margin-left: 2px;
+    line-height: 1;
+    }
+}
