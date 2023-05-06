@@ -36,12 +36,12 @@ a:hover {
     margin: 1rem 0;
 }
 .home .home-profile .home-avatar {
-    background-size: 100% 100%; 
-    padding: 1.8rem;
+    // background-size: 100% 100%; 
+    padding: 1rem;
     // height: auto;
     background-repeat: no-repeat;
     background-position: center;
-    // background-size: auto 8rem;
+    background-size: auto 9rem;
     background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake.svg);
     [data-theme='dark'] & {
     background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake-dark.svg);
