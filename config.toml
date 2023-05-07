@@ -853,7 +853,7 @@ enableGitInfo = false
     enable = true
     permalink = "https://github.com/nyancccat/"
     title = "在 GitHub 上查看源代码"
-    position = "right" # ["left", "right"]
+    position = "left" # ["left", "right"]
 
   #  Gravatar 设置
   [params.gravatar]
