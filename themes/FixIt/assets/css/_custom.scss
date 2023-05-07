@@ -71,29 +71,3 @@ footer .footer-container .footer-line .fixit-icon {
     top: 0.1em;
 }
 
-
-.single .content {
-    >h2,
-    >h3,
-    >h4,
-    >h5,
-    >h6 {
-        padding-bottom: 3px;
-        border-bottom : 1px solid #eee;
-        >.header-mark::before {
-            content: "# ";
-            margin-right: .3125rem;
-            color: $single-link-color;
-
-
-            [theme=dark] & {
-                color: $single-link-color-dark;
-            }
-        }
-    }
-
-    >h2>.header-mark::before {
-        content: "# ";
-        border-bottom : 1px solid rgb(136, 37, 37);
-    }
-}
