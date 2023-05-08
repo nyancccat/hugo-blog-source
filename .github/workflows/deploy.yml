@@ -18,8 +18,12 @@ jobs:
           submodules: true  
           fetch-depth: 0    
         
-      - name: Disable quotePath
-        run: git config --global core.quotePath false
+      - name: Git Configuration
+        run: |
+          git config --global core.quotePath false
+          git config --global core.autocrlf false
+          git config --global core.safecrlf true
+          git config --global core.ignorecase false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
