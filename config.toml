@@ -509,7 +509,7 @@ enableGitInfo = true
       #  编辑的基础链接
       # url = "/edit/branch-name/subdirectory-name" # 相对于 `params.gitRepo`
       # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # 完整链接
-      url = "" 
+      url = "/edit/master/content" 
     #  KaTeX 数学公式 (https://katex.org)
     [params.page.math]
       enable = true
