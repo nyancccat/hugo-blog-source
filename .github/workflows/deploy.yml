@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@master
         with:
           submodules: true  
           fetch-depth: 0    
@@ -28,7 +28,7 @@ jobs:
           extended: true
 
       - name: Build 
-        run: hugo --minify
+        run: hugo --gc --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
