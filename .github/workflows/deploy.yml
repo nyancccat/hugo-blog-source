@@ -7,7 +7,7 @@ on:
 
 env:
   TZ: Asia/Shanghai # 设置当前环境时区
-  
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -18,7 +18,7 @@ jobs:
           submodules: true  
           fetch-depth: 0    
         
-        - name: Disable quotePath
+      - name: Disable quotePath
         run: git config --global core.quotePath false
 
       - name: Setup Hugo
