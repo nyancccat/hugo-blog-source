@@ -5,11 +5,11 @@
 .single,
 .home-profile {
     background-color: $global-background-color;
-    opacity: .86;
+    opacity: 0.86;
 
-    [data-theme='dark'] & {
+    [data-theme="dark"] & {
         background: $global-background-color-dark;
-        opacity: .86;
+        opacity: 0.86;
     }
 }
 
@@ -22,10 +22,9 @@ a:hover {
 
 .home.posts .summary .content,
 .home .home-profile .home-disclaimer,
-.single .post-meta
-    {
+.single .post-meta {
     color: #4d4d4d;
-    }
+}
 
 .home.posts .summary {
     border-bottom: 3px dashed #f0f0f0;
@@ -36,15 +35,15 @@ a:hover {
     margin: 1rem 0;
 }
 .home .home-profile .home-avatar {
-    background-size: 110% 100%;
+    background-size: 100% 100%;
     padding: 1rem;
     // height: auto;
     background-repeat: no-repeat;
     background-position: center top;
     // background-size: auto 8rem;
     background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake.svg);
-    [data-theme='dark'] & {
-    background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake-dark.svg);
+    [data-theme="dark"] & {
+        background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake-dark.svg);
     }
 }
 
@@ -55,9 +54,8 @@ a:hover {
     display: inline-block;
     margin-left: 2px;
     line-height: 1;
-    [data-theme='dark'] & {
-    border: 1px solid #a9a9b3;
-
+    [data-theme="dark"] & {
+        border: 1px solid #a9a9b3;
     }
 }
 
