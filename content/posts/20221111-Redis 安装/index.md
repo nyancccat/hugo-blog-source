@@ -21,11 +21,11 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 {{< admonition type=info title="Redis 的特点" open=true >}}
 
-性能极高 – Redis 能读的速度是 110000次/s,写的速度是 81000次/s 。
+性能极高 – Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。
 
 丰富的数据类型 – Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
 
-原子 – Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子性的。多个操作也支持事务，即原子性，通过MULTI和EXEC指令包起来。
+原子 – Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个操作是原子性的。多个操作也支持事务，即原子性，通过 MULTI 和 EXEC 指令包起来。
 
 丰富的特性 – Redis 还支持 publish/subscribe, 通知, key 过期等等特性。
 
@@ -33,9 +33,9 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 ### Redis 相关资源
 
-Redis 官网：  https://redis.io/
+Redis 官网： https://redis.io/
 
-源码地址：  https://redis.io/
+源码地址： https://redis.io/
 
 **Redis 官方不建议在 windows 下使用 Redis**，所以官网没有 windows 版本可以下载。虽然有微软维护的版本使用，但这里我是在 CentOS 7 下安装的。
 
@@ -43,7 +43,7 @@ Redis 官网：  https://redis.io/
 
 Redis 基于 C ,先安装所需要的 gcc 依赖，`root `登录 CentOS，安装依赖:
 
-``` bash
+```bash
 yum install -y gcc tcl
 ```
 
@@ -70,8 +70,8 @@ make && make install
 ```bash
 redis-server
 ```
-![安装完成启动 Redis](redis.jpg "安装完成启动 Redis")
 
+![安装完成启动 Redis](redis.jpg "安装完成启动 Redis")
 
 ### Redis 配置
 
@@ -85,17 +85,17 @@ vi redis.conf
 
 {{< admonition type=info title="" open=true >}}
 
-#允许访问的地址，默认是 127.0.0.1，会导致只能在本地访问。修改为 0.0.0.0 则可以在任意IP访问，为了方便设置为 0.0.0.0，正式环境请勿这样使用。
+#允许访问的地址，默认是 127.0.0.1，会导致只能在本地访问。修改为 0.0.0.0 则可以在任意 IP 访问，为了方便设置为 0.0.0.0，正式环境请勿这样使用。
 
-bind 0.0.0.0 
+bind 0.0.0.0
 
 #去掉保护模式
 
 protected-mode no
 
-#守护进程，修改为yes后即可后台运行
+#守护进程，修改为 yes 后即可后台运行
 
-daemonize yes 
+daemonize yes
 
 #设置访问 Redis 密码 pass
 
@@ -174,4 +174,3 @@ systemctl status redis          # 查看状态
 截个图 ：
 
 ![Another-Redis-Desktop-Manager](Another-Redis-Desktop-Manager.png "Another-Redis-Desktop-Manager")
-

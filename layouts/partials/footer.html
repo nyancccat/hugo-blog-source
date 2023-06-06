@@ -122,8 +122,9 @@
         },
      });
 </script> -->
-<script>
-    fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
+<!-- <script>
+    
+          fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
         .then((response) => response.json())
         .then((data) => {
             let str = `🐸 ${data.hitokoto} —— ${data.from_who || ""} 《${data.from}》`;
@@ -131,5 +132,10 @@
             hitokoto.innerText = str;
         })
         .catch(console.error);
+    
+
+</script> -->
+<script>
+var meting_api='https://meting.yany.ml/api?server=:server&type=:type&id=:id&auth=:auth&r=:r';
 </script>
 {{- end -}}
