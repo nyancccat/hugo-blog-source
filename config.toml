@@ -331,7 +331,7 @@ enableGitInfo = true
       title = "晴空小筑"
       # 主页显示的网站副标题
       # subtitle = '<span id="jinrishici-sentence">正在加载今日诗词....</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>'
-      subtitle = '<span id="hitokoto_text">正在加载....</span>'
+      subtitle = '<span id="hitokoto_text">正在加载...</span>'
       # 是否为副标题显示打字机动画
       typeit = false
       # 是否显示社交账号
