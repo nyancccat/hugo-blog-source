@@ -696,7 +696,9 @@ enableGitInfo = true
       #  Twikoo 评论系统设置 (https://twikoo.js.org/)
       [params.page.comment.twikoo]
         enable = true
-        envId = "https://blog-twikoo-three.vercel.app/"
+        # envId = "https://blog-twikoo-three.vercel.app/"
+        envId = "https://clearsky.zeabur.app/"
+
         region = ""
         path = ""
         visitor = true
