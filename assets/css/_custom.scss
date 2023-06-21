@@ -41,9 +41,9 @@
     background-repeat: no-repeat;
     background-position: center top;
     // background-size: auto 8rem;
-    background-image: url(https://github.com/nyancccat/hugo-blog-source/blob/output/github-contribution-grid-snake.svg);
+    background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg);
     [data-theme="dark"] & {
-        background-image: url(https://github.com/nyancccat/hugo-blog-source/blob/output/github-contribution-grid-snake-dark.svg);
+        background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg);
     }
 }
 
