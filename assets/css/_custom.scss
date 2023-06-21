@@ -13,12 +13,12 @@
     }
 }
 
-html {
-    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;
-}
-a:hover {
-    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;
-}
+// html {
+//     cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;
+// }
+// a:hover {
+//     cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;
+// }
 
 .home.posts .summary .content,
 .home .home-profile .home-disclaimer,
@@ -41,9 +41,9 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center top;
     // background-size: auto 8rem;
-    background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake.svg);
+    background-image: url(https://github.com/nyancccat/hugo-blog-source/blob/output/github-contribution-grid-snake.svg);
     [data-theme="dark"] & {
-        background-image: url(https://cdn.jsdelivr.net/gh/nyancccat/hugo-blog-source@output/github-contribution-grid-snake-dark.svg);
+        background-image: url(https://github.com/nyancccat/hugo-blog-source/blob/output/github-contribution-grid-snake-dark.svg);
     }
 }
 
