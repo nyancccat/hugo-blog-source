@@ -6,10 +6,12 @@
 .home-profile {
     background-color: $global-background-color;
     opacity: 0.86;
+    padding: 15px;
 
     [data-theme="dark"] & {
         background: $global-background-color-dark;
         opacity: 0.86;
+        padding: 15px;
     }
 }
 
@@ -69,6 +71,6 @@ footer .footer-container .footer-line .fixit-icon {
     top: 0.1em;
 }
 
-.page {
-    padding: 40px;
+.single,
+.home-profile {
 }
