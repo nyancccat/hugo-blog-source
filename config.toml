@@ -458,7 +458,7 @@ enableGitInfo = true
     #  是否在 RSS 中显示全文内容
     rssFullText = false
     #  页面样式 ["narrow", "normal", "wide", ...]
-    pageStyle = "wide"
+    pageStyle = "normal"
     #   强制使用 Gravatar 作为作者头像
     # gravatarForce = true
     #  开启自动书签支持
