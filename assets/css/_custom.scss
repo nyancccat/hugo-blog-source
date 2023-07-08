@@ -6,12 +6,12 @@
 .home-profile {
     background-color: $global-background-color;
     opacity: 0.86;
-    padding: 15px;
+    padding: 10px;
 
     [data-theme='dark'] & {
         background: $global-background-color-dark;
         opacity: 0.86;
-        padding: 15px;
+        padding: 10px;
     }
 }
 
