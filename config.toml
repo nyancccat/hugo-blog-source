@@ -697,7 +697,7 @@ enableGitInfo = true
       [params.page.comment.twikoo]
         enable = true
         # envId = "https://blog-twikoo-three.vercel.app/"
-        envId = "https://clearsky.zeabur.app/"
+        envId = "https://twikoo.clearsky.me/"
 
         region = ""
         path = ""
