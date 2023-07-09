@@ -1,11 +1,11 @@
 ---
-title: "简单记录 Redis 安装"
-slug: "redis-install"
+title: '简单记录 Redis 安装'
+slug: 'redis-install'
 date: 2022-11-15T21:17:40+08:00
-description: "简单记录一下 redis 安装过程"
+description: '简单记录一下 redis 安装过程'
 
-tags: ["Redis"]
-categories: ["学习备忘"]
+tags: ['Redis']
+categories: ['学习备忘']
 ---
 
 ### Redis 简介
@@ -71,7 +71,7 @@ make && make install
 redis-server
 ```
 
-![安装完成启动 Redis](redis.jpg "安装完成启动 Redis")
+![安装完成启动 Redis](redis.jpg '安装完成启动 Redis')
 
 ### Redis 配置
 
@@ -171,6 +171,6 @@ systemctl status redis          # 查看状态
 
 下载地址: [Another-Redis-Desktop-Manager](https://github.com/qishibo/AnotherRedisDesktopManager/releases/)
 
-截个图 ：
+最后截个图 ：
 
-![Another-Redis-Desktop-Manager](Another-Redis-Desktop-Manager.png "Another-Redis-Desktop-Manager")
+![Another-Redis-Desktop-Manager](Another-Redis-Desktop-Manager.png 'Another-Redis-Desktop-Manager')
