@@ -29,7 +29,20 @@ function tofullScreen() {
         element.webkitRequestFullscreen();
     }
 }
+// AI 摘要
+document.addEventListener("DOMContentLoaded", function () {
+    // 从 .ai-explanation-content 取值
+    const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
+
+    new TypeIt("#ai-explanation", {
+        strings: matchingSummary,
+        speed: 50,
+        lifeLike: true,
+        waitUntilVisible: true,
+    }).go();
+});
 </script>
+
 <header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper"{{ if .Site.Params.githubCorner.enable }} data-github-corner="{{ .Site.Params.githubCorner.position }}"{{ end }}>
     <div class="header-title">
