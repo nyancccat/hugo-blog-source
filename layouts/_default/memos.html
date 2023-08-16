@@ -1,0 +1,68 @@
+{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+
+{{- define "content" -}}
+  {{- $params := .Scratch.Get "params" -}}
+  <article class="page single special">
+    <div class="header">
+      {{- /* Title */ -}}
+      <h1 class="single-title animate__animated animate__pulse animate__faster">{{- .Title -}}</h1>
+
+      {{- /* Subtitle */ -}}
+      {{- with $params.subtitle -}}<p class="single-subtitle animate__animated animate__fadeIn">{{ . }}</p>{{- end -}}
+    </div>
+
+    {{- /* Content */ -}}
+    {{- $content := dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
+    {{- if $params.password -}}
+      {{- $saltLen := strings.RuneCount (trim $params.password "") -}}
+      {{- $saltLen = cond (eq (mod $saltLen 2) 0) (add $saltLen 1) $saltLen -}}
+      {{- $base64EncodeContent := $content | base64Encode -}}
+      {{- $content = printf "%v%v%v"
+        (substr $base64EncodeContent 0 $saltLen)
+        (substr (sha256 $params.password) $saltLen)
+        (substr $base64EncodeContent $saltLen)
+      -}}
+    {{- end -}}
+    <div
+      class="content"
+      id="content"
+      {{ with $params.password }}data-password="{{ md5 $params.password }}"{{ end }}
+      {{ with $params.password }}data-content="{{ $content }}"{{ end }}
+    >
+
+      {{- if not $params.password -}}
+        {{- $content -}}
+      {{- else -}}
+        {{- partial "single/fixit-decryptor.html" . -}}
+      {{- end -}}
+      <div id="memos" class="memos"></div>
+
+    </div>
+      <script type="text/javascript">
+        var memos = {
+            host: 'https://m.ttt.ninja/',  //修改为自己部署 Memos 的网址，末尾有 / 斜杠
+            limit: '10',  //默认每次显示 10条
+            creatorId: '1',  //默认为 101用户 https://demo.usememos.com/u/101
+            domId: '#memos',  //默认为 #memos
+            username: 'memos',  //发布者 ID 自定义
+            name: 'Official Demo',  //发布者全称自定义
+        }
+
+    </script>
+    <script type="text/javascript" src="/assets/js/lazyload.min.js"></script>
+    <script type="text/javascript" src="/assets/js/marked.min.js?v=4.2.2"></script>
+    <script type="text/javascript" src="/assets/js/view-image.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/pangu.min.js?v=4.0.7"></script> -->
+    <script type="text/javascript" src="/assets/js/moment.min.js?v=2.29.4"></script>
+    <script type="text/javascript" src="./assets/js/moment.twitter.js"></script>
+    <script type="text/javascript" src="./assets/js/APlayer.min.js"></script>
+    <script type="text/javascript" src="./assets/js/Meting.min.js"></script>
+    <script type="text/javascript" src="./assets/js/highlight.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/custom.js"></script>
+    <script>hljs.highlightAll();</script>
+
+    {{- /* Comment */ -}}
+    {{- partial "single/comment.html" . -}}
+  </article>
+{{- end -}}
