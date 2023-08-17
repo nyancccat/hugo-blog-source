@@ -68,7 +68,7 @@ enableGitInfo = true
     # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
     parent = ""
     # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-    pre = "<i class='fas fa-head-side-cough'></i>"
+    pre = "<i class='fas fa-skull'></i>"
     # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
     post = ""
     name = "嘀咕"
