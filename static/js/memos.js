@@ -629,7 +629,7 @@ function meNums(apiV1) {
         arrData = resdata.data;
       }
       if (arrData) {
-        let allnums = `<div id="bb-footer"><p class="bb-allnums">共 ${arrData.length} 条 </p><p class="bb-allpub"><a href="https://immmmm.com/bbs/" target="_blank">Memos Public</a></p></div>`;
+        let allnums = `<div id="bb-footer"><p class="bb-allnums">共 ${arrData.length} 条 </p><p class="bb-allpub"><a href="https://memos.clearsky.me/" target="_blank">揾嘢</a></p></div>`;
         bbLoad.insertAdjacentHTML('afterend', allnums);
       }
     });
@@ -761,9 +761,8 @@ async function updateHTMl(data) {
           imgUrl += `<figure class="gallery-thumbnail"><img class="img thumbnail-image" src="${resLink}"/></figure>`;
           resImgLength = resImgLength + 1;
         } else if (restype == 'video') {
-          imgUrl += `<div class="video-wrapper"><video controls><source src="${
-            memos + 'o/r/' + resourceList[j].id
-          }" type="video/mp4"></video></div>`;
+          imgUrl += `<div class="video-wrapper"><video controls><source src="${memos + 'o/r/' + resourceList[j].id
+            }" type="video/mp4"></video></div>`;
         } else {
           resUrl += `<a target="_blank" rel="noreferrer" href="${resLink}">${resourceList[j].filename}</a>`;
         }
@@ -780,9 +779,8 @@ async function updateHTMl(data) {
       }
     }
     let memosIdNow = memos.replace(/https\:\/\/(.*\.)?(.*)\..*/, 'id-$2-');
-    let emojiReaction = `<emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com" reacttargetid="${
-      memosIdNow + 'memo-' + bbID
-    }" style="line-height:normal;display:inline-flex;"></emoji-reaction>`;
+    let emojiReaction = `<emoji-reaction theme="system" class="reaction" endpoint="https://api-emaction.immmmm.com" reacttargetid="${memosIdNow + 'memo-' + bbID
+      }" style="line-height:normal;display:inline-flex;"></emoji-reaction>`;
     let datacountDOM = `<div class="datacount" data-twienv="${bbMemo.twiEnv}" data-id="${bbID}" onclick="loadTwikoo(this)"> ${data[i].count} 条评论 </div>`;
 
     memosOpenIdNow =
@@ -794,19 +792,18 @@ async function updateHTMl(data) {
         ${neodbDom}
           <div class="bb-tool">
             ${emojiReaction}
-            ${
-              !memosOpenIdNow
-                ? ''
-                : `<span class="archive-btn" onclick="archiveMemo(this)" data-id="${bbID}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-img"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>`
-            }
+            ${!memosOpenIdNow
+        ? ''
+        : `<span class="archive-btn" onclick="archiveMemo(this)" data-id="${bbID}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-img"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></span>`
+      }
           </div>
           <div class="bb-cont">
             ${bbContREG}
           </div>
           <div class="bb-info">
             <a href="${memoUrl}" target="_blank"><span class="datatime">${new Date(
-      data[i].createdTs * 1000
-    ).toLocaleString()}</span></a>
+        data[i].createdTs * 1000
+      ).toLocaleString()}</span></a>
             ${datacountDOM}
           </div>
           <div class="item-twikoo twikoo-${bbID} d-none">
@@ -837,18 +834,14 @@ async function fetchNeoDB(url) {
   let dbFetch = await response.json();
   let neodbDom = `<div class="db-card">
     <div class="db-card-subject">
-        <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${
-          dbFetch.cover_image_url
-        }"></div>
+        <div class="db-card-post"><img loading="lazy" decoding="async" referrerpolicy="no-referrer" src="${dbFetch.cover_image_url
+    }"></div>
         <div class="db-card-content">
-            <div class="db-card-title"><a href="${urlNow}" class="cute" target="_blank" rel="noreferrer">${
-    dbFetch.title
-  }</a></div>
-            <div class="rating"><span class="allstardark"><span class="allstarlight" style="width:${
-              dbFetch.rating * 10
-            }%"></span></span><span class="rating_nums">${
-    dbFetch.rating
-  }</span></div>
+            <div class="db-card-title"><a href="${urlNow}" class="cute" target="_blank" rel="noreferrer">${dbFetch.title
+    }</a></div>
+            <div class="rating"><span class="allstardark"><span class="allstarlight" style="width:${dbFetch.rating * 10
+    }%"></span></span><span class="rating_nums">${dbFetch.rating
+    }</span></div>
             <div class="db-card-abstract">${dbFetch.brief}</div>
         </div>
         <div class="db-card-cate">${dbFetch.category}</div>
