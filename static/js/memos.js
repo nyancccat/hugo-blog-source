@@ -155,7 +155,7 @@ const allCSS = `
   clear: both;
   padding: 3px;
   display: block;
-  margin: 2em auto;
+  margin: 0;
   max-width: 100%;
   clear: both;
 }
