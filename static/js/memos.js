@@ -151,11 +151,14 @@ const allCSS = `
 .bb-cont .img {
   border-radius: 4px;
   cursor: pointer;
-  max-width: 100%;
-  margin: 0;
   border: 1px solid #ccc;
   clear: both;
   padding: 3px;
+  display: block;
+  margin: 2em auto;
+  max-width: 100%;
+  clear: both;
+}
 }
 .bb-cont .img.square {
   width: 180px;
