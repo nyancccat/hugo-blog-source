@@ -135,6 +135,29 @@ enableGitInfo = true
       # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
       type = ""
 
+    [[menu.main]]
+    identifier = "bookmarks"
+    # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+    parent = ""
+    # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+    pre = "<i class='fas fa-bookmark'></i>"
+    # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+    post = ""
+    name = "书签"
+    url = "https://ttt.ninja/"
+    # 当你将鼠标悬停在此菜单链接上时，将显示的标题
+    title = ""
+    weight = 6
+    # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+    [menu.main.params]
+      # 添加 CSS 类到菜单项
+      class = ""
+      # 是否为草稿菜单，类似草稿页面
+      draft = false
+      # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+      icon = ""
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
 
     [[menu.main]]
     identifier = "about"
@@ -148,7 +171,7 @@ enableGitInfo = true
     url = "/about"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
-    weight = 6
+    weight = 7
     # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
