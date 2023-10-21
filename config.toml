@@ -375,7 +375,7 @@ enableGitInfo = true
       #  头像菜单链接的 identifier
       avatarMenu = ""
       #  主页显示的网站标题（支持 HTML 格式）
-      title = "晴空小筑"
+      title = ""
       # 主页显示的网站副标题
       # subtitle = '<span id="jinrishici-sentence">正在加载今日诗词....</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>'
       subtitle = '<span id="hitokoto_text">正在加载...</span>'

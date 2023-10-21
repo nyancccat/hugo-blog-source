@@ -5,3 +5,6 @@
 	path = themes/hugo-theme-luna
 	url = https://github.com/Ice-Hazymoon/hugo-theme-luna
 	branch = master
+[submodule "themes/diary"]
+	path = themes/diary
+	url = https://github.com/AmazingRise/hugo-theme-diary.git

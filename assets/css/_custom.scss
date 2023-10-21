@@ -136,9 +136,9 @@ footer .footer-container .footer-line .fixit-icon {
 }
 
 .ai-explanation span {
-    margin-left: 0.5rem;
+    display: none;
+    height: 0;
 }
-
 .ai-explanation-content {
-    display: none !important;
+    visibility: hidden;
 }
