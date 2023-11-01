@@ -33,7 +33,7 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 ### Redis 相关资源
 
-Redis 的官网： https://redis.io/
+Redis 官网： https://redis.io/
 
 源码地址： https://redis.io/
 
