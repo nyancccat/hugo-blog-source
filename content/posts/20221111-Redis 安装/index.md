@@ -21,7 +21,7 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 {{< admonition type=info title="Redis 的特点" open=true >}}
 
-性能极高 – Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s 。
+性能极高 – Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s。
 
 丰富的数据类型 – Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。
 
@@ -33,7 +33,7 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 ### Redis 相关资源
 
-Redis 官网： https://redis.io/
+Redis 的官网： https://redis.io/
 
 源码地址： https://redis.io/
 
