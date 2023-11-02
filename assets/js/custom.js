@@ -390,7 +390,7 @@ fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
 
 
 // 创建 fps 面板展示元素
-var fpsPanel = document.createElement('div');
+let fpsPanel = document.createElement('div');
 fpsPanel.setAttribute('id', 'fps');
 fpsPanel.style.position = 'fixed';
 fpsPanel.style.left = '40px';
@@ -403,35 +403,28 @@ fpsPanel.style.borderBottom = '2px solid pink';
 // 将面板插入到 body
 document.body.append(fpsPanel);
 // fps 监测逻辑实现
-let showFPS = (function () {
-    let requestAnimationFrame =
-        window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimationFrame ||
-        function (callback) {
-            window.setTimeout(callback, 10);
-        };
-    let fps, last, offset, step, appendFps;
+let last = Date.now();
+let ticks = 0;
+//循环调用 requestAnimationFrame
+function rafLoop(timestamp) {
+    ticks += 1;
+    //每30帧统计一次帧率
+    if (ticks >= 30) {
+        const now = Date.now();
+        const diff = now - last;
+        const fps = Math.round(1000 / (diff / ticks));
+        last = now;
+        ticks = 0;
+        renderFps(fps);// 刷新帧率数值
+    }
+    requestAnimationFrame(rafLoop);
+}
 
-    fps = 0;
-    last = Date.now();
-    step = function () {
-        offset = Date.now() - last;
-        fps += 1;
-        if (offset >= 1000) {
-            last += offset;
-            appendFps(fps);
-            fps = 0;
-        }
-        requestAnimationFrame(step);
-    };
-    appendFps = function (fps) {
-        // 打印 fps
-        console.log(fps + ' ' + 'FPS');
-        // 修改面板显示的值
-        fpsPanel.innerHTML = fps + ' ' + 'FPS';
-    };
-    step();
-})();
+let fpsEl = document.querySelector('#fps');
+//显示帧率数值到界面上
+function renderFps(fps) {
+    fpsEl.textContent = fps + ' ' + 'fps';
+}
+
+//开始执行
+rafLoop();
