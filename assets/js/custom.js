@@ -24,7 +24,6 @@ function runtime() {
 runtime();
 
 
-
 /**
  * Ribbons Class File.
  * Creates low-poly ribbons background effect inside a target container.
