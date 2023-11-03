@@ -34,7 +34,7 @@ libFiles:
     # eruda@2.5.0 https://github.com/liriliri/eruda
     erudaJS: eruda@2.5.0/eruda.js
     # fontawesome-free@6.2.0 https://github.com/FortAwesome/Font-Awesome
-    fontawesomeFreeCSS: "@fortawesome/fontawesome-free@6.2.0/css/all.min.css"
+    fontawesomeFreeCSS: '@fortawesome/fontawesome-free@6.2.0/css/all.min.css'
     # fusejs@6.6.2 https://github.com/krisk/fuse
     fuseJS: fuse.js@6.6.2/dist/fuse.min.js
     # gitalk@1.7.2 https://github.com/gitalk/gitalk
@@ -74,7 +74,7 @@ libFiles:
     # twemoji@13.1.0 https://github.com/twitter/twemoji
     twemojiJS: twemoji@14.0.2/dist/twemoji.min.js
     # twikoo@1.6.8 https://github.com/imaegoo/twikoo
-    twikooJS: twikoo@1.6.16/dist/twikoo.all.min.js
+    twikooJS: twikoo@1.6.22/dist/twikoo.all.min.js
     # typeit@8.7.1 https://github.com/alexmacarthur/typeit
     typeitJS: typeit@8.7.1/dist/index.umd.js
     # valine@1.5.1 https://github.com/xCss/Valine
@@ -82,5 +82,5 @@ libFiles:
     # vconsole@3.14.6 https://github.com/Tencent/vConsole
     vconsoleJS: vconsole@3.14.6/dist/vconsole.min.js
     # waline@2.14.7 https://github.com/walinejs/waline
-    walineCSS: "@waline/client@2.14.7/dist/waline.css"
-    walineJS: "@waline/client@2.14.7/dist/waline.js"
+    walineCSS: '@waline/client@2.14.7/dist/waline.css'
+    walineJS: '@waline/client@2.14.7/dist/waline.js'
