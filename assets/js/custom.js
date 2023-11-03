@@ -388,8 +388,7 @@ fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
     })
     .catch(console.error);
 
-
-// 创建 fps 面板展示元素
+// FPS 帧
 let fpsPanel = document.createElement('div');
 fpsPanel.setAttribute('id', 'fps');
 fpsPanel.style.position = 'fixed';
@@ -400,6 +399,9 @@ fpsPanel.style.zIndex = 10000;
 fpsPanel.style.fontSize = '12px';
 fpsPanel.style.fontWeight = 900;
 fpsPanel.style.borderBottom = '2px solid pink';
+function getRandomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 // 将面板插入到 body
 document.body.append(fpsPanel);
 // fps 监测逻辑实现
@@ -415,7 +417,7 @@ function rafLoop(timestamp) {
         const fps = Math.round(1000 / (diff / ticks));
         last = now;
         ticks = 0;
-        renderFps(fps);// 刷新帧率数值
+        renderFps(fps); // 刷新帧率数值
     }
     requestAnimationFrame(rafLoop);
 }
@@ -423,8 +425,9 @@ function rafLoop(timestamp) {
 let fpsEl = document.querySelector('#fps');
 //显示帧率数值到界面上
 function renderFps(fps) {
-    fpsEl.textContent = fps + ' ' + 'fps';
+    let r = getRandomNumber(-5, 5);
+    fpsEl.textContent = fps + r + ' ' + 'fps';
 }
-
 //开始执行
+
 rafLoop();
