@@ -392,7 +392,7 @@ fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
 let fpsPanel = document.createElement('div');
 fpsPanel.setAttribute('id', 'fps');
 fpsPanel.style.position = 'fixed';
-fpsPanel.style.left = '153px';
+fpsPanel.style.left = '52px';
 fpsPanel.style.top = '-2px';
 fpsPanel.style.color = 'green';
 fpsPanel.style.zIndex = 10000;
