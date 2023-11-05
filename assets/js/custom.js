@@ -392,11 +392,11 @@ fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
 let fpsPanel = document.createElement('div');
 fpsPanel.setAttribute('id', 'fps');
 fpsPanel.style.position = 'fixed';
-fpsPanel.style.left = '86px';
-fpsPanel.style.top = '-2px';
+fpsPanel.style.right = '1px';
+fpsPanel.style.top = '0px';
 fpsPanel.style.color = 'green';
 fpsPanel.style.zIndex = 10000;
-fpsPanel.style.fontSize = '12px';
+fpsPanel.style.fontSize = '11px';
 fpsPanel.style.fontWeight = 900;
 // fpsPanel.style.borderBottom = '2px solid pink';
 function getRandomNumber(min, max) {
