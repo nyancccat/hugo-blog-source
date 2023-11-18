@@ -398,7 +398,7 @@ fpsPanel.style.color = 'green';
 fpsPanel.style.zIndex = 10000;
 fpsPanel.style.fontSize = '11px';
 fpsPanel.style.fontWeight = 900;
-// fpsPanel.style.borderBottom = '2px solid pink';
+// fpsPanel.style.borderBottom = '1px solid pink';
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
