@@ -16,7 +16,8 @@
 }
 
 html {
-    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB','Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;   
+    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC',
+        'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
     // cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;
 }
 // a:hover {
@@ -30,14 +31,24 @@ html {
 }
 
 .home.posts .summary {
-    border-bottom: 3px dashed #f0f0f0;
+    border: 3px dashed #ccc;
+    border-bottom: 0;
+    box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
     padding-bottom: 0;
+    [data-theme='dark'] & {
+        border: 3px dashed #ccc;
+        border-bottom: 0;
+        box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
+        padding-bottom: 0;
+    }
 }
 
 .single .post-footer {
     margin: 1rem 0;
 }
 .home .home-profile .home-avatar {
+    border: 3px solid #ccc;
+    box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
     background-size: 100% 100%;
     padding: 1rem;
     // height: auto;
@@ -142,4 +153,18 @@ footer .footer-container .footer-line .fixit-icon {
 }
 .ai-explanation-content {
     visibility: hidden;
+}
+
+footer {
+    background-color: #e5e7eb;
+    [data-theme='dark'] & {
+        background-color: #18181b;
+    }
+}
+
+#header-desktop .header-wrapper {
+    background-color: #e5e7eb;
+    [data-theme='dark'] & {
+        background-color: #18181b;
+    }
 }
