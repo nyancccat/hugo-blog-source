@@ -5,6 +5,9 @@
   <article class="page single special">
     <div class="header">
       {{- /* Title */ -}}
+      
+      <link rel="stylesheet" href="../css/mastodon-timeline.css" />
+      
       <h1 class="single-title animate__animated animate__pulse animate__faster">{{- .Title -}}</h1>
 
       {{- /* Subtitle */ -}}
@@ -36,23 +39,14 @@
       {{- end -}}
     </div>
     
-    <div id="bber"></div>
-  
-<script type="module" src="../js/emaction.js"></script>
-<script src="https://fastly.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/Tokinx/ViewImage/view-image.min.js"></script>
-<script src="https://fastly.jsdelivr.net/gh/Tokinx/Lately/lately.min.js"></script>
-<script src="https://cdn.staticfile.org/twikoo/1.6.16/twikoo.all.min.js"></script>
-<script type="text/javascript">
-  var bbMemos = {
-    memos : 'https://memos.clearsky.me/',//修改为自己部署 Memos 的网址，末尾有 / 斜杠
-    limit : '10',//默认每次显示 10 条
-    creatorId:'1' ,//早期默认为 101 用户，新安装是 1； https://demo.usememos.com/u/101
-    domId: '',//默认为 bber
-    twiEnv:'https://twikoo.clearsky.me/',//启开 twikoo 评论，默认 https://metk.edui.fun/
-  }
-</script>
-<script src="../js/memos.js"></script>
+    <div class="dummy-wrapper">
+      <div class="mt-container">
+        <div id="mt-body" class="mt-body" role="feed">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+<script src="../js/mastodon-timeline.js"></script>
     {{- /* Comment */ -}}
     {{- partial "single/comment.html" . -}}
   </article>
