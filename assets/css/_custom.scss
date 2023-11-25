@@ -20,9 +20,9 @@ html {
         'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
     cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;
 }
-// a:hover {
-//     cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;
-// }
+a:hover {
+    cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;
+}
 
 .home.posts .summary .content,
 .home .home-profile .home-disclaimer,
