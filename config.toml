@@ -64,6 +64,30 @@ enableGitInfo = true
       type = ""
 
   [[menu.main]]
+    identifier = ""
+    # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+    parent = ""
+    # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+    pre = "<i class='fa-brands fa-mastodon'></i>"
+    # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+    post = ""
+    name = "嘟嘟"
+    url = "/toot"
+    # 当你将鼠标悬停在此菜单链接上时，将显示的标题
+    title = ""
+    weight = 3
+    # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+    [menu.main.params]
+      # 添加 CSS 类到菜单项
+      class = ""
+      # 是否为草稿菜单，类似草稿页面
+      draft = false
+      # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+      icon = ""
+      # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+      type = ""
+
+  [[menu.main]]
     identifier = "tags"
     # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
     parent = ""
@@ -75,7 +99,7 @@ enableGitInfo = true
     url = "/tags"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
-    weight = 3
+    weight = 4
     # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -99,7 +123,7 @@ enableGitInfo = true
     url = "categories/"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
-    weight = 4
+    weight = 5
     # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -123,7 +147,7 @@ enableGitInfo = true
     url = "/about"
     # 当你将鼠标悬停在此菜单链接上时，将显示的标题
     title = ""
-    weight = 5
+    weight = 6
     # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
     [menu.main.params]
       # 添加 CSS 类到菜单项
@@ -401,13 +425,13 @@ enableGitInfo = true
     Vine = ""
     Googlescholar = ""
     Researchgate = ""
-    Mastodon = ""
+    Mastodon = "pagezen"
     Thingiverse = ""
     Devto = ""
     Gitea = ""
     XMPP = ""
     Matrix = ""
-    Bilibili = "237076"
+    Bilibili = ""
     ORCID = ""
     Liberapay = ""
     Ko-Fi = ""
