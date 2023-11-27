@@ -60,7 +60,7 @@ class Util {
 class FixIt {
   constructor() {
     this.config = window.config;
-    this.data = this.config.data;
+    this.data = this.config.data || [];
     this.isDark = document.body.dataset.theme === 'dark';
     this.util = new Util();
     this.newScrollTop = this.util.getScrollTop();
@@ -476,6 +476,14 @@ class FixIt {
     }
   }
 
+  initBreadcrumb() {
+    const $breadcrumbContainer = document.querySelector('.breadcrumb-container.sticky')
+    this.breadcrumbHeight = $breadcrumbContainer?.clientHeight ?? 0;
+    if (this.breadcrumbHeight) {
+      document.querySelector('#content')?.style.setProperty('--fi-breadcrumb-height', `${this.breadcrumbHeight}px`);
+    }
+  }
+
   initDetails() {
     this.util.forEach(document.getElementsByClassName('details'), ($details) => {
       const $summary = $details.querySelector('.details-summary');
@@ -528,7 +536,8 @@ class FixIt {
         // code title
         const $title = document.createElement('span');
         $title.classList.add('code-title');
-        $title.insertAdjacentHTML('afterbegin', '<i class="arrow fa-solid fa-chevron-right fa-fw" aria-hidden="true"></i>');
+        const hlAttrs = this.data[$chroma.parentNode.id];
+        $title.insertAdjacentHTML('afterbegin', `<i class="arrow fa-solid fa-chevron-right fa-fw" aria-hidden="true"></i><span class="title-inner">${hlAttrs?.title ?? ''}</span>`);
         $title.addEventListener('click', () => {
           $chroma.classList.toggle('open');
         }, false);
@@ -644,7 +653,6 @@ class FixIt {
       const $tocLinkElements = $tocCore.querySelectorAll('a:first-child');
       const $tocLiElements = $tocCore.getElementsByTagName('li');
       const $headerLinkElements = document.getElementsByClassName('header-link');
-      const headerIsFixed = document.body.dataset.headerDesktop !== 'normal';
       const headerHeight = document.getElementById('header-desktop').offsetHeight;
       document.querySelector('.container').addEventListener('resize', () => {
         $toc.style.marginBottom = `${document.querySelector('.container').clientHeight - document.querySelector('.post-footer').offsetTop}px`;
@@ -657,7 +665,7 @@ class FixIt {
         this.util.forEach($tocLiElements, ($tocLi) => {
           $tocLi.classList.remove('has-active');
         });
-        const INDEX_SPACING = 20 + (headerIsFixed ? headerHeight : 0);
+        const INDEX_SPACING = 20 + (document.body.dataset.headerDesktop !== 'normal' ? headerHeight : 0) + this.breadcrumbHeight;
         let activeTocIndex = $headerLinkElements.length - 1;
         for (let i = 0; i < $headerLinkElements.length - 1; i++) {
           const thisTop = $headerLinkElements[i].getBoundingClientRect().top;
@@ -667,7 +675,7 @@ class FixIt {
             break;
           }
         }
-        if (activeTocIndex !== -1) {
+        if (activeTocIndex !== -1 && $tocLinkElements[activeTocIndex]) {
           $tocLinkElements[activeTocIndex].classList.add('active');
           let $parent = $tocLinkElements[activeTocIndex].parentElement;
           while ($parent !== $tocCore) {
@@ -1313,6 +1321,7 @@ class FixIt {
       this.initMenu();
       this.initSwitchTheme();
       this.initSearch();
+      this.initBreadcrumb();
       this.initCookieconsent();
       this.initSiteTime();
       this.initServiceWorker();

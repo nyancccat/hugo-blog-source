@@ -16,7 +16,6 @@
   --ti-cursor-color: #{$global-font-color};
   --ti-cursor-transform: translateX(0);
 
-
   [data-theme='dark'] & {
     --ti-cursor-color: #{$global-font-color-dark};
   }

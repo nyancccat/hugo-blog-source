@@ -3,17 +3,87 @@
 All notable changes to this project will be documented in this file.
 <!-- Releases see https://github.com/hugo-fixit/FixIt/releases -->
 
+## v0.2.18-lts.5 [2023.11.26]
+
+> Snapshot: <https://fixit-git-v0218-lts-cell-x.vercel.app>
+
+- :sparkles: Feat: add hiddenFromRss param and front matter
+- :zap: Perf: preload some stylesheet
+- :zap: Perf: optimize featured image rendering
+- :children_crossing: Feat: change bilibili shortcode `muted` default value
+- :bug: Style: fix the emoji style of valine comment ([#376](https://github.com/hugo-fixit/FixIt/issues/376))
+- :bug: Fix: active index of toc may result in error ([#305](https://github.com/hugo-fixit/FixIt/issues/305))
+- :memo: Docs: update the outputs configuration to avoid the "taxonomyterm" warning in versions above Hugo 0.112.0 (resolve [#354](https://github.com/hugo-fixit/FixIt/issues/354))
+- :wrench: Chore: update default config in `hugo.toml`
+- :wrench: Chore: change the theme minimum supported Hugo versions above **0.110.0**
+- **Full Changelog:** @Lruihao [`v0.2.18-lts.4...v0.2.18-lts.5`](https://github.com/hugo-fixit/FixIt/compare/v0.2.18-lts.4...v0.2.18-lts.5)
+
+## v0.2.18-lts.4 [2023.11.6]
+
+> Snapshot: <https://fixit-git-v0218-lts-cell-x.vercel.app>
+
+- :sparkles: Perf: optimize lightgallery images rendering
+- :bug: Fix: add a option "Responsive" for plugin image fixed [#369](https://github.com/hugo-fixit/FixIt/issues/369)
+- :bug: Fix: fix featured image path error and show img tags in rss ([#373](https://github.com/hugo-fixit/FixIt/issues/373))
+- :bug: Fix: disable encrypted articles from rendering to rss ([#374](https://github.com/hugo-fixit/FixIt/issues/374))
+- :sparkles: Feat: add more options support for bilibili shortcode, e.g. `autoplay`, `muted` etc. ([#375](https://github.com/hugo-fixit/FixIt/issues/375))
+- **Full Changelog:** @Lruihao [`v0.2.18-lts.3...v0.2.18-lts.4`](https://github.com/hugo-fixit/FixIt/compare/v0.2.18-lts.3...v0.2.18-lts.4)
+
+## v0.2.18-lts.3 [2023.11.3]
+
+> Snapshot: <https://fixit-git-v0218-lts-cell-x.vercel.app>
+
+- :bug: Fix: fix path errors in image src and 1.5x srcset ([#346](https://github.com/hugo-fixit/FixIt/issues/346))
+- :sparkles: Feat: add options to cache remote image locally ([#362](https://github.com/hugo-fixit/FixIt/pull/362) Fixes [#348](https://github.com/hugo-fixit/FixIt/issues/348))
+- :bug: Fix: fix toc active error when breadcrumb is enabled and set `sticky` to `true` ([#368](https://github.com/hugo-fixit/FixIt/issues/368))
+- :arrow_up: Chore(deps-dev):
+  - Bump core-js from 3.33.1 to 3.33.2
+  - Bump browserify-sign from 4.2.1 to 4.2.2
+- **Full Changelog:** @Lruihao [`v0.2.18-lts.2...v0.2.18-lts.3`](https://github.com/hugo-fixit/FixIt/compare/v0.2.18-lts.2...v0.2.18-lts.3)
+
+## v0.2.18-lts.2 [2023.10.24]
+
+This release is mainly for upgrading third-party libraries and development dependencies.  
+Snapshot: <https://fixit-iyi1zrhg9-cell-x.vercel.app/>
+
+> **Note**
+> **FixIt 0.2.18 will reach End of Life (EOL) on December 31st, 2024.** After that date, FixIt 0.2.18 will no longer receive updates, including security and browser compatibility fixes.
+> Please stay tuned for the next version of FixIt under development!
+
+- :sparkles: Feat: add code block attributes support ([#330](https://github.com/hugo-fixit/FixIt/issues/330))
+- :bug: Fix: use dateFormat function to render localized dates (@stefanoginobili [#355](https://github.com/hugo-fixit/FixIt/pull/355))
+- :lipstick: Style: update define list style
+- :lipstick: Style: update footnote and footnote-ref style
+- :bug: Fix: total word count error in section
+- :arrow_up: Chore(libs):
+  - Update algoliasearch from 4.14.2 to 4.20.0
+  - Update Artalk from 2.5.2 to 2.6.4
+  - Update fontawesome-free from 6.2.0 to 6.4.2
+  - Update instant.page from 5.1.1 to 5.2.0
+  - Update katex from 0.16.2 to 0.16.9
+  - Update lightgallery from 2.6.1 to 2.7.2
+  - Removed Renren, Digg and StumbleUpon in sharer.js 0.5.0
+  - Update Twikoo from 1.6.8 to 1.6.22
+  - Update vConsole from 3.14.6 to 3.15.1
+  - Update eruda from 2.5.0 to 3.0.1
+  - Update Waline from 2.14.7 to 2.15.8
+  - Update simple-icons from 7.12.0 to 9.19.0
+- :arrow_up: Chore(deps-dev): update and pin all development dependency versions
+- **Full Changelog:** @Lruihao [`v0.2.18...v0.2.18-lts.2`](https://github.com/hugo-fixit/FixIt/compare/v0.2.18...v0.2.18-lts.2)
+
+_BTW, Happy Programmer's Day (1024)! :)_
+
 ## v0.2.18 [2023.3.31]
 
 > **Note**
 > This will be the last relatively stable 0.x release, after which the first major release will be incompatible with all previous 0.x releases
-> Snapshot: <>
+> Snapshot: <https://fixit-bpkhreqhl-x-cell.vercel.app>
 
-## :boom: Breaking Updates
+### :boom: Breaking Updates
 
 - Refactor author data config [#288](https://github.com/hugo-fixit/FixIt/pull/288)
 
-## :new: What's New
+### :new: What's New
 
 - :tada: Feat: add natively support mermaid with code fences ([#230](https://github.com/hugo-fixit/FixIt/issues/230))
 - :tada: Feat: add breadcrumb navigation ([#309](https://github.com/hugo-fixit/FixIt/pull/309))
@@ -30,7 +100,7 @@ All notable changes to this project will be documented in this file.
 - :bug: Fix: resolve style conflicts between valine and animate.css ([#304](https://github.com/hugo-fixit/FixIt/issues/304))
 - :bug: Fix: version `v0.2.17` is not compatible with previous versions
 - :bug: Fix: `crypto-js/md5.js` and `crypto-js/sha256.js` cdn path error
-- :bug: Fix:  HackTheBox social link not in the right format ([#308](https://github.com/hugo-fixit/FixIt/issues/308))
+- :bug: Fix: HackTheBox social link not in the right format ([#308](https://github.com/hugo-fixit/FixIt/issues/308))
 - :recycle: Refactor: image lazy loading ([#283](https://github.com/hugo-fixit/FixIt/pull/283))
 - :recycle: Refactor: author's avatar of post or profile ([#288](https://github.com/hugo-fixit/FixIt/pull/288))
 - :recycle: Refactor: language switch in desktop header ([#306](https://github.com/hugo-fixit/FixIt/pull/306))
@@ -274,7 +344,7 @@ All notable changes to this project will be documented in this file.
 - :bug: Fix: remove source map of local libraries to avoid 404 error ([#67](https://github.com/hugo-fixit/FixIt/issues/67))
 - :fire: Feat: remove shortcode cardlink ([#42](https://github.com/hugo-fixit/FixIt/issues/42))
 - :lipstick: Style: more refined theme style ([#40](https://github.com/hugo-fixit/FixIt/issues/40))
-- :pencil2: Style: fix typo *discription* should be **description** ([#60](https://github.com/hugo-fixit/FixIt/issues/60))
+- :pencil2: Style: fix typo _discription_ should be **description** ([#60](https://github.com/hugo-fixit/FixIt/issues/60))
 - :wrench: Chore(update-libs):
   - Update cell-watermark 1.0.3 and CDN support (fontFamily supported)
   - Update animate.css 3.7.2 -> 4.1.1 ([#74](https://github.com/hugo-fixit/FixIt/issues/74))
