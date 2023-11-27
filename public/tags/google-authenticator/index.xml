@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Google Authenticator - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/google-authenticator/</link>
+    <description>Google Authenticator - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Sun, 29 Jun 2014 00:31:14 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/google-authenticator/" rel="self" type="application/rss+xml" /><item>
+  <title>使用Google身份验证器加锁CentOS</title>
+  <link>https://clearsky.me/centos-google-authenticator/</link>
+  <pubDate>Sun, 29 Jun 2014 00:31:14 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/centos-google-authenticator/</guid>
+  <description><![CDATA[数据丢失，这篇文章是复制2013年8月快照的，感觉有用，留一下。 挺久之前，在害羞哥那里看到这篇文章：用Google身份验证器给你的ubuntu加把锁，之前没空试试，今天折腾一下。 Ubuntu下使用google身份验证器直接看害羞哥的文章就好了。 CentOS下我搜索了一下，基本上没中文的，都是老外的文章，其实过程大同小异，我这主要是记录一下。 什么是google身份验证器？ 网上抄的介绍~~ Google Authenticator是谷歌推出的一款动态口令工具，解决大家的google账户遭到恶意攻击的问题，在手机端生成动态口令后，在google相关的服务登陆中除了用正常用户名和密码外，需要输入一次动态口令才能验证]]></description>
+</item>
+</channel>
+</rss>

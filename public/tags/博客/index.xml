@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>博客 - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/%E5%8D%9A%E5%AE%A2/</link>
+    <description>博客 - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Fri, 12 Sep 2014 19:24:54 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/%E5%8D%9A%E5%AE%A2/" rel="self" type="application/rss+xml" /><item>
+  <title>导入 09 年开始的老数据</title>
+  <link>https://clearsky.me/old-data/</link>
+  <pubDate>Fri, 12 Sep 2014 19:24:54 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/old-data/</guid>
+  <description><![CDATA[今年5月数据丢失，5年的数据没了。 本来都不抱什么希望了，今天误打误撞登录到一个已经很久很久不用的网盘的时候，居然发现里面居然还留着一份2009至2010年的数据备份，附件什么的都在。 赶紧下载下来，搭建个PHP环境上传导入，刷新页面的看到的一瞬间，说不出的感觉。 老博客页面 呵呵，我记得以前用的这个主题是自己用那时候很火的主题Elegant Box瞎改的，没什么审美水平，就是折腾着玩，不懂html，不懂css，遇到不会的就google，经常折腾到半夜。现在想想那时候真是精力旺盛~ 既然有这备份数据，还是导入到这里来吧。虽然中间还是有一部分数据再也找不回来了。 操作数据库麻烦，懒得折腾，直接以前的wordp]]></description>
+</item>
+</channel>
+</rss>

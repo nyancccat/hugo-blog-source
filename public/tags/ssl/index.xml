@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>SSL - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/ssl/</link>
+    <description>SSL - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Tue, 20 Jun 2017 00:00:00 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/ssl/" rel="self" type="application/rss+xml" /><item>
+  <title>申请 Let&#39;s Encrypt SSL 证书配置 Nginx 开启站点 HTTPS</title>
+  <link>https://clearsky.me/lets-encrypt/</link>
+  <pubDate>Tue, 20 Jun 2017 00:00:00 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/lets-encrypt/</guid>
+  <description><![CDATA[安装客户端 Ubuntu 16.04.2 LTS 自带带有软件包，安装非常简单，直接一条命令搞定。 1 apt-get install letsencrypt 但是，官方最近提供 certbot 这样的自动化部署工具并推荐使用，我不太清楚上面这条命令所安装的客户端和 Certbot 是否一样，感觉是一样的，试了一下上面所安装的客户端用的操作指令是 letsencrypt ，certbot 用的指令是certbot 。 并且，访问这官方工具的 Github 原来项目地址：https://github.com/letsencrypt/letsencrypt 会直接跳转到了 https://github.com/certbot/certbot 。为了避免搞混淆，本文将统一使用 certbot 指令，因此，我并没有使用上面这条命令安装。 简单说明下，下面正式开始： Certbot 官方地址 https://certbot.eff.org/ 里面有安装说明，你只要选择 Web服务器 （比如 Nginx）和操作系统 （ 比如 Ubuntu ）]]></description>
+</item>
+<item>
+  <title>使用 StartSSL™ 免费 SSL 证书开启整站 HTTPS</title>
+  <link>https://clearsky.me/startssl-https/</link>
+  <pubDate>Fri, 05 Jun 2015 00:25:06 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/startssl-https/</guid>
+  <description><![CDATA[失眠好几天了，大半夜睡不着，但是头又晕呼呼的，翻点资料瞎折腾的，估计写得乱七八糟，就这样了，纯记录。 用的是StartSSL™ 提供的证书，免费一年，据说到期可以再生成一个继续用。 怎么申请StartSSL™ 的证书的资料网上一搜一大堆，懒得写了。这里简单记录一下nginx下安装配置ssl，以免下次我又要到处翻资料。 申请完得到两个文件ssl.crt和ssl.key。 系统环境约定：CentOS6.4 64位 + 军哥的一键包LNMP1.1。 （写完这篇的时候发现军哥LNMP1.2发布了，默认启用spdy和增加ssl范例配置，本文还是以LNMP1.1为例）。 nginx配置目录在/usr/local/server/]]></description>
+</item>
+</channel>
+</rss>
