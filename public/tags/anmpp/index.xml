@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>anmpp - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/anmpp/</link>
+    <description>anmpp - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Wed, 05 Jun 2013 01:24:35 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/anmpp/" rel="self" type="application/rss+xml" /><item>
+  <title>安装anmpp</title>
+  <link>https://clearsky.me/anmpp/</link>
+  <pubDate>Wed, 05 Jun 2013 01:24:35 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/anmpp/</guid>
+  <description><![CDATA[某件事泡汤了，还是上上网好了，闲来无事忍不住找东西折腾了。 什么是ANMPP? ANMPP是android``nginx``mysql``php-fpm``postgresql的简写，安卓本地ANMPP集成环境，手机PHP环境系统. 直观点就是一个集成的php本地环境，只不过不是运行在pc上的，而是在安卓手机上的。 官方地址：ANMPP.NET 大致看了下安装文档， 官方环境要求 保证你的设备剩余磁盘120MB以上（安卓设备的/data分区) 保证你的设备系统空闲5MB以上（安卓设备的/system分区） 保证你的设备的内核是LINUX，并且内核版本在2.6以上（还需要一些内核模块支持） 我的是两年前买的i910]]></description>
+</item>
+</channel>
+</rss>

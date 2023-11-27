@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>代码高亮 - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/</link>
+    <description>代码高亮 - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Wed, 27 Aug 2014 16:41:54 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/" rel="self" type="application/rss+xml" /><item>
+  <title>使用 Prism.js 高亮代码</title>
+  <link>https://clearsky.me/prism/</link>
+  <pubDate>Wed, 27 Aug 2014 16:41:54 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/prism/</guid>
+  <description><![CDATA[其实也不怎么贴代码，偶尔贴一下就直接pre标签括起来，在随便翻个样式扔到css里面，今天休息没事做，也是闲得没事做小折腾一下，以前也用过几款代码高亮插件，总感觉体积太大了，加载慢，这次选用的是轻量级的Prism.js。 什么是Prism.js？ Prism是一款轻量级，可扩展的代码高亮javascript类库，默认支持HTML/CSS/Javascript三种语言，当然你在官方上很方便的扩展自定义添加其它语言支持，除了语言支持，行号显示，行内高亮，自动链接，显示语言等等功能也可以自由定制。 Prism官网点这里：Prism.com 安装之前你也可以在这个官方在线示例先感受一下。 Prism.js的使用 打]]></description>
+</item>
+</channel>
+</rss>

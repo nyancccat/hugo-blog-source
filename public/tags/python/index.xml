@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Python - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/python/</link>
+    <description>Python - 标签 - 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Tue, 08 May 2018 20:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/python/" rel="self" type="application/rss+xml" /><item>
+  <title>使用 Python 爬虫自动登陆京东抢购华为 P20 Pro 手机</title>
+  <link>https://clearsky.me/jd-autobuy/</link>
+  <pubDate>Tue, 08 May 2018 20:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/jd-autobuy/</guid>
+  <description><![CDATA[原因 目前使用的 iPhone 6s plus 慢慢的有点卡了，低电量降频的时候更加严重，升级到 ios 11.3.1 后不强制降频了，不卡了，但是本来掉得快的电量掉得更快了，我是不习惯有空就插着充电的那种，所以经常临时出门发现电量少点可怜了，充又来不及，挺尴尬的。 想着换一块电池满血复活，也不贵，还上门安装，挺好的，但是我妈前两年买的手机也是卡到不能正常使用了，她对手机性能和电量没什么需求，就想着把 6 sp 给她用吧，我自己再买一个。 苹果这些年尽出水桶机，这次考虑换到安卓阵营了，试了下朋友的华为 mate 10 pro，感觉这几年国产安卓手机并不像前几年说的用久必卡，软件生态虽然没有苹果好，但是我自己又不爱折腾了，常用的软件就那么几个，差不多就行，在翻阅了这个]]></description>
+</item>
+</channel>
+</rss>
