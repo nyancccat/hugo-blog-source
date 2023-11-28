@@ -66,8 +66,3 @@ comment: false
 看完了，那么我的邮箱主页可以找到。
 {{< /admonition >}}
 
-## 我的家乡
-
-目前我生活在家乡，一个小县城，如果有缘路过或者想来，我请你吃螺蛳粉。
-
-{{< mapbox lng=109.397538 lat=25.22455 zoom=10 marked=true light-style="mapbox://styles/mapbox/streets-zh-v1" >}}

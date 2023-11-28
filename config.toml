@@ -395,7 +395,7 @@ enableGitInfo = true
 
   #  作者的社交信息设置
   [params.social]
-    GitHub = "nyancccat"
+    GitHub = ""
     Linkedin = ""
     Twitter = ""
     Instagram = ""
@@ -450,7 +450,7 @@ enableGitInfo = true
     Vine = ""
     Googlescholar = ""
     Researchgate = ""
-    Mastodon = "pagezen"
+    Mastodon = ""
     Thingiverse = ""
     Devto = ""
     Gitea = ""
