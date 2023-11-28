@@ -20,7 +20,7 @@ window.addEventListener("load", () => {
         default_theme: "auto",
 
         // Your Mastodon instance
-        instance_url: "https://m.cmx.im",
+        instance_url: "https://cmx.0500000.xyz",
 
         // Choose type of toots to show in the timeline: 'local', 'profile', 'hashtag'. Default: local
         timeline_type: "profile",
