@@ -36,7 +36,7 @@ comment: false
 
 2016 年 4 月，~~GitCafe~~ 被 [Coding](https://coding.net/) 收购并开始收费，博客只部署到 [GitHub Pages](https://pages.github.com/)。
 
-2017 年 6 月，迁移至 [BandwagonHost VPS](https://bandwagonhost.com/) （ KVM 架构）。
+2017 年 6 月，迁移至 [BandwagonHost](https://bandwagonhost.com/) VPS（ KVM 架构）。
 
 2017 年 6 月 – 2021 年 8 月，长期不更新,托管在 [GitHub Pages](https://pages.github.com/)。
 
