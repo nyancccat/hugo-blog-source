@@ -34,7 +34,7 @@ comment: false
 
 2016 年 1 月，迁移至 [Hexo](https://hexo.io/)，托管在 [GitHub Pages](https://pages.github.com/) 和 ~~GitCafe Pages~~。
 
-2016 年 4 月，GitCafe 被 [Coding](https://coding.net/) 收购并开始收费，博客只部署到 [GitHub Pages](https://pages.github.com/)。
+2016 年 4 月，~~GitCafe~~ 被 [Coding](https://coding.net/) 收购并开始收费，博客只部署到 [GitHub Pages](https://pages.github.com/)。
 
 2017 年 6 月，迁移至 [BandwagonHost VPS](https://bandwagonhost.com/) （ KVM 架构）。
 
