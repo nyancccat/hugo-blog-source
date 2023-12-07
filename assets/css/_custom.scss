@@ -214,3 +214,11 @@ footer {
             linear-gradient(1turn, rgba(195, 245, 215, 0.04) 3%, transparent 0);
     }
 }
+
+.pagination li::before,
+.pagination li::after {
+    background-color: deeppink;
+    [data-theme="dark"] & {
+        background-color: deepskyblue;
+    }
+}
