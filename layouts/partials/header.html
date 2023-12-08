@@ -1,5 +1,8 @@
-{- $buildDrafts := .Site.BuildDrafts -}}
+{{- $buildDrafts := .Site.BuildDrafts -}}
+
 {{- /* Desktop header */ -}}
+
+
 <header class="desktop animate__faster" id="header-desktop">
   <div class="header-wrapper"{{ if .Site.Params.githubCorner.enable }} data-github-corner="{{ .Site.Params.githubCorner.position }}"{{ end }}>
     <div class="header-title header__verification">
@@ -108,6 +111,8 @@
         </li>
         <li class="menu-item"><a class='fa-solid fa-expand' href="javascript:;" onclick="tofullScreen()" title="全屏阅读"></a></li> 
         <li class="menu-item"><a class='fa-regular fa-thumbs-up fa-bounce' href="javascript:;" onclick="randomPost()" title="随机访问一篇文章"></a></li>
+
+
       
         {{- if .Site.IsMultiLingual -}}
           <li class="menu-item language-switch">
@@ -150,6 +155,7 @@
     </nav>
   </div>
 </header>
+
 {{- /* Mobile header */ -}}
 <header class="mobile animate__faster" id="header-mobile">
   <div class="header-container">
@@ -311,10 +317,12 @@
     </nav>
   </div>
   <script>
+
  // AI 摘要
 document.addEventListener("DOMContentLoaded", function () {
     // 从 .ai-explanation-content 取值
     const matchingSummary = document.querySelector(".ai-explanation-content").textContent;
+
     new TypeIt("#ai-explanation", {
         strings: matchingSummary,
         speed: 40,
@@ -322,6 +330,7 @@ document.addEventListener("DOMContentLoaded", function () {
         waitUntilVisible: true,
     }).go();
 });
+
  
 // 随机文章
 function randomPost() {
@@ -335,6 +344,7 @@ function randomPost() {
         location.href = locationHref
     }
     )
+
 }
 //浏览器全屏
 function tofullScreen() {
@@ -349,12 +359,13 @@ function tofullScreen() {
         element.webkitRequestFullscreen();
     }
 }
-
 </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet" />
 </header>
+
 {{- if .Site.Params.search.enable -}}
   <div class="search-dropdown desktop">
     <div id="search-dropdown-desktop"></div>
