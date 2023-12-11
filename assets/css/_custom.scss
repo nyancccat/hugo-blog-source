@@ -18,16 +18,20 @@
 html {
     font-family: Georgia, -apple-system, "Nimbus Roman No9 L", "PingFang SC", "Hiragino Sans GB", "Noto Serif SC",
         "Microsoft Yahei", "WenQuanYi Micro Hei", "ST Heiti", sans-serif;
-    // cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a11.cur), auto;
 }
-// a:hover {
-//     cursor: url(https://cdn.jsdelivr.net/gh/bynotes/texiao/source/img/a22.cur), auto;
-// }
+body {
+    background: url("../background.svg"), hsl(50, 100%, 99%) center;
+    transition: background ease 0.2s, color ease 0.2s;
+}
 
 .home.posts .summary .content,
 .home .home-profile .home-disclaimer,
 .single .post-meta {
     color: #4d4d4d;
+}
+.home-profile {
+    background: url("../background.svg"), hsl(50, 100%, 99%) center;
+    transition: background ease 0.2s, color ease 0.2s;
 }
 
 .home.posts .summary {
@@ -97,8 +101,11 @@ footer .footer-container .footer-line .fixit-icon {
 }
 
 .single .content p {
-    // text-indent: 2em;
+    text-indent: 2em;
     line-height: 2rem;
+}
+.single .content p .text-secondary {
+    text-indent: initial;
 }
 
 // AI摘要
