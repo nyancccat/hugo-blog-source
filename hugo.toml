@@ -562,7 +562,7 @@ enableGitInfo = true
       url = "/edit/master/content"
     #  KaTeX 数学公式 (https://katex.org)
     [params.page.math]
-      enable = true
+      enable = false
       # 默认行内定界符是 $ ... $ 和 \( ... \)
       inlineLeftDelimiter = ""
       inlineRightDelimiter = ""
@@ -1063,5 +1063,5 @@ enableGitInfo = true
   home = ["HTML", "RSS", "JSON", "BaiduUrls"]
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
-  taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
+  taxonomy = ["HTML"]
+  term = ["HTML", "RSS"]
