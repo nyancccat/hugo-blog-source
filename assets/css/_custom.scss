@@ -162,12 +162,10 @@ footer .footer-container .footer-line .fixit-icon {
 
 #header-desktop .header-wrapper {
     // background-color: #e5e7eb;
-    background: rgb(242, 3, 51);
-    background: linear-gradient(
-        90deg,
-        rgba(242, 3, 51, 0.18175192440257348) 0%,
-        rgba(163, 175, 236, 0.3694269944305847) 100%
-    );
+    background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
+        radial-gradient(91% 146%, rgba(255, 255, 255, 0.5) 47%, rgba(0, 0, 0, 0.5) 100%);
+    background-blend-mode: screen;
+
     [data-theme="dark"] & {
         // background-color: #18181b;
         background: rgb(66, 197, 73);
