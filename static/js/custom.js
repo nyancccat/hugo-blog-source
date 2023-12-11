@@ -20,3 +20,4 @@ function runtime() {
         + ((seconds < 10) ? '0' : '') + seconds + ' 秒 ';
 }
 runtime();
+

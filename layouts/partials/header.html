@@ -316,7 +316,8 @@
       </ul>
     </nav>
   </div>
-  <script>
+
+<script>
 
  // AI 摘要
 document.addEventListener("DOMContentLoaded", function () {
@@ -330,40 +331,10 @@ document.addEventListener("DOMContentLoaded", function () {
         waitUntilVisible: true,
     }).go();
 });
-
- 
-// 随机文章
-function randomPost() {
-    fetch('/sitemap.xml').then(res=>res.text()).then(str=>(new window.DOMParser()).parseFromString(str, "text/xml")).then(data=>{
-        let ls = data.querySelectorAll('url loc');
-        let locationHref, locSplit;
-        do {
-            locationHref = ls[Math.floor(Math.random() * ls.length)].innerHTML
-            locSplit = locationHref.split('/')[3] || ''
-        } while (locSplit == '' || locSplit == 'tags' || locSplit == 'posts'|| locSplit == 'categories'|| locSplit == 'friends'|| locSplit == 'toot'|| locSplit == 'about');
-        location.href = locationHref
-    }
-    )
-
-}
-//浏览器全屏
-function tofullScreen() {
-    var element = document.documentElement;
-    if (element.requestFullscreen) {
-        element.requestFullscreen();
-    } else if (element.msRequestFullscreen) {
-        element.msRequestFullscreen();
-    } else if (element.mozRequestFullScreen) {
-        element.mozRequestFullScreen();
-    } else if (element.webkitRequestFullscreen) {
-        element.webkitRequestFullscreen();
-    }
-}
-
 </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+    <link href="https://fonts.loli.net/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet" />
 </header>
 
 {{- if .Site.Params.search.enable -}}
