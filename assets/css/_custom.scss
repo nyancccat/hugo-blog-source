@@ -67,9 +67,9 @@ body {
     // [data-theme="dark"] & {
     //     background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg);
     // }
-    background-image: url(https://gh.ddlc.top/https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg);
+    background-image: url('https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg');
     [data-theme="dark"] & {
-        background-image: url(https://gh.ddlc.top/https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg);
+        background-image: url('raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg');
     }
 }
 
