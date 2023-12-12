@@ -403,10 +403,11 @@ new Ribbons({
     parallaxAmount: -0.99,
 });
 
+//  获取 hitokoto 一言并显示
 fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
     .then((response) => response.json())
     .then((data) => {
-        let str = `🐸 ${data.hitokoto} —— ${data.from_who || ""} 《${data.from}》`;
+        let str = `🌞 ${data.hitokoto} —— ${data.from_who || ""} 《${data.from}》`;
         const hitokoto = document.querySelector("#hitokoto_text");
         hitokoto.innerText = str;
     })

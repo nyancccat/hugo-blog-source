@@ -13,7 +13,7 @@ function runtime() {
     let leavel3 = leavel2 % (60 * 1000);
     let seconds = Math.floor(leavel3 / (1000));
     let runbox = document.getElementById('run-time');
-    runbox.innerHTML = '<i class="far fa-clock fa-fw"></i> 本站已运行了 '
+    runbox.innerHTML = '<i class="far fa-clock fa-fw"></i> 本站已运行了帆帆帆帆 '
         + ((days < 10) ? '0' : '') + days + ' 天 '
         + ((hours < 10) ? '0' : '') + hours + ' 时 '
         + ((minutes < 10) ? '0' : '') + minutes + ' 分 '
