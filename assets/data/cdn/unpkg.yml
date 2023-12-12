@@ -2,11 +2,9 @@
 # See https://github.com/hugo-fixit/FixIt/issues/67
 
 prefix:
-  # libFiles: https://unpkg.com/
-  libFiles: https://unpkg.zhimg.com/
+  libFiles: https://unpkg.com/
   # simple-icons@9.19.0 https://github.com/simple-icons/simple-icons
-  # simpleIcons: https://unpkg.com/simple-icons@9.19.0/icons/
-  simpleIcons: https://unpkg.zhimg.com/simple-icons@9.19.0/icons/
+  simpleIcons: https://unpkg.com/simple-icons@9.19.0/icons/
 libFiles:
   # algoliasearch@4.20.0 https://github.com/algolia/algoliasearch-client-javascript
   algoliasearchJS: algoliasearch@4.20.0/dist/algoliasearch-lite.umd.js
