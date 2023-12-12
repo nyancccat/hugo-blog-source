@@ -13,8 +13,8 @@
             (resources.Get "fixit.svg" | minify).RelPermalink
           -}}
           {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
-          | 托管 <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
-          | 感谢 <a title="BlogCDN" href="https://blog.tanglu.me/blogcdn/" target="_blank" rel="noopener noreffer">BlogCDN</a> 提供防护
+          | 托管于 <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
+          | <a title="BlogCDN" href="https://blog.tanglu.me/blogcdn/" target="_blank" rel="noopener noreffer">BlogCDN</a> 提供防护
         </div>
       {{- end -}}
       {{- if .Site.Params.footer.copyright | or .Site.Params.footer.author | or .Site.Params.footer.license -}}
