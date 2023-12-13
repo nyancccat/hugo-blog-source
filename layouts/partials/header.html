@@ -317,8 +317,10 @@
     </nav>
   </div>
 
-<script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet" />
+    <script>
  // AI 摘要
 document.addEventListener("DOMContentLoaded", function () {
     // 从 .ai-explanation-content 取值
@@ -332,9 +334,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }).go();
 });
 </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet" />
+<script src="../js/instantpage.min.js"></script>
 </header>
 
 {{- if .Site.Params.search.enable -}}
