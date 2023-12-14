@@ -4,7 +4,7 @@
             "title": "自建 VaultWarden 密码管理器",
             "slug": "vaultwarden",
             "generated": true,
-            "summary": "文章介绍了作者使用LastPass密码管理器多年后，发现其存在密码泄露和使用体验不佳的问题，因此决定自建密码管理器。作者选择了Vaultwarden，并详细介绍了其优势、安装、启用HTTPS、设置、插件和APP下载以及日常使用。作者还分享了从LastPass导出密码库并导入Vaultwarden的过程，以及使用Vaultwarden工具进行密码检测的经验。最后，作者总结了自己的密码整理过程和改进密码安全性的方法。"
+            "summary": "文章介绍了作者使用 LastPass 密码管理器多年后，发现其存在密码泄露和使用体验不佳的问题，因此决定自建密码管理器。作者选择了 Vaultwarden，并详细介绍了其优势、安装、启用 HTTPS、设置、插件和 APP 下载以及日常使用。作者还分享了从 LastPass 导出密码库并导入 Vaultwarden 的过程，以及使用 Vaultwarden 工具进行密码检测的经验。最后，作者总结了自己的密码整理过程和改进密码安全性的方法。"
         },
         {
             "title": "简单记录 Redis 安装",
