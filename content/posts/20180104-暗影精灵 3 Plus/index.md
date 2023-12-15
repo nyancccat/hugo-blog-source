@@ -3,7 +3,7 @@ title = "惠普 (HP) 游戏本暗影精灵 3 Plus"
 description = "惠普 (HP) 游戏本暗影精灵 3 Plus"
 tags = ["暗影精灵 3"]
 date = "2018-01-04 13:36:04"
-lastmod: 2018-07-29T20:09:42+08:00
+lastmod = '2018-07-29'
 categories = ["游戏娱乐"]
 slug = "new-omen-iii"
 lightgallery =1

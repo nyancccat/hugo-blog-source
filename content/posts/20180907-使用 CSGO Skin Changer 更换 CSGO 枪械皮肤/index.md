@@ -3,7 +3,7 @@ title = "使用 CSGO Skin Changer 更换 CSGO 枪械皮肤"
 description = "使用 CSGO Skin Changer 更换 CSGO 枪械皮肤"
 tags = ["CSGO"]
 date = "2018-09-07 20:49:04"
-lastmod: 2018-09-09T20:09:42+08:00
+lastmod = '2018-09-09'
 categories = ["游戏娱乐"]
 slug = "csgoskinchanger"
 lightgallery =1
