@@ -3,6 +3,7 @@ title = "Hexo 升级 3.2.2 遇到的问题"
 description = "Hexo 升级 3.2.2 遇到的问题"
 tags = ["Hexo"]
 date = "2016-07-24 11:33:38"
+lastmod = '2016-07-24'
 categories = ["乱七八糟"]
 slug = "hexo-upgrade-to-3.2.2"
 lightgallery = true

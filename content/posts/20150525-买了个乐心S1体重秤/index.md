@@ -3,6 +3,7 @@ title = "买了个乐心 S1 体重秤"
 description = "买了个乐心 S1 体重秤"
 tags = ["乐心S1体重秤"]
 date = "2015-05-25 00:07:49"
+lastmod = '2015-05-28'
 categories = ["生活点滴"]
 slug = "lifesense-s1"
 lightgallery =1

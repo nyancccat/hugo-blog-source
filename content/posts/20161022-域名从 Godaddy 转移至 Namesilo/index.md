@@ -3,6 +3,7 @@ title = "域名从 Godaddy 转移至 Namesilo"
 description = "域名从 Godaddy 转移至 Namesilo"
 tags = ["域名"]
 date = "2016-10-22 11:00:23"
+lastmod = '2016-10-22'
 categories = ["乱七八糟"]
 slug = "domain-transfer-godaddy-to-namesilos"
 lightgallery = true

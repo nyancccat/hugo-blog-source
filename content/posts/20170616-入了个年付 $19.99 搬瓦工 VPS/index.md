@@ -3,6 +3,7 @@ title = "入了个年付 $19.99 搬瓦工 VPS"
 description = "入了个年付 $19.99 搬瓦工 VPS"
 tags = ["BandwagonHost","VPS"]
 date = "2017-06-16 23:36:04"
+lastmod = '2017-06-16'
 categories = ["乱七八糟"]
 slug = "fuck-bandwagonhost-again"
 lightgallery =1

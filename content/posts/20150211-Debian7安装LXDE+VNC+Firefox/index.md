@@ -3,6 +3,7 @@ title = "Debian 7 安装 LXDE + VNC + Firefox"
 description = "Debian7安装LXDE+VNC+Firefox"
 tags = ["Debian"]
 date = "2015-02-11 20:31:41"
+lastmod = '2015-02-22'
 categories = ["学习备忘"]
 slug = "debian-lxde-vnc-firefox"
 lightgallery =1

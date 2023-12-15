@@ -3,6 +3,7 @@ title = "Hexo 多部署--同时使用 Coding 和 Github 托管博客"
 description = "Hexo 多部署--同时使用 Coding 和 Github 托管博客"
 tags = ["Hexo"]
 date = "2016-07-18 23:44:21"
+lastmod = '2016-07-18'
 categories = ["学习备忘"]
 slug = "hexo-deploy"
 +++

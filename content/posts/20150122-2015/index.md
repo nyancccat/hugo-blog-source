@@ -3,6 +3,7 @@ title = "2015"
 description = "2015"
 tags = ["2015"]
 date = "2015-01-22 10:44:21"
+lastmod = '2015-01-22'
 categories = ["生活点滴"]
 slug = "2015"
 lightgallery =1

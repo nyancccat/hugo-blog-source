@@ -3,6 +3,7 @@ title = "Hexo 永久链接管理"
 description = "Hexo 永久链接管理"
 tags = ["Hexo"]
 date = "2017-06-17 18:36:04"
+lastmod = '2017-06-17'
 categories = ["乱七八糟"]
 slug = "hexo-permalinks"
 lightgallery =1

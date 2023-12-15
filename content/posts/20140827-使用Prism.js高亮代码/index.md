@@ -3,6 +3,7 @@ title = "使用 Prism.js 高亮代码"
 description = "使用 Prism.js 高亮代码"
 tags = ["代码高亮"]
 date = "2014-08-27 16:41:54"
+lastmod = '2014-08-27'
 categories = ["学习备忘"]
 slug = "prism"
 lightgallery = true

@@ -3,6 +3,7 @@ title = "VPS 压力测试工具 siege 和 httpbench"
 description = "VPS 压力测试工具s iege 和 httpbench"
 tags = ["httpbench","siege","VPS"]
 date = "2014-07-12 11:58:21"
+lastmod = '2014-07-20'
 categories = ["学习备忘"]
 slug = "webserver-test"
 +++

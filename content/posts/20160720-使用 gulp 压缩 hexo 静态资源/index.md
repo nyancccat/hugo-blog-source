@@ -3,6 +3,7 @@ title = "使用 gulp 压缩 hexo 静态资源"
 description = "使用 gulp 压缩 hexo 静态资源"
 tags = ["Hexo","Gulp"]
 date = "2016-07-20"
+lastmod = '2016-07-20'
 categories = ["乱七八糟"]
 slug = "hexo-gulp-compres"
 lightgallery =1

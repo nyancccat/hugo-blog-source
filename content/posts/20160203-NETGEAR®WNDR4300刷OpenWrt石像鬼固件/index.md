@@ -3,6 +3,7 @@ title = "NETGEAR®WNDR4300 刷 OpenWrt 石像鬼固件"
 description = "NETGEAR®WNDR4300 刷 OpenWrt 石像鬼固件"
 tags = ["NETGEAR","石像鬼固件"]
 date = "2016-02-03 13:38:19"
+lastmod = '2016-02-03'
 categories = ["乱七八糟"]
 slug = "netgear-wndr4300-gargoyle"
 lightgallery =1

@@ -3,6 +3,7 @@ title = "Hello Hexo"
 description = "Hello Hexo"
 tags = ["Hexo"]
 date = "2016-01-01 20:46:25"
+lastmod = '2016-01-01'
 categories = ["乱七八糟"]
 slug = "hello-hexo"
 toc = false

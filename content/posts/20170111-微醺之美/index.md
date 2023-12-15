@@ -3,6 +3,7 @@ title = "微醺之美"
 description = "微醺之美"
 tags = ["酒"]
 date = "2017-01-11 23:30:25"
+lastmod = '2017-01-11'
 categories = ["乱七八糟"]
 slug = "beauty-of-tipiness"
 toc = false

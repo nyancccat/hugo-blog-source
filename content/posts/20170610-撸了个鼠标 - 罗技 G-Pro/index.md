@@ -3,6 +3,7 @@ title = "撸了个鼠标 - 罗技 G-Pro"
 description = "撸了个鼠标 - 罗技 G-Pro"
 tags = ["G-Pro"]
 date = "2017-06-10 17:35:32"
+lastmod = '2017-06-10'
 categories = ["乱七八糟"]
 slug = "logitech-g-pro"
 lightgallery =1

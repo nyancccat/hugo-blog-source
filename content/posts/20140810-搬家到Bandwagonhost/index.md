@@ -3,6 +3,7 @@ title = "搬家到 Bandwagonhost"
 description = "搬家到 Bandwagonhost"
 tags = ["BandwagonHost","VPS"]
 date = "2014-08-10 20:29:39"
+lastmod = '2014-08-20'
 categories = ["乱七八糟"]
 slug = "move-to-bandwagonhost"
 lightgallery = true

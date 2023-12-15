@@ -3,6 +3,7 @@ title = "买了本书 - 《智识分子：做个复杂的现代人》"
 description = "买了本书 - 《智识分子：做个复杂的现代人》"
 tags = ["读书"]
 date = "2016-01-28 22:14:19"
+lastmod = '2016-01-28'
 categories = ["生活点滴"]
 slug = "zsfzy"
 lightgallery = true

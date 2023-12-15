@@ -3,6 +3,7 @@ title = "远方的朋友"
 description = "远方的朋友"
 tags = ["信件"]
 date = "2015-01-28 09:23:38"
+lastmod = '2015-01-28'
 categories = ["生活点滴"]
 slug = "friends-far-away"
 toc = false

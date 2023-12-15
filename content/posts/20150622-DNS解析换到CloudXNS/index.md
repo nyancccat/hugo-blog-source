@@ -3,6 +3,7 @@ title = "DNS 解析换到 CloudXNS"
 description = "DNS 解析换到 CloudXNS"
 tags = ["CloudXNS"]
 date = "2015-06-22 09:46:41"
+lastmod = '2015-06-28'
 categories = ["乱七八糟"]
 slug = "cloudxns"
 lightgallery =1

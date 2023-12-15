@@ -3,6 +3,7 @@ title = "Filco 忍者 87 二代侧刻青轴"
 description = "Filco忍者87二代侧刻青轴"
 tags = ["Filco","机械键盘"]
 date = "2015-06-25 21:13:02"
+lastmod = '2015-06-28'
 categories = ["生活点滴"]
 slug = "fkbn87mc-efb2"
 lightgallery =1

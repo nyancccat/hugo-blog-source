@@ -3,6 +3,7 @@ title = "导入 09 年开始的老数据"
 description = "导入 09 年开始的老数据"
 tags = ["博客"]
 date = "2014-09-12 19:24:54"
+lastmod = '2014-09-12'
 categories = ["乱七八糟"]
 slug = "old-data"
 lightgallery = true
