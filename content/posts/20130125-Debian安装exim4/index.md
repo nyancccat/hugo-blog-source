@@ -3,6 +3,7 @@ title = "Debian安装exim4"
 description = "Debian安装exim4"
 tags = ["Debian"]
 date = "2013-01-25 16:12:52"
+lastmod = '2013-01-25'
 categories = ["学习备忘"]
 slug = "debian-exim4"
 lightgallery =1

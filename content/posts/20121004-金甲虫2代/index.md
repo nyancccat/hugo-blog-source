@@ -3,6 +3,7 @@ title = "金甲虫2代"
 description = "金甲虫2代"
 tags = ["鼠标"]
 date = "2012-10-04 12:25:48"
+lastmod = '2012-10-04'
 categories = ["游戏娱乐"]
 slug = "new-mouse"
 lightgallery = true

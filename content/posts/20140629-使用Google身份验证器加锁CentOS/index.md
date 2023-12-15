@@ -3,6 +3,7 @@ title = "使用Google身份验证器加锁CentOS"
 description = "使用Google身份验证器加锁CentOS"
 tags = ["Google Authenticator","CentOS"]
 date = "2014-06-29 00:31:14"
+lastmod = '2014-06-29'
 categories = ["学习备忘"]
 slug = "centos-google-authenticator"
 lightgallery =1

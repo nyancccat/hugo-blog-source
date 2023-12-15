@@ -3,6 +3,7 @@ title = "安装anmpp"
 description = "安装anmpp"
 tags = ["anmpp"]
 date = "2013-06-05 01:24:35"
+lastmod = '2013-06-09'
 categories = ["乱七八糟"]
 slug = "anmpp"
 lightgallery = true

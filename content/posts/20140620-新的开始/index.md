@@ -3,6 +3,7 @@ title = "新的开始"
 description = "新的开始"
 tags = ["开始"]
 date = "2014-06-20 19:48:38"
+lastmod = '2014-06-20'
 categories = ["乱七八糟"]
 slug = "start"
 toc = false

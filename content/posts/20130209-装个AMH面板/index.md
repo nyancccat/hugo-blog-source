@@ -3,6 +3,7 @@ title = "装个 AMH 面板"
 description = "装个 AMH 面板"
 tags = ["VPS"]
 date = "2013-02-09 15:54:38"
+lastmod = '2013-02-09'
 categories = ["乱七八糟"]
 slug = "amh"
 lightgallery = true

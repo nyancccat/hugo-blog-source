@@ -3,6 +3,7 @@ title = "博客再次搬家"
 description = "博客再次搬家"
 tags = ["虚拟主机"]
 date = "2013-02-03 12:40:13"
+lastmod = '2013-02-04'
 categories = ["乱七八糟"]
 slug = "blog-moving-again"
 toc = false

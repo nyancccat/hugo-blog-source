@@ -3,6 +3,7 @@ title = "VPS 命令备忘"
 description = "VPS 命令备忘"
 tags = ["VPS"]
 date = "2012-10-30 12:17:35"
+lastmod = '2012-10-30'
 categories = ["学习备忘"]
 slug = "vps-memo"
 +++

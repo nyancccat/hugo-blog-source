@@ -3,6 +3,7 @@ title = "更换服务器遇到的问题"
 description = "更换服务器遇到的问题"
 tags = ["虚拟主机"]
 date = "2013-07-16 01:29:21"
+lastmod = '2013-07-16'
 categories = ["学习备忘"]
 slug = "blog-moving-problem"
 toc = false

@@ -3,6 +3,7 @@ title = "VPS 小折腾"
 description = "VPS 小折腾"
 tags = ["VPS"]
 date = "2012-09-30 00:26:05"
+lastmod = '2009-09-30'
 categories = ["学习备忘"]
 slug = "freevps"
 +++

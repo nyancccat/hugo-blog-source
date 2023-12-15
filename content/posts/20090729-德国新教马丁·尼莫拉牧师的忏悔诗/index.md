@@ -3,6 +3,7 @@ title = "德国新教马丁·尼莫拉牧师的忏悔诗"
 description = "德国新教马丁·尼莫拉牧师的忏悔诗"
 tags = ["马丁尼莫拉"]
 date = "2009-07-29 00:26:08"
+lastmod = '2009-07-29'
 categories = ["乱七八糟"]
 slug = "martinniemoller"
 toc = false

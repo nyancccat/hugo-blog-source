@@ -2,6 +2,7 @@
 title: "学车记"
 slug: "learn-to-drive"
 date: 2014-07-05T20:48:26+08:00
+lastmod: 2014-07-06T20:48:26+08:00
 tags: [驾照]
 categories: ["生活点滴"]
 toc: false

@@ -3,6 +3,7 @@ title = "重装系统+常用软件清单"
 description = "重装系统+常用软件清单"
 tags = ["软件"]
 date = "2013-04-27 00:51:30"
+lastmod = '2013-04-27'
 categories = ["乱七八糟"]
 slug = "reinstall-and-lists-of-software"
 lightgallery =1

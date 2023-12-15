@@ -3,6 +3,7 @@ title = "用了Incapsula的CDN加速"
 description = "用了Incapsula的CDN加速"
 tags = ["incapsula"]
 date = "2012-12-15 11:15:31"
+lastmod = '2012-12-15'
 categories = ["乱七八糟"]
 slug = "incapsula"
 lightgallery =1

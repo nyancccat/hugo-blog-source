@@ -3,6 +3,7 @@ title = "更换博客虚拟空间"
 description = "更换博客虚拟空间"
 tags = ["虚拟空间"]
 date = "2012-12-02 23:50:54"
+lastmod = '2012-12-04'
 categories = ["乱七八糟"]
 slug = "blog-moving"
 +++

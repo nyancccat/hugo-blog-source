@@ -3,6 +3,7 @@ title = "更换域名"
 description = "更换域名"
 tags = ["域名"]
 date = "2012-11-03 12:13:23"
+lastmod = '2012-11-04'
 categories = ["乱七八糟"]
 slug = "change-domain"
 toc = false

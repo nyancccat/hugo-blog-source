@@ -3,6 +3,7 @@ title = "Debian 下 SSH 显示中文"
 description = "Debian 下 SSH 显示中文"
 tags = ["Debian"]
 date = "2013-04-30 01:01:12"
+lastmod = '2013-04-30'
 categories = ["学习备忘"]
 slug = "debian-ssh-zh-cn"
 lightgallery =1

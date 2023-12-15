@@ -3,6 +3,7 @@ title = "AMH面板安装反向代理模块"
 description = "AMH面板安装反向代理模块"
 tags = ["VPS"]
 date = "2013-02-23 10:19:45"
+lastmod = '2013-02-23'
 categories = ["游戏娱乐"]
 slug = "amh-amproxy"
 lightgallery = true

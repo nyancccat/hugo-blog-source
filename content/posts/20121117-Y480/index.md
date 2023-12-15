@@ -3,6 +3,7 @@ title = "Y480"
 description = "Y480"
 tags = ["Y480"]
 date = "2012-11-17 11:20:50"
+lastmod = '2012-11-17'
 categories = ["游戏娱乐"]
 slug = "y480"
 lightgallery =1

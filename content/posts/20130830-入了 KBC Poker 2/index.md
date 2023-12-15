@@ -3,6 +3,7 @@ title = "入了 KBC Poker 2"
 description = "入了 KBC Poker 2"
 tags = ["机械键盘"]
 date = "2013-08-30 00:21:43"
+lastmod = '2013-08-30'
 categories = ["生活点滴"]
 slug = "kbc-poker2"
 lightgallery = true

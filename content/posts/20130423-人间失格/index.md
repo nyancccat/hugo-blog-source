@@ -3,6 +3,7 @@ title = "人间失格"
 description = "人间失格"
 tags = ["人间失格"]
 date = "2013-04-23 20:17:21"
+lastmod = '2013-04-23'
 categories = ["生活点滴"]
 slug = "nolongerhuman"
 lightgallery = true

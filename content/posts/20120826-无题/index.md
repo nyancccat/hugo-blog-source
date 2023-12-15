@@ -3,6 +3,7 @@ title = "无题"
 description = "无题"
 tags = ["无题"]
 date = "2012-08-26 00:13:50"
+lastmod = '2012-08-27'
 categories = ["生活点滴"]
 slug = "untitled"
 toc = false

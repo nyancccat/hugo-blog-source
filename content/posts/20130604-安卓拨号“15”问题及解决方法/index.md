@@ -3,6 +3,7 @@ title = "安卓拨号“15”问题及解决方法"
 description = "安卓拨号“15”问题及解决方法"
 tags = ["安卓","拨号15问题"]
 date = "2013-06-04 01:20:34"
+lastmod = '2013-06-09'
 categories = ["乱七八糟"]
 slug = "android-15"
 lightgallery = 1

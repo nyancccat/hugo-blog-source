@@ -3,6 +3,7 @@ title = "最近"
 description = "最近"
 tags = ["生活"]
 date = "2012-09-14 12:37:10"
+lastmod = '2012-09-27'
 categories = ["生活点滴"]
 slug = "recently"
 toc = false

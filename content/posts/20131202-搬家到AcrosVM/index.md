@@ -3,6 +3,7 @@ title = "搬家到 AcrosVM"
 description = "搬家到 AcrosVM"
 tags = ["VPS"]
 date = "2013-12-02 01:39:18"
+lastmod = '2013-12-09'
 categories = ["乱七八糟"]
 slug = "move-to-acrosvm"
 lightgallery = true

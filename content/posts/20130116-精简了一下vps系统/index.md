@@ -3,6 +3,7 @@ title = "精简了一下vps系统"
 description = "精简了一下vps系统"
 tags = ["VPS"]
 date = "2013-01-16 11:03:20"
+lastmod = '2013-01-16'
 categories = ["学习备忘"]
 slug = "debian-lite"
 lightgallery = true
