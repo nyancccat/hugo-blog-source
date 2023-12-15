@@ -2,6 +2,7 @@
 title: '简单记录 Redis 安装'
 slug: 'redis-install'
 date: 2022-11-15T21:17:40+08:00
+lastmod: 2022-11-18T21:09:42+08:00
 description: '简单记录一下 redis 安装过程'
 tags: ['Redis']
 categories: ['学习备忘']
