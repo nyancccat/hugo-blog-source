@@ -12,7 +12,7 @@ summaryLength = 300
 theme = "FixIt"
 enableGitInfo = true
 [frontmatter]
-  lastmod = [":git", "lastmod", ":fileModTime", ":defalut"]
+  lastmod = ["lastmod", ":git", ":fileModTime", ":defalut"]
 [menu]
   [[menu.main]]
     identifier = "home"
