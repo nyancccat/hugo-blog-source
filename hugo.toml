@@ -744,7 +744,7 @@ enableGitInfo = true
         darkTheme = "github-dark"
       #  Twikoo 评论系统设置 (https://twikoo.js.org/)
       [params.page.comment.twikoo]
-        enable = true
+        enable = false
         # envId = "https://blog-twikoo-three.vercel.app/"
         envId = "https://twikoo.clearsky.me/"
 
