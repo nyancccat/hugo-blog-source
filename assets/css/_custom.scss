@@ -121,6 +121,13 @@ footer .footer-container .footer-line .fixit-icon {
         border: 1px solid #333;
     }
 }
+.ai-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 0.5rem;
+}
 
 .ai-title {
     display: flex;
@@ -146,6 +153,41 @@ footer .footer-container .footer-line .fixit-icon {
     margin-left: 0.25rem;
     line-height: 1;
 }
+
+.ai-title-tooltip {
+    margin-right: .25rem;
+    font-size: 0.875rem;
+    position: relative;
+    display: inline-flex;
+    cursor: help;
+    align-items: center;
+}
+
+.ai-title-tooltip .ai-title-tooltip-text {
+    font-family: 'Times New Roman', Times, serif;
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    white-space: nowrap;
+    max-width: none;
+    text-align: right;
+    padding-right: 0.25rem;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: opacity 0.3s;
+    font-size: .9rem;
+    cursor: text;
+}
+.ai-title-tooltip .ai-title-tooltip-text i {
+    font-weight: 900;
+    color: red;
+}
+.ai-title-tooltip:hover .ai-title-tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
 .ai-explanation {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
@@ -155,7 +197,9 @@ footer .footer-container .footer-line .fixit-icon {
     font-size: 0.95rem;
     line-height: 1.4;
     display: inline-block;
-    width: auto;
+    // width: auto;
+    box-sizing: border-box;
+    width: 100%;
     [data-theme="dark"] & {
         background: #292a2d;
         border: 1px solid #333;
@@ -170,8 +214,8 @@ footer .footer-container .footer-line .fixit-icon {
     visibility: hidden;
 }
 
-// 头部边框
 
+// 头部边框
 #header-desktop .header-wrapper {
     // background-color: #e5e7eb;
     background-image: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
