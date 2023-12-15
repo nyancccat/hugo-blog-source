@@ -3,6 +3,7 @@ title = "骑行入门山地车 - 美利达挑战者 300"
 description = "骑行入门山地车 - 美利达挑战者 300"
 tags = ["骑行"]
 date = "2017-07-30 20:44:06"
+lastmod = '2017-07-30'
 categories = ["生活点滴"]
 slug = "challenger-300"
 lightgallery = true

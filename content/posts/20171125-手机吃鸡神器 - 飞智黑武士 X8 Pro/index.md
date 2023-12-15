@@ -3,6 +3,7 @@ title = "手机“吃鸡”神器 - 飞智黑武士 X8 Pro"
 description = "手机“吃鸡”神器 - 飞智黑武士 X8 Pro"
 tags = ["手柄"]
 date = "2017-11-26 22:36:04"
+lastmod = '2017-11-27'
 categories = ["游戏娱乐"]
 slug = "flydigi-x8-pro"
 lightgallery =1

@@ -3,6 +3,7 @@ title = "使用 Dota Mods Installer 替换 Dota2 模型"
 description = "使用 Dota Mods Installer 替换 Dota2 模型"
 tags = ["Dota2"]
 date = "2017-08-24 22:36:04"
+lastmod = '2017-08-25'
 categories = ["游戏娱乐"]
 slug = "dota-mods-installer"
 lightgallery = true

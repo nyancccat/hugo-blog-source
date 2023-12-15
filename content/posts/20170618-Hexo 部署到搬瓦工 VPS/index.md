@@ -3,6 +3,7 @@ title = "Hexo 部署到搬瓦工 VPS"
 description = "Hexo 部署到搬瓦工 VPS"
 tags = ["VPS","Hexo"]
 date = "2017-06-18 12:36:04"
+lastmod = '2017-06-18'
 categories = ["学习备忘"]
 slug = "hexo-deploy-to-vps"
 lightgallery =1

@@ -3,6 +3,7 @@ title = "Ubuntu 开启 BBR 拥塞控制算法加速 TCP"
 description = "Ubuntu 开启 BBR 拥塞控制算法加速 TCP"
 tags = ["VPS","Ubuntu"]
 date = "2017-06-18 00:36:04"
+lastmod = '2017-06-18'
 categories = ["乱七八糟"]
 slug = "ubuntu-bbr"
 lightgallery = true
