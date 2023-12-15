@@ -3,6 +3,7 @@ title = "购买米其林车载充气泵和伟力通无线胎压监测"
 description = "购买米其林车载充气泵和伟力通无线胎压监测"
 tags = ["胎压监测"]
 date = "2018-05-30 20:36:04"
+lastmod: 2018-06-29T20:09:42+08:00
 categories = ["乱七八糟"]
 slug = "michelin-4389ml-and-victon-t6ls"
 lightgallery =1

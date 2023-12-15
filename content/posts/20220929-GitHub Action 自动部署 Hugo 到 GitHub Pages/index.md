@@ -2,8 +2,8 @@
 title: "GitHub Action 自动部署 Hugo 到 GitHub Pages"
 slug: "github-action-auto-build-deploy"
 date: 2022-09-29T19:17:40+08:00
+lastmod: 2022-10-02T20:09:42+08:00
 description: "简单记录一下 GitHub Action 自动部署 Hugo 到 GitHub Pages"
-
 tags: ["GitHub Action", "Hugo"]
 categories: ["学习备忘"]
 ---

@@ -2,6 +2,7 @@
 title: "很久没更新了"
 slug: "long-time-no-update"
 date: 2022-07-28T22:48:26+08:00
+lastmod: 2022-07-29T20:09:42+08:00
 tags: [生活]
 categories: ["生活点滴"]
 toc: false

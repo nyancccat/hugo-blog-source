@@ -3,6 +3,7 @@ title = "Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"
 description = "Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR"
 tags = ["宝塔","Ubuntu"]
 date = "2018-12-20 20:49:04"
+lastmod: 2019-01-13T20:09:42+08:00
 categories = ["学习备忘"]
 slug = "ubuntu-1804-bbr"
 lightgallery =1

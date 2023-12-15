@@ -3,7 +3,7 @@ title = "淘了一套太豪 PBT 奶酪绿键帽"
 description = "淘了一套太豪 PBT 奶酪绿键帽"
 tags = ["键帽"]
 date = "2018-12-27 20:49:04"
-lastmod = "2019-10-10"
+lastmod: 2019-01-10T20:09:42+08:00
 categories = ["游戏娱乐"]
 slug = "taihao-keycaps"
 lightgallery = true
