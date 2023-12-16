@@ -11,16 +11,8 @@ summaryLength = 300
 # 更改使用 Hugo 构建网站时使用的默认主题
 theme = "FixIt"
 enableGitInfo = true
-enableRobotsTXT = true
-relativeURLs = false
-buildDrafts = false
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
 [frontmatter]
 lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
-
-# 菜单设置
 [menu]
 [[menu.main]]
 identifier = "home"
@@ -42,20 +34,20 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-home"
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
 
 [[menu.main]]
-identifier = "archives"
+identifier = "posts"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
+pre = "<i class='fas fa-clock'></i>"
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
-name = "归档"
+name = "文章"
 url = "/posts"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
@@ -67,20 +59,20 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-solid fa-folder-open"
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
 [[menu.main]]
-identifier = "posts"
+identifier = "toot"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = "archives"
+parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
+pre = "<i class='fa-brands fa-mastodon'></i>"
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
-name = "文章"
-url = "/posts"
+name = "嘟嘟"
+url = "/toot"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
 weight = 3
@@ -91,40 +83,16 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-book"
-# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
-type = ""
-
-[[menu.main]]
-identifier = "categories"
-# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = "archives"
-# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
-# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
-post = ""
-name = "分类"
-url = "/categories"
-# 当你将鼠标悬停在此菜单链接上时，将显示的标题
-title = ""
-weight = 4
-# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
-[menu.main.params]
-# 添加 CSS 类到菜单项
-class = ""
-# 是否为草稿菜单，类似草稿页面
-draft = false
-# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-solid fa-list"
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
 [[menu.main]]
 identifier = "tags"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = "archives"
+parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
+pre = "<i class='fas fa-tags'></i>"
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
 name = "标签"
@@ -139,21 +107,45 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-tags"
+icon = ""
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
+
+[[menu.main]]
+identifier = "categories"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = ""
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = "<i class='fas fa-book'></i>"
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "分类"
+url = "categories/"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 4
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
 
 [[menu.main]]
-identifier = "toot"
+identifier = "friends"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = "<i class=''></i>"
+pre = "<i class='fa-solid fa-users fa-fw fa-sm'></i>"
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
-name = "嘟嘟"
-url = "/toot"
+name = "友链"
+url = "/friends"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
 weight = 6
@@ -164,21 +156,20 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-brands fa-mastodon"
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
-
 [[menu.main]]
-identifier = "friends"
+identifier = "about"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
+pre = "<i class='fas fa-user-tie'></i>"
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
-name = "友链"
-url = "/friends"
+name = "关于"
+url = "/about"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
 weight = 7
@@ -189,39 +180,16 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-solid fa-users fa-fw fa-sm"
+icon = ""
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
-[[menu.main]]
-identifier = "about"
-# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = ""
-# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
-# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
-post = ""
-name = "关于"
-url = "/about"
-# 当你将鼠标悬停在此菜单链接上时，将显示的标题
-title = ""
-weight = 8
-# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
-[menu.main.params]
-# 添加 CSS 类到菜单项
-class = ""
-# 是否为草稿菜单，类似草稿页面
-draft = false
-# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-user-tie"
-# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
-type = ""
 
 [params]
 #  FixIt 主题版本
 version = "0.2.X" # 例如："0.2.X", "0.2.15", "v0.2.15" 等
 # 网站描述
-description = "这是我的博客，记录一些学习过程及生活感悟等"
+description = "古井之水，不泛涟漪。"
 # 网站关键词
 keywords = ["晴空小筑", "clearsky.me"]
 # 网站默认主题样式 ["light", "dark", "auto"]
@@ -242,13 +210,6 @@ externalIcon = true
 #  默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记
 # 您可以将其关闭，但如果您不这样做，我们将不胜感激，因为这是观察 FixIt 受欢迎程度上升的好方法
 disableThemeInject = false
-
-# 作者配置
-[params.author]
-name = "pagezen"
-email = "theqee@gmail.com"
-link = "http://clearsky.me/"
-avatar = "/avatar.jpg"
 
 #  应用图标配置
 [params.app]
@@ -334,9 +295,9 @@ showHome = true
 # 页面底部信息配置
 [params.footer]
 enable = true
-custom = '<span id="run-time"></span>'
 #  自定义内容（支持 HTML 格式）
 # 进阶使用，见参数 `params.customFilePath.footer`
+custom = '<span id="run-time"></span>'
 #  是否显示 Hugo 和主题信息
 hugo = true
 #  是否显示版权信息
@@ -348,9 +309,9 @@ since = 2009
 #  是否显示网站内容总字数
 wordCount = true
 #  公网安备信息，仅在中国使用（支持 HTML 格式）
-gov = ""
+gov = ''
 #  ICP 备案信息，仅在中国使用（支持 HTML 格式）
-icp = ""
+icp = ''
 # 许可协议信息（支持 HTML 格式）
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> <a href="https://ipw.cn/ipv6webcheck/?site=clearsky.me" title="本站支持IPv6访问" target="_blank" class="icon_ip">IPv6</a>'
 #  网站创立时间
@@ -358,7 +319,7 @@ license = '<a rel="license external nofollow noopener noreferrer" href="https://
 enable = false
 animate = true
 icon = "fa-solid fa-heartbeat"
-pre = ""
+pre = "本站已经运行"
 value = "2009-07-28T16:15:22+08:00" # e.g. "2021-12-18T16:15:22+08:00"
 #  页面底部行排序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
 [params.footer.order]
@@ -381,7 +342,7 @@ rss = 10
 enable = false
 rss = false
 days = 30
-maxCount = 10
+maxCount = 4
 
 #  List（目录或标签）页面配置
 [params.list]
@@ -416,12 +377,14 @@ avatarMenu = ""
 #  主页显示的网站标题（支持 HTML 格式）
 title = ""
 # 主页显示的网站副标题
+# subtitle = '<span id="jinrishici-sentence">正在加载今日诗词....</span><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>'
 subtitle = '<span id="hitokoto_text">正在加载...</span>'
 # 是否为副标题显示打字机动画
 typeit = false
 # 是否显示社交账号
 social = true
 #  免责声明（支持 HTML 格式）
+disclaimer = ""
 # disclaimer = "本站主要为记录生活学习用，出于传递信息目的可能存在摘录或转载来自第三方内容，并不意味赞同其观点或认可其真实性，仅供参考。"
 # 主页文章列表
 [params.home.posts]
@@ -525,8 +488,6 @@ authorAvatar = true
 hiddenFromHomePage = false
 #  是否在搜索结果中隐藏一篇文章
 hiddenFromSearch = false
-#  是否在 RSS 中隐藏一篇文章
-hiddenFromRss = false
 #  是否使用 twemoji
 twemoji = true
 # 是否使用 lightgallery
@@ -558,7 +519,7 @@ readingTime = true
 #  文章结束标志
 endFlag = " ------------- 文章结束，感谢您的阅读。 ------------- "
 #  是否开启即时页面
-instantPage = true
+instantPage = false
 
 #  转载配置
 [params.page.repost]
@@ -658,8 +619,11 @@ Xing = false
 Line = true
 Instapaper = false
 Pocket = false
+Digg = false
+Stumbleupon = false
 Flipboard = false
 Weibo = true
+Renren = false
 Myspace = true
 Blogger = true
 Baidu = false
@@ -674,7 +638,7 @@ enable = true
 #  Artalk 评论系统设置 (https://artalk.js.org/)
 [params.page.comment.artalk]
 enable = false
-server = "https://yourdomain"
+server = "https://yourdomain/api/"
 site = "默认站点"
 placeholder = ""
 noComment = ""
@@ -782,6 +746,7 @@ darkTheme = "github-dark"
 enable = true
 # envId = "https://blog-twikoo-three.vercel.app/"
 envId = "https://twikoo.clearsky.me/"
+
 region = ""
 path = ""
 visitor = true
@@ -789,7 +754,7 @@ commentCount = true
 #  启用 lightgallery 支持
 lightgallery = false
 #  启用 Katex 支持
-katex = false
+katex = true
 #  Giscus 评论系统设置
 [params.page.comment.giscus]
 enable = false
@@ -981,12 +946,6 @@ color = "blue"
 # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
 theme = "minimal"
 
-#  [试验性功能] 缓存图床图片到本地，详见：https://github.com/hugo-fixit/FixIt/pull/362
-[params.cacheRemoteImages]
-enable = false
-# 用本地图片链接替换远程图片链接
-replace = false
-
 #  定义自定义文件路径
 # 在站点目录 `layouts/partials/custom` 中创建您的自定义文件，并取消注释下面需要的文件
 [params.customFilePath]
@@ -1030,25 +989,32 @@ table = true
 taskList = true
 typographer = true
 
-[goldmark.parser]
+
+[markup.goldmark.parser]
 autoHeadingID = true
 autoHeadingIDType = "github"
 wrapStandAloneImageWithinParagraph = true
-[goldmark.parser.attribute]
+[markup.goldmark.parser.attribute]
 block = true
 title = true
-
 [markup.goldmark.renderer]
 # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
 # 默认情况下，Goldmark 会忽略段落中的换行符。设置为 true 将换行符呈现为 <br> 元素。
 hardWraps = false
+# whether to use HTML tags directly in the document
 # 是否在文档中直接使用 HTML 标签
 unsafe = true
-
 # 目录设置
 [markup.tableOfContents]
 startLevel = 2
 endLevel = 6
+
+# 作者配置
+[author]
+name = "pagezen"
+email = "theqee@gmail.com"
+link = "http://clearsky.me/"
+avatar = "/avatar.jpg"
 
 # 网站地图配置
 [sitemap]

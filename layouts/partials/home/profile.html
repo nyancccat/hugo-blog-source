@@ -32,9 +32,9 @@
             end
             }}
         >
-            {{- dict "Src" $avatar "Alt" $.Site.Author.name | partial "plugin/image.html" -}}
+            {{- dict "Src" $avatar "Alt" $.Site.Params.author.name | partial "plugin/image.html" -}}
         </a>
-        {{- else -}} {{- dict "Src" $avatar "Alt" $.Site.Author.name | partial "plugin/image.html" -}} {{- end -}}
+        {{- else -}} {{- dict "Src" $avatar "Alt" $.Site.Params.author.name| partial "plugin/image.html" -}} {{- end -}}
     </div>
     {{- end -}} 
     <h1 class="home-title">
