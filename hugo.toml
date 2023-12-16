@@ -249,6 +249,11 @@ name = "pagezen"
 email = "theqee@gmail.com"
 link = "http://clearsky.me/"
 avatar = "/avatar.jpg"
+[author]
+name = "pagezen"
+email = "theqee@gmail.com"
+link = "http://clearsky.me/"
+avatar = "/avatar.jpg"
 
 #  应用图标配置
 [params.app]
