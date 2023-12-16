@@ -109,6 +109,7 @@
         <li class="menu-item theme-switch" title="{{ T "header.switchTheme" }}">
           {{ dict "Class" "fa-solid fa-adjust fa-fw" | partial "plugin/icon.html" }}
         </li>
+        <li class="menu-item"><a class='fa-solid fa-gauge fa-fw' href="https://umami.clearsky.me/share/33g2mFZczesQka9e/%E6%99%B4%E7%A9%BA%E5%B0%8F%E7%AD%91" title="流量分析" target="_blank"></a></li> 
         <li class="menu-item"><a class='fa-solid fa-expand' href="javascript:;" onclick="tofullScreen()" title="全屏阅读"></a></li> 
         <li class="menu-item"><a class='fa-regular fa-thumbs-up fa-bounce' href="javascript:;" onclick="randomPost()" title="随机访问一篇文章"></a></li>
 
@@ -334,6 +335,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }).go();
 });
 </script>
+<<<<<<< HEAD
+=======
+<!-- 点击预加载 -->
+<script src="../js/instantpage.min.js"></script>
+<!-- 统计代码 -->
+<script async src="https://umami.clearsky.me/script.js" data-website-id="c2c97a31-a5b3-4874-9d53-738db148ad73"></script>
+>>>>>>> 43523a10d48669f380ca23cf566fb46e0c03c329
 </header>
 
 {{- if .Site.Params.search.enable -}}
