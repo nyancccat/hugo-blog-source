@@ -52,7 +52,7 @@ identifier = "toot"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = "<i class=''></i>"
+pre = ""
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
 name = "嘟嘟"
@@ -413,7 +413,7 @@ showHome = true
 # 页面底部信息配置
 [params.footer]
 enable = true
-custom = '<span id="run-time"></span>'
+custom = '<span id="run-time"></span> / 帧: <span id="fps">60fps</span>'
 #  自定义内容（支持 HTML 格式）
 # 进阶使用，见参数 `params.customFilePath.footer`
 #  是否显示 Hugo 和主题信息

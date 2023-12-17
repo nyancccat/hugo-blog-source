@@ -2,7 +2,6 @@
 
 function runtime() {
     window.setTimeout(runtime, 1000);
-
     /* 请修改这里的起始时间 */
     let startTime = new Date("07/27/2009 20:49:04");
     let endTime = new Date();
@@ -16,7 +15,7 @@ function runtime() {
     let seconds = Math.floor(leavel3 / 1000);
     let runbox = document.getElementById("run-time");
     runbox.innerHTML =
-        '<i class="far fa-clock fa-fw"></i> 本站已运行了 ' +
+        '<i class="far fa-clock fa-fw"></i> 本站运行 ' +
         (days < 10 ? "0" : "") +
         days +
         " 天 " +
@@ -415,14 +414,19 @@ fetch("https://v1.hitokoto.cn/?c=a&c=j&c=d&c=h&c=i")
 
 // FPS 帧
 let fpsPanel = document.createElement("div");
-fpsPanel.setAttribute("id", "fps");
-fpsPanel.style.position = "fixed";
-fpsPanel.style.right = "1px";
-fpsPanel.style.top = "0px";
-fpsPanel.style.color = "green";
-fpsPanel.style.zIndex = 10000;
-fpsPanel.style.fontSize = "11px";
-fpsPanel.style.fontWeight = 900;
+// fpsPanel.setAttribute("id", "fps");
+// fpsPanel.style.position = "fixed";
+// fpsPanel.style.right = "1px";
+// fpsPanel.style.top = "13px";
+// fpsPanel.style.color = "red";
+// fpsPanel.style.zIndex = 10000;
+// fpsPanel.style.fontSize = "11px";
+// fpsPanel.style.fontWeight = 900;
+// fpsPanel.style.marginRight = "10px";
+// fpsPanel.style.borderRadius = "10px";
+// fpsPanel.style.border = "1px solid black";
+// fpsPanel.style.padding = "2px";
+
 // fpsPanel.style.borderBottom = '1px solid pink';
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -451,7 +455,7 @@ let fpsEl = document.querySelector("#fps");
 //显示帧率数值到界面上
 function renderFps(fps) {
     let r = getRandomNumber(-5, 5);
-    fpsEl.textContent = fps + r + " " + "fps";
+    fpsEl.textContent =`${fps + r} fps`;
 }
 //开始执行
 
