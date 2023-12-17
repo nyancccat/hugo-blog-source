@@ -46,7 +46,32 @@ icon = "fas fa-home"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
+# 嘟嘟菜单
+[[menu.main]]
+identifier = "toot"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = ""
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = "<i class=''></i>"
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "嘟嘟"
+url = "/toot"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 2
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-brands fa-mastodon"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
 
+# 归档菜单
 [[menu.main]]
 identifier = "archives"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
@@ -56,10 +81,10 @@ pre = ""
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
 name = "归档"
-url = "/posts"
+url = "#"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 2
+weight = 3
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -83,7 +108,7 @@ name = "文章"
 url = "/posts"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 3
+weight = 1
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -107,7 +132,7 @@ name = "分类"
 url = "/categories"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 4
+weight = 2
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -131,7 +156,7 @@ name = "标签"
 url = "/tags"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 5
+weight = 3
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -143,20 +168,20 @@ icon = "fas fa-tags"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
-
+#  tools 菜单
 [[menu.main]]
-identifier = "toot"
+identifier = "tools"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = ""
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = "<i class=''></i>"
+pre = ""
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
-name = "嘟嘟"
-url = "/toot"
+name = "工具"
+url = "#"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 6
+weight = 4
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -164,15 +189,86 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-brands fa-mastodon"
+icon = "fa-solid fa-toolbox"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
+[[menu.main]]
+identifier = "umima"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = "tools"
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "统计"
+url = "https://umami.clearsky.me/share/33g2mFZczesQka9e/%E6%99%B4%E7%A9%BA%E5%B0%8F%E7%AD%91"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 1
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-solid fa-gauge fa-fw"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
+
+[[menu.main]]
+identifier = "About"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = ""
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "站点"
+url = "#"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 5
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-solid fa-earth-europe"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
+
+[[menu.main]]
+identifier = "about"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = "About"
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "关于"
+url = "/about"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 1
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fas fa-user-tie"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
 
 [[menu.main]]
 identifier = "friends"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = ""
+parent = "About"
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
 pre = ""
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
@@ -181,7 +277,7 @@ name = "友链"
 url = "/friends"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 7
+weight = 2
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -193,29 +289,6 @@ icon = "fa-solid fa-users fa-fw fa-sm"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
-[[menu.main]]
-identifier = "about"
-# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
-parent = ""
-# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = ""
-# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
-post = ""
-name = "关于"
-url = "/about"
-# 当你将鼠标悬停在此菜单链接上时，将显示的标题
-title = ""
-weight = 8
-# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
-[menu.main.params]
-# 添加 CSS 类到菜单项
-class = ""
-# 是否为草稿菜单，类似草稿页面
-draft = false
-# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-user-tie"
-# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
-type = ""
 
 [params]
 #  FixIt 主题版本
@@ -318,7 +391,8 @@ logo = ""
 # 标题名称
 name = "晴空小筑"
 # 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
-pre = "<i class='fas fa-code'></i>"
+# pre = "<i class='fas fa-code'></i>"
+pre = '<i class="fa-solid fa-vihara"></i> '
 # 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
 post = ""
 #  是否为标题显示打字机动画
@@ -367,11 +441,11 @@ pre = ""
 value = "2009-07-28T16:15:22+08:00" # e.g. "2021-12-18T16:15:22+08:00"
 #  页面底部行排序，可选值：["first", 0, 1, 2, 3, 4, 5, "last"]
 [params.footer.order]
-powered = 1
-copyright = 2
-statistics = 3
+powered = 5
+copyright = 4
+statistics = 1
 visitor = 0
-beian = 5
+beian = 1
 
 #  Section（所有文章）页面配置
 [params.section]
