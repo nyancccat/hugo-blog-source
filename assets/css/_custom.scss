@@ -32,6 +32,10 @@ body {
 .home-profile {
     background: url("../background.svg"), hsl(50, 100%, 99%) center;
     transition: background ease 0.2s, color ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .home.posts .summary {
@@ -58,6 +62,7 @@ body {
     border: 3px solid #ccc;
     box-shadow: 5px 5px 0px -2px #ccc, 5px 5px #ccc;
     background-size: 100% 100%;
+    width: 60%;
     padding: 1rem;
     // height: auto;
     background-repeat: no-repeat;
@@ -69,7 +74,7 @@ body {
     // }
     background-image: url('https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg');
     [data-theme="dark"] & {
-        background-image: url('raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg');
+        background-image: url('https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg');
     }
 }
 
