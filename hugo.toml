@@ -242,6 +242,54 @@ icon = "fa-solid fa-database"
 type = ""
 
 [[menu.main]]
+identifier = "qing'long"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = "tools"
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "青龙"
+url = "https://ql.clearsky.me/"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 3
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-brands fa-d-and-d"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
+
+[[menu.main]]
+identifier = "uptime"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = "tools"
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "监控"
+url = "http://uptime-kuma.clearsky.me/status/cl"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 4
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-solid fa-eye"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
+
+[[menu.main]]
 identifier = "umima"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = "tools"
@@ -253,7 +301,7 @@ name = "统计"
 url = "https://umami.clearsky.me/share/33g2mFZczesQka9e/%E6%99%B4%E7%A9%BA%E5%B0%8F%E7%AD%91"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-weight = 3
+weight = 5
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
@@ -337,6 +385,29 @@ icon = "fa-solid fa-users fa-fw fa-sm"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
+[[menu.main]]
+identifier = "rss"
+# FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
+parent = "About"
+# 你可以在名称（允许 HTML 格式）之前添加其他信息，例如图标
+pre = ""
+# 你可以在名称（允许 HTML 格式）之后添加其他信息，例如图标
+post = ""
+name = "RSS"
+url = "/index.xml"
+# 当你将鼠标悬停在此菜单链接上时，将显示的标题
+title = ""
+weight = 3
+# FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
+[menu.main.params]
+# 添加 CSS 类到菜单项
+class = ""
+# 是否为草稿菜单，类似草稿页面
+draft = false
+# FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
+icon = "fa-solid fa-rss"
+# FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
+type = ""
 
 [params]
 #  FixIt 主题版本
