@@ -266,7 +266,6 @@ icon = "fa-brands fa-d-and-d"
 type = ""
 
 [[menu.main]]
-<<<<<<< HEAD
 identifier = "uptime"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = "tools"
@@ -291,8 +290,6 @@ icon = "fa-solid fa-eye"
 type = ""
 
 [[menu.main]]
-=======
->>>>>>> dbf8d819599e6c91aa9d391c038ca5a6a166a5c1
 identifier = "umima"
 # FixIt 0.2.14 | 新增 父级菜单项的标识符 (identifier)
 parent = "tools"
@@ -304,11 +301,7 @@ name = "统计"
 url = "https://umami.clearsky.me/share/33g2mFZczesQka9e/%E6%99%B4%E7%A9%BA%E5%B0%8F%E7%AD%91"
 # 当你将鼠标悬停在此菜单链接上时，将显示的标题
 title = ""
-<<<<<<< HEAD
 weight = 5
-=======
-weight = 4
->>>>>>> dbf8d819599e6c91aa9d391c038ca5a6a166a5c1
 # FixIt 0.2.14 | 新增 向菜单项添加用户定义的内容
 [menu.main.params]
 # 添加 CSS 类到菜单项
