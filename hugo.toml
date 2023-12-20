@@ -672,7 +672,7 @@ Twitch = ""
 Strava = ""
 Skype = ""
 Whatsapp = ""
-Zhihu = "nyancccat"
+# Zhihu = "nyancccat"
 Douban = ""
 Angellist = ""
 Slidershare = ""
@@ -690,7 +690,7 @@ Devto = ""
 Gitea = ""
 XMPP = ""
 Matrix = ""
-Bilibili = ""
+Bilibili = "237076"
 ORCID = ""
 Liberapay = ""
 Ko-Fi = ""
@@ -713,7 +713,7 @@ Feishu = ""
 TryHackMe = ""
 Phone = ""
 Email = "i@clearsky.me"
-RSS = true
+RSS = false
 
 #  文章页面配置
 [params.page]
