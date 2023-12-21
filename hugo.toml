@@ -1170,7 +1170,7 @@ height = "2px"
 #  页面加载期间顶部的进度条
 # 有关详细信息：https://github.com/CodeByZach/pace
 [params.pace]
-enable = true
+enable = false
 # 所有可用颜色：
 # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
 color = "blue"
