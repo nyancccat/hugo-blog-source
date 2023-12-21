@@ -455,7 +455,7 @@ let fpsEl = document.querySelector("#fps");
 //显示帧率数值到界面上
 function renderFps(fps) {
     let r = getRandomNumber(-5, 5);
-    fpsEl.textContent =`${fps + r} fps`;
+    fpsEl.textContent = `${fps + r} fps`;
 }
 //开始执行
 
