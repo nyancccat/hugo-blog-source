@@ -61,8 +61,14 @@ comment: false
 ## 联系方式
 
 {{< admonition type=tip title="联系方式" open=true >}}
-极少使用即时通讯软件与陌生人交流，原因可以看看知乎上的这个问答：[为什么很多人用电子邮件交流，而不是即时通讯软件（如 QQ 、MSN 等）？](https://www.zhihu.com/question/20409003)
 
-看完了，那么我的邮箱主页可以找到。
+~~不太使用即时通讯软件与陌生人交流，原因可以看看知乎上的这个问答：[为什么很多人用电子邮件交流，而不是即时通讯软件（如 QQ 、MSN 等）？](https://www.zhihu.com/question/20409003)~~
+
+以前我信奉上面这点，用邮件沟通，但是在这个年代好像大家还是比较喜欢~~即时~~即食快餐，或许时代变了，或许是两者本来都有着不一样的使用场景，所以无所谓啦，你可以选择下面任意方式联系我。
+
+TG: [@pagezen](https://t.me/pagezen)
+
+E-MAIL: `aUBjbGVhcnNreS5tZWlAY2xlYXJza3kubWU=` (base 64)
+
 {{< /admonition >}}
 
