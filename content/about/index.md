@@ -6,7 +6,8 @@ comment: false
 ## 关于我
 
 {{< admonition type=abstract title="关于我" open=true >}}
-<img src='/avatar.jpg' align='right' style=' width:100px;height:100px'/>
+
+<img src='/avatar.jpg' align='right' style=' width:100px;height:100px;border-radius:6px;'/>
 
 80 后，男，已婚，育有一子。
 
@@ -20,6 +21,7 @@ comment: false
 ## 关于这里
 
 {{< admonition type=note title="建站记录" open=false >}}
+
 2005 – 2009 年大学期间，沉迷网络，网吧通宵的时候误入一个讨论免费虚拟主机的论坛，[Google](https://google.com) 了半天，终于上传了一个 index.html，从此混迹于各种资源论坛，学到很多，但学得很杂，半吊子水平。
 
 2009 年大学毕业，删除所有免费虚拟主机的数据，注册域名 ~~LLT.NAME~~ 用 [WordPress](https://wordpress.com/) 搭建了这里，大多是胡言乱语。
@@ -45,6 +47,7 @@ comment: false
 2022 年，未来在继续。。。
 
 2023 年，未来还在继续。。。
+
 {{< /admonition >}}
 
 {{< admonition type=info title="免责声明" open=true >}}
@@ -52,10 +55,15 @@ comment: false
 请注意，这是个人站点，在这里发表的评论将被记录，所以请不要张贴任何隐私的信息，并且发表言论请遵守中华人民共和国及其它国家和地区的相关法律法规。
 
 本站可能存在引用、摘录或转载来自第三方的文字、图片、视频等内容，使用这些第三方内容是出于传递更多信息之目的，并不意味着赞同其观点或认可其真实性。亦不保证内容的准确性、安全性和完整性，请您在阅读、下载及使用过程中自行确认，本站亦不承担上述资源对您或您的网站造成的任何形式的损失或伤害。
+
 {{< /admonition >}}
 
 {{< admonition type=warning title="版权声明" open=true >}}
-除特殊声明外，本站遵循 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 协议。您可以自由地共享以及演绎，但是必须署名并以相同方式共享。
+
+除特殊声明外，本站遵循 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 协议。
+
+您可以自由地共享以及演绎，但是必须署名并以相同方式共享。
+
 {{< /admonition >}}
 
 ## 联系方式
