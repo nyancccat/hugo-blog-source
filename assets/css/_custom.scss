@@ -2,18 +2,7 @@
 // Custom style
 // 自定义样式
 // ==============================
-.single,
-.home-profile {
-    background-color: $global-background-color;
-    opacity: 0.86;
-    padding: 10px;
 
-    [data-theme="dark"] & {
-        background: $global-background-color-dark;
-        opacity: 0.86;
-        padding: 10px;
-    }
-}
 
 html {
     font-display: swap;
@@ -30,6 +19,19 @@ body {
 .single .post-meta {
     color: #4d4d4d;
 }
+.single,
+.home-profile {
+    background-color: $global-background-color;
+    opacity: 0.86;
+    padding: 10px;
+
+    [data-theme="dark"] & {
+        background: $global-background-color-dark;
+        opacity: 0.86;
+        padding: 10px;
+    }
+}
+
 .home-profile {
     background: url("../background.svg"), hsl(50, 100%, 99%) center;
     transition: background ease 0.2s, color ease 0.2s;
@@ -123,6 +125,14 @@ footer .footer-container .footer-line .fixit-icon {
 }
 .single .content p .text-secondary {
     text-indent: initial;
+}
+
+.single .content kbd {
+    text-indent: initial;
+    line-height: 1.6rem;
+    font-weight: bold;
+    box-shadow: inset 0 -5px 0 #f0f0f0;
+    background-color: rgb(247, 247, 247);
 }
 
 // AI摘要
