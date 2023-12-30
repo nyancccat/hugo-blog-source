@@ -26,7 +26,7 @@ comment: false
 
 2009 年大学毕业，删除所有免费虚拟主机的数据，注册域名 ~~LLT.NAME~~ 用 [WordPress](https://wordpress.com/) 搭建了这里，大多是胡言乱语。
 
-2010 – 2011 年，长期不更新，停掉了，数据备份在邮箱。
+2010 – 2011 年，长期不更新，把网站停掉了，数据备份在邮箱。
 
 2012 – 2013 年，某个值班晚上心血来潮翻出邮箱备份的数据，注册域名 CLEARSKY.ME 重新搭建这里，程序由 [WordPress](https://wordpress.com/) 换成 [Typecho](https://typecho.org/)，同时把虚拟主机换成 VPS。
 
