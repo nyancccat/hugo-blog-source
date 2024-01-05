@@ -403,21 +403,7 @@ runtime();
 // });
 
 // FPS 帧
-// let fpsPanel = document.createElement("div");
-// fpsPanel.setAttribute("id", "fps");
-// fpsPanel.style.position = "fixed";
-// fpsPanel.style.right = "1px";
-// fpsPanel.style.top = "13px";
-// fpsPanel.style.color = "red";
-// fpsPanel.style.zIndex = 10000;
-// fpsPanel.style.fontSize = "11px";
-// fpsPanel.style.fontWeight = 900;
-// fpsPanel.style.marginRight = "10px";
-// fpsPanel.style.borderRadius = "10px";
-// fpsPanel.style.border = "1px solid black";
-// fpsPanel.style.padding = "2px";
 
-// fpsPanel.style.borderBottom = '1px solid pink';
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
