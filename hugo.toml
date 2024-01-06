@@ -764,7 +764,7 @@ linkToSource = true
 #  是否在 RSS 中显示全文内容
 rssFullText = false
 # FixIt 0.3.0 | 新增 是否显示编辑文章的链接
-linkToEdit = true
+linkToEdit = false
 # FixIt 0.3.0 | 新增 是否显示报告文章问题的链接
 linkToReport = true
 #  页面样式 ["narrow", "normal", "wide", ...]
