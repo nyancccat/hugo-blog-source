@@ -1,0 +1,162 @@
+{{- if ne .Site.Params.footer.enable false -}}
+  <footer class="footer">
+    <div class="footer-container">
+      {{- /* Custom Content */ -}}
+      {{- partial (.Scratch.Get "customFilePath").footer . -}}
+
+      {{- /* Hugo and FixIt */ -}}
+      {{- if ne .Site.Params.footer.hugo false -}}
+        <div class="footer-line powered{{ with .Site.Params.footer.order.powered }} order-{{ . }}{{ end }}">
+          {{- $hugo := printf `<a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo %v">Hugo</a>` hugo.Version -}}
+          {{- $theme := printf `<a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt %v"><img class="fixit-icon" src="%v" alt="FixIt logo" />&nbsp;FixIt</a>`
+            (.Scratch.Get "version")
+            (resources.Get "fixit.svg" | minify).RelPermalink
+          -}}
+          {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
+          | 托管于 <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
+          | 感谢 <a title="BlogCDN" href="https://blog.tanglu.me/blogcdn/" target="_blank" rel="noopener noreffer">BlogCDN</a> 防护
+        </div>
+      {{- end -}}
+      {{- if .Site.Params.footer.copyright | or .Site.Params.footer.author | or .Site.Params.footer.license -}}
+        <div class="footer-line copyright{{ with .Site.Params.footer.order.copyright }} order-{{ . }}{{ end }}" itemscope itemtype="http://schema.org/CreativeWork">
+          {{- /* Copyright year */ -}}
+          {{- if ne .Site.Params.footer.copyright false -}}
+            <a href="https://ipw.cn/ssl/?site=clearsky.me" title="本站支持SSL安全访问" target='_blank' class="icon_ip" rel="noopener noreferrer">SSL</a>
+            {{ dict "Class" "fa-regular fa-copyright fa-fw" | partial "plugin/icon.html" }}
+            {{ with .Site.Params.footer.since -}}
+              <span itemprop="copyrightYear">
+                {{- if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year -}}
+              </span> | 
+            {{- else -}}
+              <span itemprop="copyrightYear">{{ now.Year }}</span>
+            {{- end -}}
+          {{- end -}}
+
+          {{- /* Author */ -}}
+          {{- if ne .Site.Params.footer.author false -}}
+            <span class="author" itemprop="copyrightHolder">
+              {{ partial "plugin/link.html" (dict "Destination" ($.Site.Params.author.link | default .Site.Home.RelPermalink) "Content" .Site.Params.author.name) -}}
+            </span>
+          {{- end -}}
+
+          {{- /* License */ -}}
+          {{- with .Site.Params.footer.license -}}
+            <span class="license footer-divider">{{ . | safeHTML }}</span>
+          {{- end -}}
+        </div>
+      {{- end -}}
+
+      {{- $siteTime := .Scratch.Get "siteTime" -}}
+      {{- if $siteTime.enable | or .Site.Params.footer.wordCount -}}
+        <div class="footer-line statistics{{ with .Site.Params.footer.order.statistics }} order-{{ . }}{{ end }}">
+          {{- if $siteTime.enable | and $siteTime.value -}}
+            {{- with $siteTime -}}
+              <span class="site-time" title='{{ T "footer.siteRunning" }}'>
+                {{- $siteTimeIcon := printf (cond .Animate "%v fa-fw animate-icon" "%v fa-fw") .Icon -}}
+                {{- dict "Class" $siteTimeIcon | partial "plugin/icon.html" -}}
+                {{- with .Pre -}}<span class="ms-1 d-none">{{ . }}</span>{{- end -}}
+                {{- printf `<span class="run-times ms-1">%v</span>` (T "footer.siteRunning") | safeHTML -}}
+              </span>
+         
+            {{- end -}}
+          {{- end -}}
+        </div>
+      {{- end -}}
+
+      {{- /* 不蒜子 */ -}}
+      {{- if eq .Site.Params.ibruce.enable true -}}
+        {{- $loading := dict "Class" "fa-solid fa-spinner fa-spin fa-fw" | partial "plugin/icon.html" -}}
+        <div class="footer-line visitor{{ with .Site.Params.footer.order.visitor }} order-{{ . }}{{ end }}">
+          <span id="busuanzi_container_site_uv" title='{{ T "footer.siteUV" }}'>
+            {{- dict "Class" "fa-regular fa-user fa-fw" | partial "plugin/icon.html" -}}&nbsp;<span id="busuanzi_value_site_uv">{{ $loading }}</span>{{- /* NO_SPACING */ -}}
+          </span>
+          {{- /* NO_SPACING */ -}}
+          <span id="busuanzi_container_site_pv" class="footer-divider" title='{{ T "footer.sitePV" }}'>
+            {{- dict "Class" "fa-regular fa-eye fa-fw" | partial "plugin/icon.html" -}}&nbsp;<span id="busuanzi_value_site_pv">{{ $loading }}</span>{{- /* NO_SPACING */ -}}
+          </span>
+        </div>
+      {{- end -}}
+      
+      {{- if .Site.Params.footer.gov | or .Site.Params.footer.icp -}}
+        <div class="footer-line beian{{ with .Site.Params.footer.order.beian }} order-{{ . }}{{ end }}">
+          {{- /* GOV */ -}}
+          {{- with .Site.Params.footer.gov -}}
+            <span class="gov">{{ . | safeHTML }}</span>
+          {{- end -}}
+
+          {{- /* ICP */ -}}
+          {{- with .Site.Params.footer.icp -}}
+            <span class="icp footer-divider">{{ . | safeHTML }}</span>
+          {{- end -}}
+        </div>
+      {{- end -}}
+    </div>
+  </footer>
+  <!-- Live2D，网页上的小人，可以修改live2d_config.js来修改模型，模型都在static/live2d_models里面 -->
+<!-- 你也可以把js文件下载下来，放到static/js/目录下，就不依赖别人的服务了 -->
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.0.min.js"></script>
+
+<script type="text/javascript">
+    L2Dwidget.init({
+        model: {
+            scale: 1,
+            hHeadPos: 0.5,
+            vHeadPos: 0.618,
+            jsonPath: 'https://unpkg.com/live2d-widget-model-hijiki@1.0.5/assets/hijiki.model.json',       // xxx.model.json 的路径,换人物修改这个
+        },
+        display: {
+            superSample: 1,     // 超采样等级
+            width: 180,         // canvas的宽度
+            height: 390,        // canvas的高度
+            position: 'left',   // 显示位置：左或右
+            hOffset: 100,         // canvas水平偏移
+            vOffset: -60,         // canvas垂直偏移
+        },
+        mobile: {
+            show: false,         // 是否在移动设备上显示
+            scale: 1,           // 移动设备上的缩放
+            motion: true,       // 移动设备是否开启重力感应
+        },
+        react: {
+            opacityDefault: 1,  // 默认透明度
+            opacityOnHover: 1,  // 鼠标移上透明度
+        },
+     });
+</script> -->
+<script>
+  // 自定义 meting_api
+  var meting_api='https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&auth=:auth&r=:r';
+  
+  // 随机文章
+function randomPost() {
+    fetch('/sitemap.xml').then(res=>res.text()).then(str=>(new window.DOMParser()).parseFromString(str, "text/xml")).then(data=>{
+        let ls = data.querySelectorAll('url loc');
+        let locationHref, locSplit;
+        do {
+            locationHref = ls[Math.floor(Math.random() * ls.length)].innerHTML
+            locSplit = locationHref.split('/')[3] || ''
+        } while (locSplit == '' || locSplit == 'tags' || locSplit == 'posts'|| locSplit == 'categories'|| locSplit == 'friends'|| locSplit == 'toot'|| locSplit == 'about');
+        location.href = locationHref
+    }
+    )
+
+}
+//浏览器全屏
+function tofullScreen() {
+    var element = document.documentElement;
+    if (element.requestFullscreen) {
+        element.requestFullscreen();
+    } else if (element.msRequestFullscreen) {
+        element.msRequestFullscreen();
+    } else if (element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+    } else if (element.webkitRequestFullscreen) {
+        element.webkitRequestFullscreen();
+    }
+}
+</script>
+
+<!-- 统计代码 -->
+<script async src="https://umami.clearsky.me/script.js" data-website-id="c2c97a31-a5b3-4874-9d53-738db148ad73"></script>
+{{- end -}}

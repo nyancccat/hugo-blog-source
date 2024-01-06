@@ -418,8 +418,9 @@ description = "这是我的博客，记录一些学习过程及生活感悟等"
 keywords = ["晴空小筑", "clearsky.me"]
 # 网站默认主题样式 ["light", "dark", "auto"]
 defaultTheme = "auto"
+# 0.3 删除合并
 # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
-gitRepo = "https://github.com/nyancccat/hugo-blog-source"
+# gitRepo = "https://github.com/nyancccat/hugo-blog-source"
 #  哪种哈希函数用来 SRI, 为空时表示不使用 SRI
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint = ""
@@ -431,6 +432,18 @@ images = ["/logo.png"]
 enablePWA = false
 #  是否自动显示外链图标
 externalIcon = true
+# FixIt 0.3.0 | 新增 是否反转导航菜单的顺序
+navigationReverse = false
+# FixIt 0.3.0 | 新增 是否在每个页面标题中添加网站标题
+# 请记得在 `hugo.toml` 中设置网站标题 (例如 title = "title")
+withSiteTitle = true
+# FixIt 0.3.0 | 新增 当网站标题被添加到每个页面标题时的标题分隔符
+titleDelimiter = "-"
+# FixIt 0.3.0 | 新增 是否在主页标题中添加网站副标题
+# 请记得通过 `params.header.subtitle.name` 设置网站副标题
+indexWithSubtitle = false
+
+
 #  默认情况下，FixIt 只会在主页的 HTML 头中注入主题元标记
 # 您可以将其关闭，但如果您不这样做，我们将不胜感激，因为这是观察 FixIt 受欢迎程度上升的好方法
 disableThemeInject = false
@@ -441,11 +454,17 @@ name = "pagezen"
 email = "theqee@gmail.com"
 link = "http://clearsky.me/"
 avatar = "/avatar.jpg"
-# [author]
-# name = "pagezen"
-# email = "theqee@gmail.com"
-# link = "http://clearsky.me/"
-# avatar = "/avatar.jpg"
+
+[params.gitInfo]
+# 公共 Git 仓库信息，仅在 enableGitInfo 设为 true 时有效
+# e.g. "https://github.com/hugo-fixit/docs"
+repo = "https://github.com/nyancccat/hugo-blog-source"
+branch = "main"
+# the content directory path relative to the root of the repository
+dir = "content"
+# the issue template for reporting issue of the posts
+# available template params: {title} {URL} {sourceURL}
+issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
 #  应用图标配置
 [params.app]
@@ -740,8 +759,14 @@ fontawesome = true
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 # 是否在文章页面显示原始 Markdown 文档链接
 linkToMarkdown = true
+# FixIt 0.3.0 | 新增 是否显示查看文章源码的链接
+linkToSource = true
 #  是否在 RSS 中显示全文内容
 rssFullText = false
+# FixIt 0.3.0 | 新增 是否显示编辑文章的链接
+linkToEdit = true
+# FixIt 0.3.0 | 新增 是否显示报告文章问题的链接
+linkToReport = true
 #  页面样式 ["narrow", "normal", "wide", ...]
 pageStyle = "normal"
 #   强制使用 Gravatar 作为作者头像
@@ -757,7 +782,10 @@ readingTime = true
 endFlag = " ------------- 文章结束，感谢您的阅读。 ------------- "
 #  是否开启即时页面
 instantPage = true
-
+# FixIt 0.3.0 | 新增 是否在侧边栏显示集合列表
+collectionList = false
+# FixIt 0.3.0 | 新增 是否在文章末尾显示集合导航
+collectionNavigation = false
 #  转载配置
 [params.page.repost]
 enable = false
@@ -781,6 +809,20 @@ reminder = 90
 warning = 180
 # 如果文章到期是否关闭评论
 closeComment = false
+
+[params.page.heading]
+# 配合 `markup.tableOfContents.ordered` 参数使用
+[params.page.heading.number]
+# 是否启用自动标题编号
+enable = false
+[params.page.heading.number.format]
+h1 = "{title}"
+h2 = "{h2} {title}"
+h3 = "{h2}.{h3} {title}"
+h4 = "{h2}.{h3}.{h4} {title}"
+h5 = "{h2}.{h3}.{h4}.{h5} {title}"
+h6 = "{h2}.{h3}.{h4}.{h5}.{h6} {title}"
+
 #  代码配置
 [params.page.code]
 # 是否显示代码块的复制按钮
@@ -790,12 +832,12 @@ edit = true
 # 默认展开显示的代码行数
 maxShownLines = 80
 #  文章编辑
-[params.page.edit]
-enable = true
+# [params.page.edit]
+# enable = true
 #  编辑的基础链接
 # url = "/edit/branch-name/subdirectory-name" # 相对于 `params.gitRepo`
 # url = "https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name" # 完整链接
-url = "/edit/master/content"
+# url = "/edit/master/content"
 #  KaTeX 数学公式 (https://katex.org)
 [params.page.math]
 enable = false
@@ -825,6 +867,17 @@ geolocate = true
 scale = true
 # 是否添加 FullscreenControl
 fullscreen = true
+
+# FixIt 0.3.0 | 新增 [试验性功能] 缓存图床图片到本地，详见：https://github.com/hugo-fixit/FixIt/pull/362
+[params.page.cacheRemoteImages]
+enable = false
+# 用本地图片链接替换远程图片链接 (放置在 public/images/remote/)
+replace = false
+# FixIt 0.3.0 | 新增 相关内容配置 (https://gohugo.io/content-management/related/)
+[params.page.related]
+enable = false
+count = 5
+
 #  赞赏设置
 [params.page.reward]
 enable = false
@@ -1282,8 +1335,30 @@ suffixes = ["txt"]
 mediaType = "text/markdown"
 isPlainText = true
 isHTML = false
-#  用于输出 baidu_urls.txt 文件的设置
-[outputFormats.BaiduUrls]
+# FixIt 0.3.0 | 新增 用于输出 /archives/index.html 文件的设置
+[outputFormats.archives]
+path = "archives"
+baseName = "index"
+mediaType = "text/html"
+isPlainText = false
+isHTML = true
+permalinkable = true
+# FixIt 0.3.0 | 新增 用于输出 /offline/index.html 文件的设置
+[outputFormats.offline]
+path = "offline"
+baseName = "index"
+mediaType = "text/html"
+isPlainText = false
+isHTML = true
+permalinkable = true
+# FixIt 0.3.0 | 新增 用于输出 readme.md 文件的设置
+[outputFormats.README]
+baseName = "readme"
+mediaType = "text/markdown"
+isPlainText = true
+isHTML = false
+# FixIt 0.3.0 | 更改 用于输出 baidu_urls.txt 文件的设置
+[outputFormats.baidu_urls]
 baseName = "baidu_urls"
 mediaType = "text/plain"
 isPlainText = true
@@ -1291,7 +1366,7 @@ isHTML = false
 
 #  用于 Hugo 输出文档的设置
 [outputs]
-home = ["HTML", "RSS", "JSON", "BaiduUrls"]
+home = ["HTML", "RSS", "JSON", "archives", "offline"]
 page = ["HTML", "MarkDown"]
 section = ["HTML", "RSS"]
 taxonomy = ["HTML"]

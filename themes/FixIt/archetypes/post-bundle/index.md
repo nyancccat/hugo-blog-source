@@ -2,6 +2,7 @@
 title: {{ replace .TranslationBaseName "-" " " | title }}
 subtitle:
 date: {{ .Date }}
+slug: {{ substr .File.UniqueID 0 7 }}
 draft: true
 author:
   name:
@@ -20,6 +21,7 @@ categories:
 hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRss: false
+hiddenFromRelated: false
 summary:
 resources:
   - name: featured-image

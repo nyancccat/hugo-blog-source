@@ -20,6 +20,9 @@ noscript = ""
 # === baseof ===
 
 # === Taxonomy ===
+[archives]
+other = ""
+
 [allSome]
 other = "Все {{ .Some }}"
 
@@ -28,6 +31,12 @@ other = "Категория"
 
 [categories]
 other = "Категории"
+
+[collection]
+other = ""
+
+[collections]
+other = ""
 
 [tag]
 other = "Тэг"
@@ -44,6 +53,10 @@ other = "Статьи"
 recentlyUpdated = "Недавно обновленные"
 
 [section.totalWordCount]
+one = ""
+other = ""
+
+[section.archiveCounter]
 one = ""
 other = ""
 # === Section ===
@@ -82,8 +95,6 @@ searchPlaceholder = "Поиск заголовков или содержимог
 clear = "Очистить"
 cancel = "Отменить"
 noResultsFound = "Результатов не найдено"
-lunrLanguageCode = "ru"
-lunrLanguageLib = "lib/lunr/lunr.ru.js"
 copyToClipboard = "Копировать в буфер обмена"
 editLockTitle = "Заблокировать редактируемый кодовый блок"
 editUnLockTitle = "Разблокировать редактируемый блок кода"
@@ -99,16 +110,18 @@ other = "Поделиться в"
 
 # === posts/single.html ===
 [single]
-contents= "Содержание"
-repost= ""
-publishedOnDate= "Опубликовано {{ .Date }}"
-includedInCategories= "включен в {{ .Categories }}"
+contents = "Содержание"
+pin = ""
+repost = ""
+publishedOnDate = "Опубликовано {{ .Date }}"
 views = "просмотров"
 comments = "комментариев"
 author = "Автор"
 updatedOnDate = "Oбновлена {{ .Date }}"
 readMarkdown = "Читать Markdown"
+viewSource = ""
 editThisPage = "Редактировать эту страницу"
+reportIssue = ""
 back = "Назад"
 home = "Домой"
 readMore = "Читать больше"
@@ -117,6 +130,12 @@ encryptedAbstract = ""
 encryptedMessage = ""
 password = "арготизм"
 encryptyAgain = ""
+relatedContent = "Связанный контент"
+
+[single.includedIn]
+categories = "включен в {{ .Categories }}"
+collections = "включен в {{ .Collections }}"
+both = "включен в {{ .Categories }} и {{ .Collections }}"
 
 [single.wordCount]
 one = "Одно слово"

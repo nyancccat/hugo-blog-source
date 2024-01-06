@@ -1,7 +1,7 @@
 # FixIt 主题 | Hugo
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/hugo-fixit/FixIt?style=flat)](https://github.com/hugo-fixit/FixIt/releases)
-[![Hugo](https://img.shields.io/badge/Hugo-%5E0.110.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
+[![Hugo](https://img.shields.io/badge/Hugo-%5E0.112.0-ff4088?style=flat&logo=hugo)](https://gohugo.io/)
 [![License](https://img.shields.io/github/license/hugo-fixit/FixIt?style=flat)](/LICENSE)
 
 👉 [English README](README.md) | 简体中文说明
@@ -33,7 +33,7 @@ FixIt 主题继承了这些主题的优秀功能，并在此基础上添加了�
 
 如果你现在正在使用 LoveIt 主题（或者一些其他的主题），你可以很容易地迁移至 FixIt。
 
-你可以将这个主题仓库添加为你的网站目录的子模块。或者，您可以通过 [其他方式](https://fixit.lruihao.cn/zh-cn/documentation/basics/#install-theme) 安装主题。
+你可以将这个主题仓库添加为你的网站目录的子模块。或者，你可以通过 [其他方式](https://fixit.lruihao.cn/zh-cn/documentation/basics/#install-theme) 安装主题。
 
 ```bash
 git submodule add https://github.com/hugo-fixit/FixIt.git themes/FixIt
@@ -115,7 +115,7 @@ FixIt 主题继承了 LoveIt 等主题的优秀功能，并在它们的基础上
 - 支持**二级菜单**
 - 支持**内容加密**（页面、局部）
 - 支持**友情链接**的页面模板
-- 支持基于 [Lunr.js](https://lunrjs.com/) 或 [algolia](https://www.algolia.com/) 或 [Fuse.js](https://fusejs.io/) 的**搜索**
+- 支持基于 [algolia](https://www.algolia.com/) 或 [Fuse.js](https://fusejs.io/) 的**搜索**
 - 支持 **Twemoji**
 - 支持**代码高亮**
 - 一键**复制代码**到剪贴板
@@ -174,7 +174,7 @@ FixIt 支持下列语言：
 
 确保在贡献和参与讨论时遵守 [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)。
 
-**贡献时，请先通过此存储库上的问题讨论您希望进行的更改，然后再进行实际更改**。
+**贡献时，请先通过此存储库上的问题讨论你希望进行的更改，然后再进行实际更改**。
 
 ## [所有贡献者](contributors.md)
 
@@ -192,7 +192,6 @@ FixIt 支持下列语言：
 - [Simple Icons](https://github.com/simple-icons/simple-icons)
 - [Animate.css](https://daneden.github.io/animate.css/)
 - [autocomplete-js](https://github.com/algolia/autocomplete)
-- [Lunr.js](https://lunrjs.com/)
 - [algoliasearch](https://github.com/algolia/algoliasearch-client-javascript)
 - [Fuse.js](https://fusejs.io/)
 - [object-fit-images](https://github.com/fregante/object-fit-images)
