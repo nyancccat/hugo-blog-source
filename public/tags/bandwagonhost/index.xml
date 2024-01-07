@@ -1,0 +1,24 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>BandwagonHost - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/bandwagonhost/</link>
+    <description>BandwagonHost - 标签 | 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Fri, 16 Jun 2017 23:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/bandwagonhost/" rel="self" type="application/rss+xml" /><item>
+  <title>入了个年付 $19.99 搬瓦工 VPS</title>
+  <link>https://clearsky.me/fuck-bandwagonhost-again/</link>
+  <pubDate>Fri, 16 Jun 2017 23:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/fuck-bandwagonhost-again/</guid>
+  <description><![CDATA[1 序言本来没想买，一直部署在 coding 挺好的，省事，这两天看到 @skywing 换了 VPS，或许是很久不碰这种东西，手痒，还是入了个 搬瓦工 来玩玩。不过估计没多少时间来折腾了，破事多，时间不允许。简单就这样说下吧。 2 购买配置买的是最便宜的那款 10G VPS，架构方案当然选 KVM （可以锐速、BBR之类），六个机房可选（洛杉矶直连、洛杉矶MC、纽约、佛利蒙、凤凰城、荷兰、佛罗里达）月付 2.99 刀，年付 19.99 刀，使用 6% 优惠码 BWH1ZBPVK 之后 18.79 刀，按今日汇率折合人民币 128.53 元 ，简单贴下： 简单参数 值 SSD RAID-10 Space 10 GB SSD ECC RAM 512 MB Bandwidth 500 GB CPU 1x Intel Xeon Network 1 Gigabit Order KVM √ Monthly Price $2.99 pay-banwagong 3 简单测试默认系统 CentOS 6.8 开启了 BBR，用秋大的 一键测试脚本bench.sh 测试一下，貌似有点挫。。。 1 2 3 4 5 6 7]]></description>
+</item>
+<item>
+  <title>搬家到 Bandwagonhost</title>
+  <link>https://clearsky.me/move-to-bandwagonhost/</link>
+  <pubDate>Sun, 10 Aug 2014 20:29:39 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/move-to-bandwagonhost/</guid>
+  <description><![CDATA[这货限制CPU太严格了，安装环境编译过程中超限制被锁定的话，速度简直龟速，入手需谨慎！ 又换地方了，原来的VPS近段时间，特别是晚上，实在是抽得不行了。 后台管理面板reboot后居然无法启动了，发了TK，客服半天不鸟我，算了，反正还有2个月就到期了，懒得续费了，换一个好了。 这次换的还是年付的VPS，Bandwagonhost（俗称的搬瓦工）的5G PROMO v2这款，配置如下： 项目 参数 CPU 1 cores vSWAP 64MB 内存 512MB 月流量 500GB/1Gbps 硬盘 5 GB (SSD) KiwiVM 1IP 价格9.99美刀一年，配置较低，反正是够我用了。就扔个Wordpress，搭个梯子出墙，不折腾。 机房在凤凰城，速度嘛，一般，不快也不算慢，还行，只求稳定就行。管理面板是kiwiVM，第一]]></description>
+</item>
+</channel>
+</rss>

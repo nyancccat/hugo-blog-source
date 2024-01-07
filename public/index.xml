@@ -1,0 +1,90 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>晴空小筑</title>
+    <link>https://clearsky.me/</link>
+    <description>这是我的博客，记录一些学习过程及生活感悟等</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Thu, 14 Dec 2023 16:04:40 &#43;0800</lastBuildDate>
+      <atom:link href="https://clearsky.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+  <title>自建 VaultWarden 密码管理器</title>
+  <link>https://clearsky.me/vaultwarden/</link>
+  <pubDate>Thu, 14 Dec 2023 16:04:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/vaultwarden/</guid>
+  <description><![CDATA[1 起因这么多年上网，注册的网站不少，为了密码安全懒得敲键盘，一直使用 LastPass 来管理密码，配合浏览器扩展登录各类网站时候非常丝滑，用了这么多年 LastPass 也一直没怎么关注它，中间还说过收费但是我浏览器扩展一直在用也没见有什么影响，这两天闲来无事网上翻翻才知道它已经有过多次密码泄露事件了，还有，也许是我经常更换 IP 的原因，LastPass 经常要求授权验证，体验相当糟糕，于是想着换成其他的，反正这类工具大同小异，对我来说能用就行，网上搜类似服务的时候看到有人提到密码数据这么私密，为什么不掌握在自己手中，想想说的也是，刚好手头上有一台闲置的 VPS 吃灰好久了，于是打算拿来自建一个密码管理器使用。 2 需求 自托管控制：能够保持对密]]></description>
+</item>
+<item>
+  <title>简单记录 Redis 安装</title>
+  <link>https://clearsky.me/redis-install/</link>
+  <pubDate>Tue, 15 Nov 2022 21:17:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/redis-install/</guid>
+  <description><![CDATA[1 Redis 简介 Redis 是什么？ REmote DIctionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。 Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。 Redis 通常被称为数据结构服务器，因为值（value）可以是字符串(String)、哈希(Hash)、列表(list)、集合(sets)和有序集合(sorted sets)等类型。 Redis 的特点 性能极高 – Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s。 丰富的数据类型 – Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。 原子 – Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个]]></description>
+</item>
+<item>
+  <title>GitHub Action 自动部署 Hugo 到 GitHub Pages</title>
+  <link>https://clearsky.me/github-action-auto-build-deploy/</link>
+  <pubDate>Thu, 29 Sep 2022 19:17:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/github-action-auto-build-deploy/</guid>
+  <description><![CDATA[1 原因自从换到 Hugo 以来，都是本地运行 Hugo 命令生成生成静态网页 .public目录，然后推送到 GitHub Pages 项目仓库，感觉每次发布还要切换目录来上一堆 Git 操作： 1 2 3 4 git add . git status git commit -m &#34;xxx&#34; git push 略为繁琐，虽然这几行命令可以写个脚本简化一下，但是只推送.public目录没有办法对本地源文件进行备份和版本管理，于是决定把源文件推送到仓库，触发 Github Action 构建生成静态文件。 2 配置 GitHub Action没有在原来项目上新建分支，而是新建了一个仓库用来管理源文件，Github Action 触发后生成静态文件推到原来的 GitHub Pages 项目。在这之前，需要在新建项目仓库设置下验证 key , 具体仓库页面 Settings - secrets - Actions - New Repository secrets 设置一下私钥就好了。 注意 名称注意和下面要设置的 workflows 配置一样，]]></description>
+</item>
+<item>
+  <title>很久没更新了</title>
+  <link>https://clearsky.me/long-time-no-update/</link>
+  <pubDate>Thu, 28 Jul 2022 22:48:26 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/long-time-no-update/</guid>
+  <description><![CDATA[今天 NAME.COM 发来邮件，提醒我域名该续费了，我才记得这里已经很久很久没有更新了，看了一眼上次最后一次文章日期，居然已经是快是 4 年前了。 这差不多快 4 年的时间里，发生了太多太多的事情，以至于我坐在电脑前，脑中闪过这些年来发生的事情的画面，一时间不知道写些什么。 Time 2019 迷茫了一整年，2020 年和女朋友领了结婚证，2021 年办了婚礼，2022 年奶奶离世，孩子明年即将出生，喜与悲，生与死，在这些年里也算统统经历过。 年纪越大，越相信世界上最永恒的幸福就是平凡，人生中最长久的拥有就是珍惜，特别是近 3 年的疫情下，看过太多太多魔幻新闻，就越珍惜现在这种每天回家开开心心和家人一起吃饭的日子。 这些年工作很忙，休息的时间惰性就上]]></description>
+</item>
+<item>
+  <title>淘了一套太豪 PBT 奶酪绿键帽</title>
+  <link>https://clearsky.me/taihao-keycaps/</link>
+  <pubDate>Thu, 27 Dec 2018 20:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/taihao-keycaps/</guid>
+  <description><![CDATA[1 起因3 年前，买了一把 Filco 忍者 87 二代侧刻青轴 键盘，这些年用下来打字真心舒服。发这篇文章的时候看了一下这把键盘的近期价格，好像都没怎么降价，甚至有点小涨，有点惊讶。不过原装键帽是 ABS 材质，长期使用打油是避免不了的。于是想着换一套 PBT 的。 2 关于键帽的材质一般常用的有3种： ABS / PBT / POM 信息 ABS:丙烯腈(A)、丁二烯(B)、苯乙烯(S)三种单体的三元共聚物，比较常见的工程塑料。长期使用后磨损后表面会变得光滑，就是俗称的打油现场。 PBT：聚对苯二甲酸丁二醇酯，质地较为坚硬，耐磨损，相对 ABS 表面有颗粒感，类磨砂的感觉但又不是，说不太清楚。 POM：聚甲醛，质地也较为坚硬及耐磨，但是表面较为光滑，但是又不像 ABS 键帽打油]]></description>
+</item>
+<item>
+  <title>Breo isee 16 倍轻松眼部按摩仪</title>
+  <link>https://clearsky.me/breo-isee16/</link>
+  <pubDate>Mon, 24 Dec 2018 18:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/breo-isee16/</guid>
+  <description><![CDATA[1 起因4 年多前做了视力矫正手术后后一直保持比较好的用眼习惯，这些年下来视力也维持得比较好，最近玩手机玩多了，感觉眼睛比较容易累，网上学了一套眼保健操，没事经常按摩一下，感觉还挺不错，就是太麻烦了，网上看到有眼部按摩仪的推荐，于是狗东 429 元下单买了一个。 京东 isee16 2 Breo isee 16上面是官方页面说的功能介绍： 信息 智能气压：11 处按摩点配合 60Kpa 气动力，对眼周肌肉进行多段仿手按摩，按摩覆盖了:印堂穴明穴、承泣穴、瞳子髎穴鱼腰穴、丝竹三天阳穴等穴位。 恒温热敷：温和的 42℃，像热毛巾一般的温热敷双目舒缓疲劳的眼周肌肉，非常舒适。 微频震动：微微一震很“倾城”，双动力驱动高频震动规律按压眼周 9 处穴位群，在放松享受间让眼睛活]]></description>
+</item>
+<item>
+  <title>Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR</title>
+  <link>https://clearsky.me/ubuntu-1804-bbr/</link>
+  <pubDate>Thu, 20 Dec 2018 20:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/ubuntu-1804-bbr/</guid>
+  <description><![CDATA[1 手贱每隔一段时间就有换 VPS 系统的坏毛病，今天看到搬瓦工后台可以直接安装 Ubuntu 18.04 了，环境管理方面这次直接用面板了，用的是宝塔面板。对于个人使用，我觉得怎么方便怎么来吧，系统的话，如果是生产环境，还是建议 CentOS。 后台安装完成后更新完系统后，安装宝塔面板： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh 2 报错 1安装失败，报错： 问题 Pillow installation failed 搜了下大致与 Python 有关，于是直接安装 python-setuptools 工具： 1 apt-get install python-setuptools 完成后再次安装，这次安装成功了，但是状态显示面板一直无法启动。 3 报错 2搜了下是 Python 版本问题，我更新后 Python 版本是 3.7，而宝塔是 Python 2 写的，不兼容。 于是移除软连接： 1 2 rm -rf /usr/bin/python ln -s /usr/bin/python2.7 /usr/bin/python 再次启动面板 1 service bt restart 看到： 1 2 3 4 Stopping Bt-Tasks... done Stopping Bt-Panel... done Starting Bt-Panel... done Starting Bt-Tasks... done 没问题了！ 4 安装]]></description>
+</item>
+<item>
+  <title>使用 CSGO Skin Changer 更换 CSGO 枪械皮肤</title>
+  <link>https://clearsky.me/csgoskinchanger/</link>
+  <pubDate>Fri, 07 Sep 2018 20:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/csgoskinchanger/</guid>
+  <description><![CDATA[偶尔打打 CSGO，中老年手残玩家，实在不好意思上各种平台受虐，偶尔开个单机打打 BOT 娱乐一下。 不是深度玩家，没必要氪金买饰品了，但是看着好多枪械皮肤挺好看，于是找到这个小软件替换下皮肤，打 BOT 的时候自娱自乐一下~ 1 CSGO Skin Changer官网 CS:GO CHANGER 页面是俄语的，点击页面最显眼的按钮就可以下载了。运行下载好的 setup.exe 文件，一路点击就弹出程序界面了： CSGO Skin Changer 界面上使用步骤一目了然，这个软件集成了两个 Skin Changer。 技巧 第一步：选择使用哪一个，建议使用 nSkinz，另外一个 FSkinChanger 我在使用中老出点问题。 第二步：点击 Start 运行游戏，不过建议运行之前修改 CSGO 游戏启动参数，加上关闭 VAC 保护参数 -insecure，还有一个是最好把游戏语言设]]></description>
+</item>
+<item>
+  <title>购买米其林车载充气泵和伟力通无线胎压监测</title>
+  <link>https://clearsky.me/michelin-4389ml-and-victon-t6ls/</link>
+  <pubDate>Wed, 30 May 2018 20:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/michelin-4389ml-and-victon-t6ls/</guid>
+  <description><![CDATA[1 起因前段时间晚上开车出去宵夜，回来的路上发现胎压监测报警了，路过洗车店让老板测了下胎压，发现左后轮胎压只有 1.8 bar了，当时天黑看不清有什么东西，也没在意，就直接让老板帮充了气让我能开回来就行了，顺带说一下，除了这个轮胎异常，其他 3 个轮胎胎压太高了，全部是 3.0 bar,全部是出厂时候的胎压，上次首保的时候我就让 4S 店把胎压放低了，估计给忘了，难怪我说怎么老感觉悬挂太硬了，亏我还顶着这么高的胎压跑了这么多次高速，让老板帮我把 4 个轮胎全部调到 2.5 bar，开回来的时候感觉和以前完全是两辆车，舒服太多了，虽然油耗会有所增加，不过无所谓了。 过了 3 天，下班回家路上胎压监测又报警了，估计还是那个轮胎，唉，肯定是扎胎]]></description>
+</item>
+<item>
+  <title>京东回收掉使用了 5 年的 Y480</title>
+  <link>https://clearsky.me/bye-y480/</link>
+  <pubDate>Tue, 29 May 2018 18:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/bye-y480/</guid>
+  <description><![CDATA[前段时间买了 惠普 (HP) 游戏本暗影精灵 3 Plus之后，我用了 5 年的老笔记本联想 Y480 终于退役了。 这台笔记本是刚工作的时候买来打游戏的，i5 酷睿 3 代，NVIDIA GeForce GT 650M 独立显卡＋Intel GMA HD 4000 集成显卡，内存我自己加到 8 G，硬盘原来是 1 TB机械硬盘，我自己后来加了一块 120G 的 SSD 做系统盘，配置在当时还可以，玩当时大部分非硬件杀手的游戏都还凑合，除了用料看起来有点搓，整体做工还算不错，这几年用它玩游戏，刷美剧，挂机下载什么的，本身我没有关机的习惯，随开随用，保养方面就连简单的拆盖清灰我也从来没做过，能坚挺这 5 年而且从来没出现过什么问题我也是挺惊讶的，本来想扔在家里做个下载机什么的，但是扔了 3 个月好像也没怎么用上过]]></description>
+</item>
+</channel>
+</rss>
