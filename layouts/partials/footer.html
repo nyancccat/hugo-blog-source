@@ -22,8 +22,8 @@
           {{- $hugo = replace $hugo "{hugoLogo}" "" -}}
           {{- $theme = replace $theme "{themeLogo}" "" -}}
           {{- dict "Hugo" $hugo "Theme" $theme | T "footer.poweredBySome" | safeHTML }}
-          | 托管于 <i class="fa-brands fa-github" style="color: rgb(225, 32, 41)" ></i> <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
-          | 感谢 <i class="fa-solid fa-bolt" style="color: rgb(217, 116, 170)"></i> <a title="BlogCDN" href="https://blog.tanglu.me/blogcdn/" target="_blank" rel="noopener noreffer">BlogCDN</a> 防护
+          | 托管 <i class="fa-brands fa-github" style="color: rgb(225, 32, 41)" ></i> <a title="Github Pages" href="https://docs.github.com/en/pages/" target="_blank" rel="noopener noreffer">GitHub Pages</a>
+          | <i class="fa-solid fa-bolt" style="color: rgb(217, 116, 170)"></i> <a title="BlogCDN" href="https://blog.tanglu.me/blogcdn/" target="_blank" rel="noopener noreffer">BlogCDN</a> 防护
         </div>
       {{- end -}}
 
