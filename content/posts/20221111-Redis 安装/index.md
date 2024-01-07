@@ -8,7 +8,7 @@ tags: ['Redis']
 categories: ['学习备忘']
 ---
 
-### Redis 简介
+## Redis 简介
 
 {{< admonition type=abstract title="Redis 是什么？" open=true >}}
 
@@ -31,7 +31,7 @@ Redis 通常被称为数据结构服务器，因为值（value）可以是字符
 
 {{< /admonition >}}
 
-### Redis 相关资源
+## Redis 相关资源
 
 Redis 官网： https://redis.io/
 
@@ -39,7 +39,7 @@ Redis 官网： https://redis.io/
 
 **Redis 官方不建议在 windows 下使用 Redis**，所以官网没有 windows 版本可以下载。虽然有微软维护的版本使用，但这里我是在 CentOS 7 下安装的。
 
-### Redis 安装
+## Redis 安装
 
 Redis 基于 C ,先安装所需要的 gcc 依赖，`root `登录 CentOS，安装依赖:
 
@@ -73,7 +73,7 @@ redis-server
 
 ![安装完成启动 Redis](redis.jpg '安装完成启动 Redis')
 
-### Redis 配置
+## Redis 配置
 
 当前目录：`redis-7.0.5` 下，配置文件为 `redis.conf`。
 
@@ -105,7 +105,7 @@ requirepass pass
 
 修改后 `:wq` 保存。
 
-### Redis 自启动
+## Redis 自启动
 
 ```bash
 vi /etc/systemd/system/redis.service
@@ -163,7 +163,7 @@ systemctl restart redis         # 重启
 systemctl status redis          # 查看状态
 ```
 
-### Redis 可视化客户端
+## Redis 可视化客户端
 
 一般用的是 Redis Desktop Manager，但是好像要自己编译。
 
