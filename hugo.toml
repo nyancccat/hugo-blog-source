@@ -578,10 +578,10 @@ icp = ""
 license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a> <a href="https://ipw.cn/ipv6webcheck/?site=clearsky.me" title="本站支持IPv6访问" target="_blank" class="icon_ip">IPv6</a>'
 
 # FixIt 0.3.0 | NEW whether to show Hugo and theme info
-[params.footer.powered]
-enable = true
-hugoLogo = false
-themeLogo = false
+# [params.footer.powered]
+# enable = false
+# hugoLogo = false
+# themeLogo = false
 
 #  网站创立时间
 [params.footer.siteTime]
