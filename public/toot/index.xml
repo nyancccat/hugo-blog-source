@@ -1,8 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-  <channel>
-    <title>嘟嘟 - ignoreerrors - 晴空小筑</title>
-    <link>https://clearsky.me/toot/</link>
-    <description>嘟嘟 - ignoreerrors | 晴空小筑</description>
-    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
-      <webMaster>theqee@gmail.com (pagezen)</webMaster><atom:link href="https://clearsky.me/toot/" rel="self" type="application/rss+xml" /></channel>
-</rss>
