@@ -14,6 +14,12 @@ enableGitInfo = true
 enableRobotsTXT = true
 relativeURLs = false
 buildDrafts = false
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+collection = "collections"
+
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
@@ -783,9 +789,9 @@ endFlag = " ------------- 文章结束，感谢您的阅读。 ------------- "
 #  是否开启即时页面
 instantPage = true
 # FixIt 0.3.0 | 新增 是否在侧边栏显示集合列表
-collectionList = false
+collectionList = true
 # FixIt 0.3.0 | 新增 是否在文章末尾显示集合导航
-collectionNavigation = false
+collectionNavigation = true
 #  转载配置
 [params.page.repost]
 enable = false
