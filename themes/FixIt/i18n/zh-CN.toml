@@ -45,6 +45,9 @@ other = "标签"
 
 [posts]
 other = "文章"
+
+[toot]
+other = "嘟嘟"
 # === Taxonomy ===
 
 # === Section ===

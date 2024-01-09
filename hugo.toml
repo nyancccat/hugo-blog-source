@@ -19,6 +19,7 @@ buildDrafts = false
 category = "categories"
 tag = "tags"
 collection = "collections"
+'toot' = "toot"
 
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
@@ -122,7 +123,7 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fas fa-book"
+icon = "fa-solid fa-feather"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
@@ -146,7 +147,7 @@ class = ""
 # 是否为草稿菜单，类似草稿页面
 draft = false
 # FixIt 0.2.16 | 新增 添加 fontawesome 图标到菜单项
-icon = "fa-solid fa-list"
+icon = "fa-solid fa-folder-tree"
 # FixIt 0.2.16 | 新增 设置菜单项类型，可选值：["mobile", "desktop"]
 type = ""
 
