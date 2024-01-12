@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>CSGO - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/csgo/</link>
+    <description>CSGO - 标签 | 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Fri, 07 Sep 2018 20:49:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/csgo/" rel="self" type="application/rss+xml" /><item>
+  <title>使用 CSGO Skin Changer 更换 CSGO 枪械皮肤</title>
+  <link>https://clearsky.me/csgoskinchanger/</link>
+  <pubDate>Fri, 07 Sep 2018 20:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/csgoskinchanger/</guid>
+  <description><![CDATA[偶尔打打 CSGO，中老年手残玩家，实在不好意思上各种平台受虐，偶尔开个单机打打 BOT 娱乐一下。 不是深度玩家，没必要氪金买饰品了，但是看着好多枪械皮肤挺好看，于是找到这个小软件替换下皮肤，打 BOT 的时候自娱自乐一下~ 1 CSGO Skin Changer官网 CS:GO CHANGER 页面是俄语的，点击页面最显眼的按钮就可以下载了。运行下载好的 setup.exe 文件，一路点击就弹出程序界面了： CSGO Skin Changer 界面上使用步骤一目了然，这个软件集成了两个 Skin Changer。 技巧 第一步：选择使用哪一个，建议使用 nSkinz，另外一个 FSkinChanger 我在使用中老出点问题。 第二步：点击 Start 运行游戏，不过建议运行之前修改 CSGO 游戏启动参数，加上关闭 VAC 保护参数 -insecure，还有一个是最好把游戏语言设]]></description>
+</item>
+</channel>
+</rss>

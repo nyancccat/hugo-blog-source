@@ -1,0 +1,64 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Hexo - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/hexo/</link>
+    <description>Hexo - 标签 | 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Wed, 23 Aug 2017 22:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/hexo/" rel="self" type="application/rss+xml" /><item>
+  <title>Hexo 使用 APlayer 插入音乐</title>
+  <link>https://clearsky.me/hexo-aplayer/</link>
+  <pubDate>Wed, 23 Aug 2017 22:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-aplayer/</guid>
+  <description><![CDATA[1 来源刚开始一直用网易云音乐官方外链播放器 iframe 方法给文章插入音乐，后来嫌不支持 https 就换成网上找到的一个外链接口，用着还可以，最近几个月一直没怎么给文章添加音乐，所以也不太关注。今天用到了才发现接口已经挂掉了，所以网上搜了一下，找到这个新方法。 方法来自 萨摩公园 的文章 「 让 Ghost 吃上 APlayer ］ 原文是用在 Ghost 上的，看了下是加载两个 js，所以用在 Hexo 上也没什么问题。 2 加载相关 JS 文件我用的是 next 主题，编辑 /themes/next/layout/_partials/ 目录下的 header.swig，引入 Aplayer.js 2018.3.28更新：添加如下代码： 1 &lt;link rel=&#34;stylesheet&#34; href=&#34;https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css&#34;&gt; 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js&#34;&gt;&lt;/script&gt; 继续编辑同目录下的 footer.swig，引入 aplayer.js 2018.3.28更新：添加如下代码： 1 &lt;script src=&#34;https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js&#34;&gt;&lt;/script&gt; 当然也可以把 js 文件保存下来，自行引入地址]]></description>
+</item>
+<item>
+  <title>Hexo 部署到搬瓦工 VPS</title>
+  <link>https://clearsky.me/hexo-deploy-to-vps/</link>
+  <pubDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-deploy-to-vps/</guid>
+  <description><![CDATA[1 环境设定 信息 搬瓦工年付最便宜 $19.99 10G VPS，KVM 架构。 VPS 操作系统 Ubuntu 16.04.2 LTS ，已开启 Gooole TCP BBR。 本地系统 Windows_NT 10.0.15063 win32 x64，已安装 Hexo 3.3.7，Node.js 版本 6.10.3。 SSH 连接管理软件 Xshell 5，本地终端 Git for Windows 2.13。 2 方案选择传说中有 2 种方案： 信息 在 VPS 安装配置 Hexo，完成后 hexo server 让它本地运行，之后通过配置 Nginx 让域名指向 http://localhost:4000 。 本地安装配置 Hexo，生成静态文件，然后 git hook 或者 rsync 这类方式部署到 VPS，Nginx 作为 Web 服务器解析。 注意 因为我以前一直是本地生成静态文件部署到 github 或者 coding 上的，显然第二种方案适合我，在这里使用的是git hook 方式部署，因为 Google 搜索出来大多是这种方式，文章多，容易解决问题。 3 安装 Git 和 Nginxroot 登录 VPS，]]></description>
+</item>
+<item>
+  <title>Hexo 永久链接管理</title>
+  <link>https://clearsky.me/hexo-permalinks/</link>
+  <pubDate>Sat, 17 Jun 2017 18:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-permalinks/</guid>
+  <description><![CDATA[0.1 起因Hexo 官方文档关于永久链接（Permalinks）是这样定义的。 您可以在 _config.yml 配置中调整网站的永久链接或者在每篇文章的 Front-matter 中指定。 变量 描述 :year 文章的发表年份（4 位数） :month 文章的发表月份（2 位数） :i_month 文章的发表月份（去掉开头的零） :day 文章的发表日期 (2 位数) :i_day 文章的发表日期（去掉开头的零） :title 文件名称 :id 文章 ID :category 分类。如果文章没有分类，则是 default_category 配置信息 我一直是用 :title，也就是文件名称作为永久链接变量的， Hexo 配置文件_config.yml 中，配置如下： 1 permalink: :title.html 假设 \source\_posts 文件夹 中，有一篇 hello-world.md 的文章，那么它生成的效果实例为： https://clearsky.me/hello-world.html 问题来了，如果按照文件名称生成永久链接的，我的文件格式都要是这类 英文字母.md 的格式，那么我的]]></description>
+</item>
+<item>
+  <title>Hexo 升级 3.2.2 遇到的问题</title>
+  <link>https://clearsky.me/hexo-upgrade-to-3.2.2/</link>
+  <pubDate>Sun, 24 Jul 2016 11:33:38 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-upgrade-to-3.2.2/</guid>
+  <description><![CDATA[1 蛋疼悲剧值班的周末，翻了下 Hexo 官方，看到许多人都升级到 v3.2.2 了，虽然明知道每次升级都很坑，但是值班本来也无聊，于是折腾开始了。 2 开始鉴于以前每次升级都很蛋疼，这次学聪明了，先备份。我是直打包整个 Hexo 目录扔到其他盘。 说是升级，其实相当于全新安装了，新建 Hexo 目录，目录内 Git Bash here ，官方步骤： 1 2 3 npm install hexo-cli -g hexo init npm install 完成后，把原来的 source 目录拷贝进来，迁移数据。 _config.yml 不建议用原来的，以前的 Hexo 版本很多插件配置都是放在这里的，现在改了，直接用容易出错。我是怕了，所有配置都重新来了一遍，包括插件。 然后试一下。 1 hexo g &amp;&amp; hexo s 1 2 INFO Start processing INFO Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.INFO Start processing 没报错，只出现几个 WARN ，按照关键字搜索了一下大致是我的 node.js 版本高了，我用的 6.]]></description>
+</item>
+<item>
+  <title>使用 gulp 压缩 hexo 静态资源</title>
+  <link>https://clearsky.me/hexo-gulp-compres/</link>
+  <pubDate>Wed, 20 Jul 2016 00:00:00 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-gulp-compres/</guid>
+  <description><![CDATA[1 前言前两天把博客托管到 Coding，相比以前放在 Github 访问速度有了不错的提升。 今天休息没事，想着再优化下，查看页面源码发现代码未压缩，于是到 Hexo 插件库看了下，找到个 hexo-all-minifier ，但是我安装下来一直报错，搜索过程中找到基于 gulp 的几个压缩插件，马上试试。 2 关于 gulp gulp 的官方定义非常简洁：基于文件流的构建系统。 #说人话系列#：gulp 是前端开发过程中对代码进行构建的工具，是自动化项目的构建利器；她不仅能对网站资源进行优化，而且在开发过程中很多重复的任务能够使用正确的工具自动完成。 3 安装 gulp 及相关插件主要安装以下几个： 基本：gulp CSS 压缩：gulp-clean-css （原名 gulp-minify-css） JS 压缩：gulp-]]></description>
+</item>
+<item>
+  <title>Hexo 多部署--同时使用 Coding 和 Github 托管博客</title>
+  <link>https://clearsky.me/hexo-deploy/</link>
+  <pubDate>Mon, 18 Jul 2016 23:44:21 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-deploy/</guid>
+  <description><![CDATA[由于八达岭内网络环境的复杂性，使得部署在 Github 的博客时常抽风，访问体验不是那么的好，所以想想还是放在 Coding Pages 上好了。部署的时候同时部署到 Github，有需要直接解析回来，Github 托管不说了，记录下部署到 Coding Pages 。 1 关于 Coding Pages Coding Pages 是一个免费的静态网页托管和演示服务。您可以使用 Coding Pages 托管博客、项目官网等静态网页，还可以绑定自定义域名。 Coding Pages 支持用户 Pages 演示和项目 Pages 演示。用户 Pages 可以通过 {user_name}.coding.me 形式的 URL 直接访问，适合用作个人或组织的演示网站；项目 Pages 需通过 {user_name}.coding.me/{project_name} 形式的 URL 访问，适合用作项目的演示网站。 2 创建 Coding Pages登陆 Coding.net 创建一个与用户名一样的项目，切到 Pages 服务。 开启 Pages 服务 绑定域名，开启 pages 服务，分支 coding-pages 。 3 项目部署 SSH 公钥命令行终端下]]></description>
+</item>
+<item>
+  <title>Hello Hexo</title>
+  <link>https://clearsky.me/hello-hexo/</link>
+  <pubDate>Fri, 01 Jan 2016 20:46:25 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hello-hexo/</guid>
+  <description><![CDATA[换到 Hexo，新的开始！ 博客托管在 GitHub，有时候会抽风，无所谓了，毕竟大部分是给自己看的。 第一次用 Markdown 写东西，慢慢学。好多文章格式还要调整，慢慢来。 WordPress 转 Hexo 后评论都没了，但是数据我会一直保留着，或许有一天，再翻来看看，感谢这么多年的各位。]]></description>
+</item>
+</channel>
+</rss>

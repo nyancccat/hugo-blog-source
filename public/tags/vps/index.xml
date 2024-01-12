@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>VPS - 标签 - 晴空小筑</title>
+    <link>https://clearsky.me/tags/vps/</link>
+    <description>VPS - 标签 | 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</lastBuildDate><atom:link href="https://clearsky.me/tags/vps/" rel="self" type="application/rss+xml" /><item>
+  <title>Hexo 部署到搬瓦工 VPS</title>
+  <link>https://clearsky.me/hexo-deploy-to-vps/</link>
+  <pubDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-deploy-to-vps/</guid>
+  <description><![CDATA[1 环境设定 信息 搬瓦工年付最便宜 $19.99 10G VPS，KVM 架构。 VPS 操作系统 Ubuntu 16.04.2 LTS ，已开启 Gooole TCP BBR。 本地系统 Windows_NT 10.0.15063 win32 x64，已安装 Hexo 3.3.7，Node.js 版本 6.10.3。 SSH 连接管理软件 Xshell 5，本地终端 Git for Windows 2.13。 2 方案选择传说中有 2 种方案： 信息 在 VPS 安装配置 Hexo，完成后 hexo server 让它本地运行，之后通过配置 Nginx 让域名指向 http://localhost:4000 。 本地安装配置 Hexo，生成静态文件，然后 git hook 或者 rsync 这类方式部署到 VPS，Nginx 作为 Web 服务器解析。 注意 因为我以前一直是本地生成静态文件部署到 github 或者 coding 上的，显然第二种方案适合我，在这里使用的是git hook 方式部署，因为 Google 搜索出来大多是这种方式，文章多，容易解决问题。 3 安装 Git 和 Nginxroot 登录 VPS，]]></description>
+</item>
+<item>
+  <title>Ubuntu 开启 BBR 拥塞控制算法加速 TCP</title>
+  <link>https://clearsky.me/ubuntu-bbr/</link>
+  <pubDate>Sun, 18 Jun 2017 00:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/ubuntu-bbr/</guid>
+  <description><![CDATA[1 系统更新昨天 前天（打字的时候过 0 点了）买的搬瓦工 VPS，默认系统是 CentOS 6.8，后台重装先换成 Ubuntu 16.04，为什么？我懒啊，图方便。 然后 root 登录，终端输入： 1 2 3 4 apt-get update #更新软件列表 apt-get upgrade #升级软件 apt-get dist-upgrade #升级当前系统版本 do-release-upgrade -d #升级到新的系统版本 一路输入 Y ，结束后 reboot 。 2 安装最新内核并开启 BBR 脚本接上面，重新连接后： 1 uname -a 1 返回：Linux eva00 4.4.0-62-generic #83-Ubuntu SMP Wed Jan 18 14:10:15 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux 内核 4.4.0，开启 BBR 貌似需要 4.9 以上吧，需要更新内核。 3 什么是 BBR？ TCP BBR 是 Google 出品的 TCP 拥塞控制算法。BBR 目的是要尽量跑满带宽，并且尽量不要有排队的情况。BBR 可以起到单边加速 TCP 连接的效果。 用的还是秋大的 一键安装最新内核并开启 BBR 脚本： 1 2 3 wget]]></description>
+</item>
+<item>
+  <title>入了个年付 $19.99 搬瓦工 VPS</title>
+  <link>https://clearsky.me/fuck-bandwagonhost-again/</link>
+  <pubDate>Fri, 16 Jun 2017 23:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/fuck-bandwagonhost-again/</guid>
+  <description><![CDATA[1 序言本来没想买，一直部署在 coding 挺好的，省事，这两天看到 @skywing 换了 VPS，或许是很久不碰这种东西，手痒，还是入了个 搬瓦工 来玩玩。不过估计没多少时间来折腾了，破事多，时间不允许。简单就这样说下吧。 2 购买配置买的是最便宜的那款 10G VPS，架构方案当然选 KVM （可以锐速、BBR之类），六个机房可选（洛杉矶直连、洛杉矶MC、纽约、佛利蒙、凤凰城、荷兰、佛罗里达）月付 2.99 刀，年付 19.99 刀，使用 6% 优惠码 BWH1ZBPVK 之后 18.79 刀，按今日汇率折合人民币 128.53 元 ，简单贴下： 简单参数 值 SSD RAID-10 Space 10 GB SSD ECC RAM 512 MB Bandwidth 500 GB CPU 1x Intel Xeon Network 1 Gigabit Order KVM √ Monthly Price $2.99 pay-banwagong 3 简单测试默认系统 CentOS 6.8 开启了 BBR，用秋大的 一键测试脚本bench.sh 测试一下，貌似有点挫。。。 1 2 3 4 5 6 7]]></description>
+</item>
+<item>
+  <title>搬家到 Bandwagonhost</title>
+  <link>https://clearsky.me/move-to-bandwagonhost/</link>
+  <pubDate>Sun, 10 Aug 2014 20:29:39 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/move-to-bandwagonhost/</guid>
+  <description><![CDATA[这货限制CPU太严格了，安装环境编译过程中超限制被锁定的话，速度简直龟速，入手需谨慎！ 又换地方了，原来的VPS近段时间，特别是晚上，实在是抽得不行了。 后台管理面板reboot后居然无法启动了，发了TK，客服半天不鸟我，算了，反正还有2个月就到期了，懒得续费了，换一个好了。 这次换的还是年付的VPS，Bandwagonhost（俗称的搬瓦工）的5G PROMO v2这款，配置如下： 项目 参数 CPU 1 cores vSWAP 64MB 内存 512MB 月流量 500GB/1Gbps 硬盘 5 GB (SSD) KiwiVM 1IP 价格9.99美刀一年，配置较低，反正是够我用了。就扔个Wordpress，搭个梯子出墙，不折腾。 机房在凤凰城，速度嘛，一般，不快也不算慢，还行，只求稳定就行。管理面板是kiwiVM，第一]]></description>
+</item>
+<item>
+  <title>VPS 压力测试工具 siege 和 httpbench</title>
+  <link>https://clearsky.me/webserver-test/</link>
+  <pubDate>Sat, 12 Jul 2014 11:58:21 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/webserver-test/</guid>
+  <description><![CDATA[1 闲闲得没事对所用VPS来个压力测试。现在所用的VPS是去年年付的一个，配置挺低的： 内存256MB且无突发，硬盘30G，月流量500G，操作系统ubuntu 13.10 32bit。 一般常用压力测试用的软件是webbench或者是http_load，我以前也用过，这两个网上一搜一大堆文章。这次懒得用了，换其它的试试玩玩。用的是siege和HttpBench，记录一下: 2 SiegeSigeg官方主页：http://www.joedog.org/siege-home/ 官方说明：直接引用官方一堆蝌蚪文~ What Is It? Siege is an open source stress / regression test and benchmark utility. It can stress a single URL with a user defined number of simulated users or it can read many URLs into memory and stress them simultaneously. The program reports the total number of hits recorded, bytes transferred, response time, concurrency,]]></description>
+</item>
+<item>
+  <title>搬家到 AcrosVM</title>
+  <link>https://clearsky.me/move-to-acrosvm/</link>
+  <pubDate>Mon, 02 Dec 2013 01:39:18 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/move-to-acrosvm/</guid>
+  <description><![CDATA[虚拟主机还有3个月到期了，登陆到控制面板里面看了下，去年买的小容量虚拟主机，大小200MB，目前空间用了54%。 本来想升级个套餐的，因为vpsaa的虚拟主机确实还可以，这一年来基本没什么问题，还挺平价的，以前我还说过不想折腾用虚拟主机挺好的。 但是最近有朋友问我要“翻墙梯”，最近自己也突然想折腾一下了，还是转到vps上玩玩吧。 1 需求至于买哪个，我一般都针对自己需求： 我要求不高，放个基本无流量的wordpress + 搭建梯子 + 一些命令学习，配置够用就行。 付款简单点好，我懒得信用卡，paypal，财付通运通账号之类的。 E文烂，最好有中文客服，但是这个有利有弊，国人扎堆的vps你懂的。 线路稳定点，速度稍]]></description>
+</item>
+<item>
+  <title>AMH面板安装反向代理模块</title>
+  <link>https://clearsky.me/amh-amproxy/</link>
+  <pubDate>Sat, 23 Feb 2013 10:19:45 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/amh-amproxy/</guid>
+  <description><![CDATA[过年的时候在vps上安装了amh面板，之后只是简单绑定了一个域名，和用它的备份功能做了下备份，之后的这段时间沉迷于《死亡空间3》和《杀手5》。没怎么折腾了。今天晚上值班，没事到这个面板论坛看看，发现作者发了个反向代理模块。官网地址：[扩展 &amp; 程序] AMh4.0 安装反代模块 AMProxy-1.0 1 什么是反向代理? 在计算机网络中，反向代理是代理服务器的一种，它从一个或多个服务器上获取资源，然后再将这些资源返回给真正的客户端，而服务端也可以通过此获取客户端的信息。与前向代理不同，前向代理作为一个媒介将互联网上获取的资源返回给相关联的客户端，而反向代理是在服务器端作为代理使用，而不是客户端。 2 LNMP一键包nginx简单反向代理规则]]></description>
+</item>
+<item>
+  <title>装个 AMH 面板</title>
+  <link>https://clearsky.me/amh/</link>
+  <pubDate>Sat, 09 Feb 2013 15:54:38 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/amh/</guid>
+  <description><![CDATA[今天年三十，年夜饭时前玩一会电脑，发现原来的那台vps恢复了，不抽风了。 这里肯定是继续留在这个虚拟主机上了，不会再搬回去了。那vps就留着时不时折腾一下好了。 ssh登录上去，本来想继续用军哥的LNMP一键包，突然想装个面板玩玩好了，刚巧，以前关注过的amh面板新年刚发布了3.0版本，据说提供模块功能，看起来挺不错的，那么安装一个看看吧。原来vps的数据早已备份下来了，干脆大清理直接重装系统了，后台重装系统的时候点错了，本来是装debian的，点到centos了，无所谓了，懒得改了。 PS:最近不喜欢用Xshell了，改回用Putty，小巧的东西比较喜欢，当然Xshell管理多台vps比较方便，不]]></description>
+</item>
+<item>
+  <title>精简了一下vps系统</title>
+  <link>https://clearsky.me/debian-lite/</link>
+  <pubDate>Wed, 16 Jan 2013 11:03:20 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/debian-lite/</guid>
+  <description><![CDATA[现在用的这个vps性能太挫，前段时间从contos换到debian，据说debian能省点内存。 其实省不省内存我无所谓，本来就是拿来用的，留着也不能当饭吃。可是有时点开探针看着内存占用快爆了，实在受不了。 没钱上好的vps只能精简系统了，google一下，debian下精简的都差不多是同一篇文章，不知道哪里是原出处了。 人懒，不求原理，只求效果，记一下： 升级系统： 1 apt-get update&amp;&amp;apt-get upgrade 删除完全多余的软件： 1 apt-get -y purge apache2-* bind9-* xinetd samba-* nscd-* portmap sendmail-* sasl2-bin sendmail我留着了，没删。 删除多余的系统组件： 1 apt-get -y purge apache2-* bind9-* xinetd samba-* nscd-* portmap sendmail-* sasl2-bin` 事后清理： 1 apt-get autoremove &amp;&amp; apt-get clean 完事后效果： putty.jpg]]></description>
+</item>
+<item>
+  <title>VPS 命令备忘</title>
+  <link>https://clearsky.me/vps-memo/</link>
+  <pubDate>Tue, 30 Oct 2012 12:17:35 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/vps-memo/</guid>
+  <description><![CDATA[1 添加低权限ssh账号 1 2 useradd username -s /sbin/nologin echo username:password | chpasswd`&lt;/pre&gt; 2 调整时区 1 2 rm -rf /etc/localtime ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 3 修改ssh端口 1 vi /etc/ssh/sshd_config 把端口22随意改，然后 1 service sshd restart 4 常用ssh命令，来自vps侦探 5 目录操作： 1 2 3 4 5 6 7 8 9 10 rm -rf mydir /*删除mydir目录*/ mkdir dirname /*创建名为dirname的目录*/ cd mydir /*进入mydir目录*/ cd - /*回上一级目录*/ cd .. /*回父目录，中间有空格*/ cd ~ /*回根目录*/ mv tools tool /*把tools目录改名为tool */ ln -s tool bac /*给tool目录创建名为bac的符号链接,最熟悉的应该就是FTP中www链接到public_html目录了*/ cp -a tool /home/vpser/www /*把tool目录下所有文件复制到www目录下 */ 6 文件操作： 1 2 3]]></description>
+</item>
+</channel>
+</rss>

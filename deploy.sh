@@ -2,6 +2,8 @@
 echo -e "Deploying..."
 # 删除资源文件下生成
 rm -f ./resources/*
+# 删除 public 文件夹
+rm -f ./public
 git add .
 git status
 read -p "Enter git commit message: " msg

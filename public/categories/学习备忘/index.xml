@@ -1,0 +1,88 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>学习备忘 - 分类 - 晴空小筑</title>
+    <link>https://clearsky.me/categories/%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98/</link>
+    <description>学习备忘 - 分类 | 晴空小筑</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>theqee@gmail.com (pagezen)</managingEditor>
+      <webMaster>theqee@gmail.com (pagezen)</webMaster><lastBuildDate>Thu, 14 Dec 2023 16:04:40 &#43;0800</lastBuildDate><atom:link href="https://clearsky.me/categories/%E5%AD%A6%E4%B9%A0%E5%A4%87%E5%BF%98/" rel="self" type="application/rss+xml" /><item>
+  <title>自建 VaultWarden 密码管理器</title>
+  <link>https://clearsky.me/vaultwarden/</link>
+  <pubDate>Thu, 14 Dec 2023 16:04:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/vaultwarden/</guid>
+  <description><![CDATA[起因这么多年上网，注册的网站不少，为了密码安全懒得敲键盘，一直使用 LastPass 来管理密码，配合浏览器扩展登录各类网站时候非常丝滑，用了这么多年 LastPass 也一直没怎么关注它，中间还说过收费但是我浏览器扩展一直在用也没见有什么影响，这两天闲来无事网上翻翻才知道它已经有过多次密码泄露事件了，还有，也许是我经常更换 IP 的原因，LastPass 经常要求授权验证，体验相当糟糕，于是想着换成其他的，反正这类工具大同小异，对我来说能用就行，网上搜类似服务的时候看到有人提到密码数据这么私密，为什么不掌握在自己手中，想想说的也是，刚好手头上有一台闲置的 VPS 吃灰好久了，于是打算拿来自建一个密码管理器使用。 1 需求 自托管控制：能够保持对密码]]></description>
+</item>
+<item>
+  <title>简单记录 Redis 安装</title>
+  <link>https://clearsky.me/redis-install/</link>
+  <pubDate>Tue, 15 Nov 2022 21:17:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/redis-install/</guid>
+  <description><![CDATA[1 Redis 简介 Redis 是什么？ REmote DIctionary Server(Redis) 是一个由 Salvatore Sanfilippo 写的 key-value 存储系统，是跨平台的非关系型数据库。 Redis 是一个开源的使用 ANSI C 语言编写、遵守 BSD 协议、支持网络、可基于内存、分布式、可选持久性的键值对(Key-Value)存储数据库，并提供多种语言的 API。 Redis 通常被称为数据结构服务器，因为值（value）可以是字符串(String)、哈希(Hash)、列表(list)、集合(sets)和有序集合(sorted sets)等类型。 Redis 的特点 性能极高 – Redis 能读的速度是 110000 次/s,写的速度是 81000 次/s。 丰富的数据类型 – Redis 支持二进制案例的 Strings, Lists, Hashes, Sets 及 Ordered Sets 数据类型操作。 原子 – Redis 的所有操作都是原子性的，意思就是要么成功执行要么失败完全不执行。单个]]></description>
+</item>
+<item>
+  <title>GitHub Action 自动部署 Hugo 到 GitHub Pages</title>
+  <link>https://clearsky.me/github-action-auto-build-deploy/</link>
+  <pubDate>Thu, 29 Sep 2022 19:17:40 &#43;0800</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/github-action-auto-build-deploy/</guid>
+  <description><![CDATA[1 原因自从换到 Hugo 以来，都是本地运行 Hugo 命令生成生成静态网页 .public目录，然后推送到 GitHub Pages 项目仓库，感觉每次发布还要切换目录来上一堆 Git 操作： 1 2 3 4 git add . git status git commit -m &#34;xxx&#34; git push 略为繁琐，虽然这几行命令可以写个脚本简化一下，但是只推送.public目录没有办法对本地源文件进行备份和版本管理，于是决定把源文件推送到仓库，触发 Github Action 构建生成静态文件。 2 配置 GitHub Action没有在原来项目上新建分支，而是新建了一个仓库用来管理源文件，Github Action 触发后生成静态文件推到原来的 GitHub Pages 项目。在这之前，需要在新建项目仓库设置下验证 key , 具体仓库页面 Settings - secrets - Actions - New Repository secrets 设置一下私钥就好了。 注意 名称注意和下面要设置的 workflows 配置一样，]]></description>
+</item>
+<item>
+  <title>Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR</title>
+  <link>https://clearsky.me/ubuntu-1804-bbr/</link>
+  <pubDate>Thu, 20 Dec 2018 20:49:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/ubuntu-1804-bbr/</guid>
+  <description><![CDATA[1 手贱每隔一段时间就有换 VPS 系统的坏毛病，今天看到搬瓦工后台可以直接安装 Ubuntu 18.04 了，环境管理方面这次直接用面板了，用的是宝塔面板。对于个人使用，我觉得怎么方便怎么来吧，系统的话，如果是生产环境，还是建议 CentOS。 后台安装完成后更新完系统后，安装宝塔面板： 1 wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh &amp;&amp; sudo bash install.sh 2 报错 1安装失败，报错： 问题 Pillow installation failed 搜了下大致与 Python 有关，于是直接安装 python-setuptools 工具： 1 apt-get install python-setuptools 完成后再次安装，这次安装成功了，但是状态显示面板一直无法启动。 3 报错 2搜了下是 Python 版本问题，我更新后 Python 版本是 3.7，而宝塔是 Python 2 写的，不兼容。 于是移除软连接： 1 2 rm -rf /usr/bin/python ln -s /usr/bin/python2.7 /usr/bin/python 再次启动面板 1 service bt restart 看到： 1 2 3 4 Stopping Bt-Tasks... done Stopping Bt-Panel... done Starting Bt-Panel... done Starting Bt-Tasks... done 没问题了！ 4 安装]]></description>
+</item>
+<item>
+  <title>Hexo 部署到搬瓦工 VPS</title>
+  <link>https://clearsky.me/hexo-deploy-to-vps/</link>
+  <pubDate>Sun, 18 Jun 2017 12:36:04 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-deploy-to-vps/</guid>
+  <description><![CDATA[1 环境设定 信息 搬瓦工年付最便宜 $19.99 10G VPS，KVM 架构。 VPS 操作系统 Ubuntu 16.04.2 LTS ，已开启 Gooole TCP BBR。 本地系统 Windows_NT 10.0.15063 win32 x64，已安装 Hexo 3.3.7，Node.js 版本 6.10.3。 SSH 连接管理软件 Xshell 5，本地终端 Git for Windows 2.13。 2 方案选择传说中有 2 种方案： 信息 在 VPS 安装配置 Hexo，完成后 hexo server 让它本地运行，之后通过配置 Nginx 让域名指向 http://localhost:4000 。 本地安装配置 Hexo，生成静态文件，然后 git hook 或者 rsync 这类方式部署到 VPS，Nginx 作为 Web 服务器解析。 注意 因为我以前一直是本地生成静态文件部署到 github 或者 coding 上的，显然第二种方案适合我，在这里使用的是git hook 方式部署，因为 Google 搜索出来大多是这种方式，文章多，容易解决问题。 3 安装 Git 和 Nginxroot 登录 VPS，]]></description>
+</item>
+<item>
+  <title>Hexo 多部署--同时使用 Coding 和 Github 托管博客</title>
+  <link>https://clearsky.me/hexo-deploy/</link>
+  <pubDate>Mon, 18 Jul 2016 23:44:21 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/hexo-deploy/</guid>
+  <description><![CDATA[由于八达岭内网络环境的复杂性，使得部署在 Github 的博客时常抽风，访问体验不是那么的好，所以想想还是放在 Coding Pages 上好了。部署的时候同时部署到 Github，有需要直接解析回来，Github 托管不说了，记录下部署到 Coding Pages 。 1 关于 Coding Pages Coding Pages 是一个免费的静态网页托管和演示服务。您可以使用 Coding Pages 托管博客、项目官网等静态网页，还可以绑定自定义域名。 Coding Pages 支持用户 Pages 演示和项目 Pages 演示。用户 Pages 可以通过 {user_name}.coding.me 形式的 URL 直接访问，适合用作个人或组织的演示网站；项目 Pages 需通过 {user_name}.coding.me/{project_name} 形式的 URL 访问，适合用作项目的演示网站。 2 创建 Coding Pages登陆 Coding.net 创建一个与用户名一样的项目，切到 Pages 服务。 开启 Pages 服务 绑定域名，开启 pages 服务，分支 coding-pages 。 3 项目部署 SSH 公钥命令行终端下]]></description>
+</item>
+<item>
+  <title>使用 StartSSL™ 免费 SSL 证书开启整站 HTTPS</title>
+  <link>https://clearsky.me/startssl-https/</link>
+  <pubDate>Fri, 05 Jun 2015 00:25:06 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/startssl-https/</guid>
+  <description><![CDATA[失眠好几天了，大半夜睡不着，但是头又晕呼呼的，翻点资料瞎折腾的，估计写得乱七八糟，就这样了，纯记录。 用的是StartSSL™ 提供的证书，免费一年，据说到期可以再生成一个继续用。 怎么申请StartSSL™ 的证书的资料网上一搜一大堆，懒得写了。这里简单记录一下nginx下安装配置ssl，以免下次我又要到处翻资料。 申请完得到两个文件ssl.crt和ssl.key。 系统环境约定：CentOS6.4 64位 + 军哥的一键包LNMP1.1。 （写完这篇的时候发现军哥LNMP1.2发布了，默认启用spdy和增加ssl范例配置，本文还是以LNMP1.1为例）。 nginx配置目录在/usr/local/server/]]></description>
+</item>
+<item>
+  <title>Debian 7 安装 LXDE &#43; VNC &#43; Firefox</title>
+  <link>https://clearsky.me/debian-lxde-vnc-firefox/</link>
+  <pubDate>Wed, 11 Feb 2015 20:31:41 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/debian-lxde-vnc-firefox/</guid>
+  <description><![CDATA[需要搞点挂机的东西，只需要安装firefox + flash支持 + 自动刷新扩展，本来想买个windows挂机宝之类的，后来想想现在用的vps挫是挫了一点，装个桌面环境挂挂机应该还行。 前几天找了个Gnone一键包，用着还凑合，就是现在用的VPS是在是太挫了，硬盘小，安装完硬盘快爆了，想想还是装点轻量级的。 说说我的VPS机器配置： 搬瓦工（bandwagonhost）5G PROMO V2 这款，单核OpenVZ，内存512MB，硬盘5G SSD，系统Debian 7.0 x86 。 本来已经安装lnmp环境，硬盘还剩差不多3个G，勉强还能试试。 1 安装LXDE桌面root登陆，先更新下： 1 apt-get update 安装lxde ，当然在，这里肯定是最小化安装，]]></description>
+</item>
+<item>
+  <title>使用 Prism.js 高亮代码</title>
+  <link>https://clearsky.me/prism/</link>
+  <pubDate>Wed, 27 Aug 2014 16:41:54 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/prism/</guid>
+  <description><![CDATA[其实也不怎么贴代码，偶尔贴一下就直接pre标签括起来，在随便翻个样式扔到css里面，今天休息没事做，也是闲得没事做小折腾一下，以前也用过几款代码高亮插件，总感觉体积太大了，加载慢，这次选用的是轻量级的Prism.js。 1 什么是Prism.js？Prism是一款轻量级，可扩展的代码高亮javascript类库，默认支持HTML/CSS/Javascript三种语言，当然你在官方上很方便的扩展自定义添加其它语言支持，除了语言支持，行号显示，行内高亮，自动链接，显示语言等等功能也可以自由定制。 Prism官网点这里：Prism.com 安装之前你也可以在这个官方在线示例先感受一下。 2 Prism.js的使]]></description>
+</item>
+<item>
+  <title>VPS 压力测试工具 siege 和 httpbench</title>
+  <link>https://clearsky.me/webserver-test/</link>
+  <pubDate>Sat, 12 Jul 2014 11:58:21 &#43;0000</pubDate>
+  <author>pagezen</author>
+  <guid>https://clearsky.me/webserver-test/</guid>
+  <description><![CDATA[1 闲闲得没事对所用VPS来个压力测试。现在所用的VPS是去年年付的一个，配置挺低的： 内存256MB且无突发，硬盘30G，月流量500G，操作系统ubuntu 13.10 32bit。 一般常用压力测试用的软件是webbench或者是http_load，我以前也用过，这两个网上一搜一大堆文章。这次懒得用了，换其它的试试玩玩。用的是siege和HttpBench，记录一下: 2 SiegeSigeg官方主页：http://www.joedog.org/siege-home/ 官方说明：直接引用官方一堆蝌蚪文~ What Is It? Siege is an open source stress / regression test and benchmark utility. It can stress a single URL with a user defined number of simulated users or it can read many URLs into memory and stress them simultaneously. The program reports the total number of hits recorded, bytes transferred, response time, concurrency,]]></description>
+</item>
+</channel>
+</rss>
