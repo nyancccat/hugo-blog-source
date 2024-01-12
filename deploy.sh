@@ -1,8 +1,8 @@
 #!/bin/bash
 # 删除资源文件下生成
-rm -f ./resources/*
+rm -v ./resources/*
 # 删除 public 文件夹
-rm -f ./public
+rm -v ./public
 echo -e "Deploying..."
 git add .
 git status
