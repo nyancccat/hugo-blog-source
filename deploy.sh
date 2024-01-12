@@ -1,8 +1,9 @@
 #!/bin/bash
+echo -e "Clearing..."
 # 删除资源文件下生成
-rm -v ./resources/*
+rm -r resources/*
 # 删除 public 文件夹
-rm -v ./public
+rm -r public/
 echo -e "Deploying..."
 git add .
 git status
@@ -11,4 +12,4 @@ if [ -z $msg ];then
   msg=":black_nib: update $(date +'%F %a %T')"
 fi
 git commit -m "$msg"
-git push
+git pushf
