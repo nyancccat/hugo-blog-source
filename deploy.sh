@@ -12,4 +12,4 @@ if [ -z $msg ];then
   msg=":black_nib: update $(date +'%F %a %T')"
 fi
 git commit -m "$msg"
-git pushf
+git push
