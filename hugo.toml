@@ -19,7 +19,7 @@ buildDrafts = false
 category = "categories"
 tag = "tags"
 collection = "collections"
-'toot' = "toot"
+toot = "toot"
 
 # ignore some build errors
 ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
