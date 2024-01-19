@@ -1,8 +1,8 @@
 #!/bin/bash
 echo -e "Clearing..."
-# 删除资源文件下生成
-# rm -r resources/*
-# 删除 public 文件夹
+删除资源文件下生成
+rm -r resources/*
+删除 public 文件夹
 rm -r public/
 echo -e "Deploying..."
 git add .
