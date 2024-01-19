@@ -700,7 +700,7 @@ Foursquare = ""
 Hackernews = ""
 Kickstarter = ""
 Patreon = ""
-Steam = "u0defined"
+Steam = "76561199615246115"
 Twitch = ""
 Strava = ""
 Skype = ""
@@ -1371,6 +1371,7 @@ baseName = "readme"
 mediaType = "text/markdown"
 isPlainText = true
 isHTML = false
+
 # FixIt 0.3.0 | 更改 用于输出 baidu_urls.txt 文件的设置
 [outputFormats.baidu_urls]
 baseName = "baidu_urls"
