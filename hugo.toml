@@ -21,9 +21,6 @@ tag = "tags"
 collection = "collections"
 toot = "toot"
 
-# ignore some build errors
-ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
-
 [frontmatter]
 lastmod = ["lastmod", ":git", ":fileModTime", ":default"]
 
