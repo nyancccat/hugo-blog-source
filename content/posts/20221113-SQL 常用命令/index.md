@@ -9,7 +9,7 @@ tags: ['SQL']
 categories: ['学习备忘']
 ---
 
-{{< carousel "https://unsplash.it/1920/1080/?random=1" "https://unsplash.it/1920/1080/?random=2" "https://unsplash.it/1920/1080/?random=3" "https://unsplash.it/1920/1080/?random=4" >}}
+
 
 ## DDL 数据定义
 
