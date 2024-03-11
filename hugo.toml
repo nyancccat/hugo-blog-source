@@ -613,7 +613,7 @@ rss = 10
 [params.home.profile]
 enable = true
 # Gravatar 邮箱，用于优先在主页显示的头像
-gravatarEmail = "theqee@gmail.com"
+#gravatarEmail = "theqee@gmail.com"
 # 主页显示头像的 URL
 avatarURL = "/avatar.jpg"
 #  头像菜单链接的 identifier
