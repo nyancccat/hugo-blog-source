@@ -1020,7 +1020,8 @@ darkTheme = "github-dark"
 [params.page.comment.twikoo]
 enable = true
 #envId = "https://blog-twikoo-three.vercel.app/"
-envId = "https://twikoo.clearsky.me/"
+#envId = "https://twikoo.clearsky.me/"
+envId = "https://artlak.clearsky.me/"
 region = ""
 path = ""
 visitor = true
