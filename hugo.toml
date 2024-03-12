@@ -914,7 +914,7 @@ enable = true
 [params.page.comment.artalk]
 enable = true
 server = "https://artlak.clearsky.me"
-site = "默认站点"
+site = "晴空小筑"
 placeholder = ""
 noComment = ""
 sendBtn = ""
