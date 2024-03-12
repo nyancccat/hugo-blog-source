@@ -24,5 +24,4 @@ toc: false
 
 那么就从不熬夜开始吧，现在差不多是 23：00，一首歌后就睡吧，祝我好梦吧!
 
-
-{{< music "https://music.163.com/#/song?id=1832684671" >}}
+{{< music server="netease" type="song" id="1832684671" >}}
