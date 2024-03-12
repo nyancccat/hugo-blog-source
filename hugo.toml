@@ -912,7 +912,7 @@ Mix = false
 enable = true
 #  Artalk 评论系统设置 (https://artalk.js.org/)
 [params.page.comment.artalk]
-enable = true
+enable = false
 server = "https://artalk.clearsky.me/"
 site = "晴空小筑"
 placeholder = ""
@@ -921,14 +921,14 @@ sendBtn = ""
 editorTravel = true
 flatMode = "auto"
 #  启用 lightgallery 支持
-lightgallery = false
+lightgallery = true
 locale = ""          # 
 # 
 emoticons = ""
 nestMax = 2
 nestSort = "DATE_ASC" # ["DATE_ASC", "DATE_DESC", "VOTE_UP_DESC"]
 vote = true
-voteDown = false
+voteDown = true
 uaBadge = true
 listSort = true
 imgUpload = true
@@ -1018,9 +1018,9 @@ lightTheme = "github-light"
 darkTheme = "github-dark"
 #  Twikoo 评论系统设置 (https://twikoo.js.org/)
 [params.page.comment.twikoo]
-enable = false
+enable = true
 #envId = "https://blog-twikoo-three.vercel.app/"
-#envId = "https://twikoo.clearsky.me/"
+envId = "https://twikoo.clearsky.me/"
 region = ""
 path = ""
 visitor = true
