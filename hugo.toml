@@ -912,8 +912,8 @@ Mix = false
 enable = true
 #  Artalk 评论系统设置 (https://artalk.js.org/)
 [params.page.comment.artalk]
-enable = false
-server = "https://yourdomain"
+enable = true
+server = "https://artlak.clearsky.me"
 site = "默认站点"
 placeholder = ""
 noComment = ""
@@ -1018,10 +1018,9 @@ lightTheme = "github-light"
 darkTheme = "github-dark"
 #  Twikoo 评论系统设置 (https://twikoo.js.org/)
 [params.page.comment.twikoo]
-enable = true
+enable = false
 #envId = "https://blog-twikoo-three.vercel.app/"
 #envId = "https://twikoo.clearsky.me/"
-envId = "https://artlak.clearsky.me/"
 region = ""
 path = ""
 visitor = true
