@@ -913,7 +913,7 @@ enable = true
 #  Artalk 评论系统设置 (https://artalk.js.org/)
 [params.page.comment.artalk]
 enable = true
-server = "https://artlak.clearsky.me/"
+server = "https://artalk.clearsky.me/"
 site = "晴空小筑"
 placeholder = ""
 noComment = ""
