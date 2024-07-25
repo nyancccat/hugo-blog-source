@@ -1,0 +1,436 @@
+{
+    "summaries": [
+        {
+            "title": "自建 VaultWarden 密码管理器",
+            "slug": "vaultwarden",
+            "generated": true,
+            "summary": "文章介绍了作者使用 LastPass 密码管理器多年后，发现其存在密码泄露和使用体验不佳的问题，因此决定自建密码管理器。作者选择了 Vaultwarden，并详细介绍了其优势、安装、启用 HTTPS、设置、插件和 APP 下载以及日常使用。作者还分享了从 LastPass 导出密码库并导入 Vaultwarden 的过程，以及使用 Vaultwarden 工具进行密码检测的经验。最后，作者总结了自己的密码整理过程和改进密码安全性的方法。"
+        },
+        {
+            "title": "简单记录 Redis 安装",
+            "slug": "redis-install",
+            "generated": true,
+            "summary": "文章介绍了 Redis 的安装过程和基本特点。作者提到了 Redis 是一个开源的键值对存储数据库，支持多种数据类型操作，并具有高性能、原子性和丰富的特性。文章还详细描述了在 CentOS 7 下安装 Redis 的步骤，包括依赖安装、编译、配置修改等。最后，作者推荐了 Another-Redis-Desktop-Manager 作为可视化管理工具。"
+        },
+        {
+            "title": "GitHub Action 自动部署 Hugo 到 GitHub Pages",
+            "slug": "github-action-auto-build-deploy",
+            "generated": true,
+            "summary": "文章介绍了如何使用 GitHub Action 自动部署 Hugo 静态网页到 GitHub Pages。作者提到之前每次发布都需要手动进行 Git 操作，为了备份和版本管理源文件，决定将源文件推送到仓库并触发 GitHub Action 构建生成静态文件。在新建的项目仓库中设置验证密钥，并在本地 Hugo 博客目录下配置 deploy.yml 文件来定义自动部署流程。最后，作者还提供了一个简单的部署脚本以方便操作。"
+        },
+        {
+            "title": "很久没更新了",
+            "slug": "long-time-no-update",
+            "generated": true,
+            "summary": "文章介绍了作者很久没有更新博客的原因，回顾了过去几年发生的事情，包括迷茫、结婚、丧亲和即将出生的孩子。作者认识到平凡是最永恒的幸福，决定调整心态并制定学习、饮食、运动和作息计划。希望在未来总结中能看到一些进步，并以不熬夜为起点开始新的改变。"
+        },
+        {
+            "title": "淘了一套太豪 PBT 奶酪绿键帽",
+            "slug": "taihao-keycaps",
+            "generated": true,
+            "summary": "文章介绍了作者购买了一套太豪 PBT 奶酪绿键帽来替换原装 ABS 键帽的经历。作者对 PBT 材质的键帽有较好的手感和耐磨性，选择了这种材质。在网上找到合适配色的键帽后，由于自己使用的是 87 键布局，无货可买，最终在二手市场找到与自己键盘完全相同型号的宝强绿（奶酪绿）配色，并以 80 元包邮价格购得。最后作者将新旧键帽进行对比，并表示更换后打字舒服多了。"
+        },
+        {
+            "title": "Breo isee 16倍轻松眼部按摩仪",
+            "slug": "breo-isee16",
+            "generated": true,
+            "summary": "文章介绍了一款名为 Breo isee 16 倍轻松眼部按摩仪的产品。该按摩仪具有智能气压、恒温热敷、微频震动和外放音乐等功能，可以舒缓眼周肌肉疲劳。使用者表示在手机使用过多导致眼睛容易疲劳时，通过按摩仪进行眼部保健效果不错。然而，也有人对电动马达声音较大提出了意见。总体来说，用户对这款产品还是比较满意的。"
+        },
+        {
+            "title": "Ubuntu 18.04 安装宝塔面板遇到问题及启用魔改 BBR",
+            "slug": "ubuntu-1804-bbr",
+            "generated": true,
+            "summary": "文章介绍了在安装 Ubuntu 18.04 时遇到的问题以及启用魔改 BBR 的方法。作者首先提到自己很久没有更新博客的原因，然后分享了过去几年发生的事情。接着，作者详细描述了在安装宝塔面板时遇到的错误和解决方法，并说明了 Python 版本不兼容导致面板无法启动的原因。最后，作者介绍了如何使用魔改 BBR 来优化网络速度，并附上了相关脚本和测速结果。"
+        },
+        {
+            "title": "使用 CSGO Skin Changer 更换 CSGO 枪械皮肤",
+            "slug": "csgoskinchanger",
+            "generated": true,
+            "summary": "文章介绍了使用 CSGO Skin Changer 软件更换 CSGO 枪械皮肤的方法。作者是一位中老年手残玩家，不想花钱购买饰品，但喜欢看到其他玩家的枪械皮肤。他找到了这个小软件，在打 BOT 时自娱自乐。文章详细介绍了下载和安装该软件的步骤，并提供了一些技巧，如修改游戏启动参数以避免显示问题。最后，作者展示了他选择的 AK- BloodSport 皮肤作为例子，并表示只在单机模式下使用此功能。"
+        },
+        {
+            "title": "购买米其林车载充气泵和伟力通无线胎压监测",
+            "slug": "michelin-4389ml-and-victon-t6ls",
+            "generated": true,
+            "summary": "文章介绍了作者购买米其林车载充气泵和伟力通无线胎压监测器的经历。作者在开车过程中发现胎压异常，后来发现有两颗钉子扎进轮胎，找到补胎店进行修理。为了避免类似情况再次发生，作者决定购买车载充气泵和无线胎压监测器，并详细介绍了产品的外观、安装步骤以及使用体验。最后，作者表示这款产品显示准确且方便实用。"
+        },
+        {
+            "title": "京东回收掉使用了 5 年的 Y480",
+            "slug": "bye-y480",
+            "generated": true,
+            "summary": "文章介绍了作者使用了 5 年的联想 Y480 笔记本退役，并选择通过京东回收卖掉。作者描述了这台笔记本的配置和使用情况，以及对其性能和耐用度的评价。最后，作者提到清除硬盘数据并等待回收款项的事宜。"
+        },
+        {
+            "title": "使用 Python 爬虫自动登陆京东抢购华为 P20 Pro 手机",
+            "slug": "jd-autobuy",
+            "generated": true,
+            "summary": "文章介绍了使用 Python 爬虫自动登录京东抢购华为 P20 Pro 手机的方法。作者首先讲述了自己对于换手机的需求和选择安卓阵营的原因，然后提到在官方商场和京东上都遇到了抢购困难，于是决定使用 Python 爬虫来实现自动抢购。文章详细介绍了如何配置脚本参数以及运行脚本的步骤，并给出了一些注意事项和解决问题的方法。"
+        },
+        {
+            "title": "摘橘子",
+            "slug": "pick-tangerines",
+            "generated": true,
+            "summary": "文章讲述了作者和父母一起去摘橘子的经历。他们原本计划去寺庙，但因为下雨改变了主意。于是他们驱车前往姑父家的果园，在那里摘了许多橘子，并顺便采摘了杨桃和木瓜。最后，大家都很开心地回到家中休息，并强调要多陪陪父母。"
+        },
+        {
+            "title": "惠普 (HP) 游戏本暗影精灵 3 Plus",
+            "slug": "new-omen-iii",
+            "generated": true,
+            "summary": "文章介绍了作者购买了惠普游戏本暗影精灵 3 Plus 的经历。他对于选择游戏本进行比较，最终选择了这款产品。文章列举了该电脑的配置和外观，并提到使用体验良好，但散热需要改进。最后，作者表示虽然玩吃鸡游戏不太顺利，但总体来说对这款电脑还是很满意的。"
+        },
+        {
+            "title": "手机 “吃鸡” 神器 - 飞智黑武士 X8 Pro",
+            "slug": "flydigi-x8-pro",
+            "generated": true,
+            "summary": "飞智黑武士 X8 Pro 是一款手机游戏手柄，可以提升玩家在吃鸡类游戏中的操作体验。文章介绍了作者对于《绝地求生：大逃杀》这款热门游戏的兴趣，但由于电脑配置不够高和时间有限，无法在 PC 平台上进行游戏。然而，近期推出的吃鸡手游解决了这个问题。尽管触屏操作存在局限性，但通过使用飞智黑武士 X8 Pro 手柄可以改善体验。文章最后分享了作者购买并使用该手柄的感受，并表示虽然没有所谓 “神挡杀神” 的情况发生，但整体来说比用手机玩要好得多。"
+        },
+        {
+            "title": "使用 Dota Mods Installer 替换 Dota2 模型",
+            "slug": "dota-mods-installer",
+            "generated": true,
+            "summary": "文章介绍了一款名为 Dota Mods Installer 的工具，可以用来替换 Dota2 游戏中的英雄模型和特效。作者分享了自己使用该工具替换影魔至宝模型后的游戏体验，并表示这样看着舒服多了。同时，作者还提到自己已经很久没玩游戏了，只是喜欢看比赛，但发现年纪相仿的朋友也有类似情况。最后，作者表示明天要上班早点睡觉。"
+        },
+        {
+            "title": "Hexo 使用 APlayer 插入音乐",
+            "slug": "hexo-aplayer",
+            "generated": true,
+            "summary": "文章介绍了在 Hexo 博客中使用 APlayer 插入音乐的方法。作者先尝试了网易云音乐官方外链播放器，但由于不支持 https 而更换为其他外链接口。最近发现接口已经挂掉，于是找到了这个新方法。通过引入 Aplayer.js 和 aplayer.js 两个 js 文件，并在文章中添加相应代码即可实现插入歌曲功能。同时还提供了一些参数设置以及更多相关信息的链接。"
+        },
+        {
+            "title": "骑行入门山地车 - 美利达挑战者 300",
+            "slug": "challenger-300",
+            "generated": true,
+            "summary": "文章介绍了作者因膝盖不适而决定暂停跑步，转而尝试骑行山地车。在咨询同事后，作者选择了美利达挑战者 300 作为入门级山地车。文章详细描述了购买过程和车辆配置，并分享了自己的使用体验和照片。最后，作者表示希望能够持续锻炼并享受骑行的乐趣。"
+        },
+        {
+            "title": "Ubuntu 16.04 使用 youtube-dl + FFmpeg 下载 Youtube 1080p 视频",
+            "slug": "youtube-dl-ffmprg",
+            "generated": true,
+            "summary": "文章介绍了在 Ubuntu 16.04 上使用 youtube-dl 和 FFmpeg 下载 Youtube 的 1080p 视频，并解决了视频和音频分开的问题。作者还提到可以选择不同格式的视频和音频进行合成，以及将下载好的视频拖回本地保存。"
+        },
+        {
+            "title": "申请 Let's Encrypt SSL 证书配置 Nginx 开启站点 HTTPS",
+            "slug": "lets-encrypt",
+            "generated": true,
+            "summary": "文章介绍了如何使用 Let's Encrypt SSL 证书配置 Nginx 开启站点的 HTTPS。首先，通过 certbot 工具申请证书，可以选择 webroot 或 standalone 插件获取证书。然后，将生成的证书文件配置到 Nginx 中，并添加一些安全配置，如开启 HTTP/2、HSTS 等。最后重启 Nginx 即可实现网站的 HTTPS 访问。同时提醒读者 90 天后需要运行命令进行续期操作。"
+        },
+        {
+            "title": "Hexo 部署到搬瓦工 VPS",
+            "slug": "hexo-deploy-to-vps",
+            "generated": true,
+            "summary": "本文介绍了如何将 Hexo 部署到搬瓦工 VPS 的方法。包括安装配置 Hexo、Git 和 Nginx，设置 SSH 连接和权限，创建 Git 仓库并配置钩子脚本，配置 Nginx 站点文件，并最后重启 Nginx。同时还提到了修改 Hexo 的 deploy 部分以实现部署功能。"
+        },
+        {
+            "title": "Ubuntu 开启 BBR 拥塞控制算法加速 TCP",
+            "slug": "ubuntu-bbr",
+            "generated": true,
+            "summary": "文章介绍了如何在 Ubuntu 系统上开启 BBR 拥塞控制算法来加速 TCP 连接。首先需要更新和升级系统，然后安装最新内核并开启 BBR 脚本。通过检查返回值确认是否成功开启 BBR。文章还提到作者安装了 SSR，并尝试使用魔改版的一键包来增强性能。"
+        },
+        {
+            "title": "Hexo 永久链接管理",
+            "slug": "hexo-permalinks",
+            "generated": true,
+            "summary": "本文介绍了 Hexo 永久链接管理的方法。通过在配置文件和文章的 Front-matter 中指定变量，可以调整网站的永久链接格式。作者提到了使用英文标题作为永久链接变量会导致文件夹看起来混乱，而改用中文标题则不美观且对 SEO 不利。最后，作者分享了一种解决方案：在 Front-matter 区域新增一个 urlname 变量，并将 permalink 配置为 urlname.html，以实现使用中文标题保存 Markdown 文件但生成英文字母格式的永久链接。此外，作者还介绍了如何给文章添加时间信息以便于查找定位。"
+        },
+        {
+            "title": "入了个年付 $19.99 搬瓦工 VPS",
+            "slug": "fuck-bandwagonhost-again",
+            "generated": true,
+            "summary": "文章介绍了作者购买了一个年付 19.99 美元的搬瓦工 VPS，并简要描述了其参数和性能测试结果。作者计划将自己的网站部署到这个 VPS 上，并升级 Hexo，但也担心会遇到一些问题。"
+        },
+        {
+            "title": "撸了个鼠标 - 罗技 G-Pro",
+            "slug": "logitech-g-pro",
+            "generated": true,
+            "summary": "文章介绍了一款罗技 G-Pro 鼠标，作者在京东上购买并享受了降价优惠和分期付款。他认为这款鼠标外观简单大方，手感舒适。文章还列举了该鼠标的主要参数和技术规格。"
+        },
+        {
+            "title": "微醺之美",
+            "slug": "beauty-of-tipiness",
+            "generated": true,
+            "summary": "文章讲述了喝酒微醺的美妙体验，感官放大、快乐悲伤更加强烈，仿佛灵魂离体。在微醺状态下，人可以扮演不同角色，安静倾听或者激情装逼。然而一切转瞬即逝，在清醒过来时感到唏嘘不已。作者写这些可能也是因为自己喝多了。"
+        },
+        {
+            "title": "域名从 Godaddy 转移至 Namesilo",
+            "slug": "domain-transfer-godaddy-to-namesilos",
+            "generated": true,
+            "summary": "文章介绍了作者将域名从 Godaddy 转移到 Namesilo 的过程。由于 Godaddy 的 WHOIS Privacy 收费，而 Namesilo 提供永久免费，作者决定转移。具体步骤包括解锁域名、获取转移授权码、登录 Namesilo 账户并提交转移申请等。整个过程快速高效，与多年前从国内服务商转移域名相比有很大改善。最后，为了省事，作者在 Namesilo 直接续费了 3 年。"
+        },
+        {
+            "title": "Hexo 升级 3.2.2 遇到的问题",
+            "slug": "hexo-upgrade-to-3.2.2",
+            "generated": true,
+            "summary": "文章讲述了作者在升级 Hexo 到 3.2.2 版本时遇到的问题。作者备份了原有目录并按照官方步骤重新安装，然后迁移数据和重新配置插件。尝试部署时出现端口被占用的问题，通过查找进程并卸载相关软件解决。同时更新了 Next 主题，并修复了使用 gulp 压缩静态资源和生成 atom.xml 文件时的错误。最后总结了 npm 速度慢和其他小问题导致升级过程耗费时间的教训。"
+        },
+        {
+            "title": "使用 gulp 压缩 hexo 静态资源",
+            "slug": "hexo-gulp-compres",
+            "generated": true,
+            "summary": "文章介绍了使用 gulp 压缩 Hexo 静态资源的方法。通过安装相关插件，配置 gulpfile.js 文件，并执行相应命令，可以对 CSS、JS、HTML 和图片等资源进行压缩处理。最后部署到网站上，提高页面加载速度。"
+        },
+        {
+            "title": "Hexo 多部署 -- 同时使用 Coding 和 Github 托管博客",
+            "slug": "hexo-deploy",
+            "generated": true,
+            "summary": "本文介绍了如何同时使用 Coding 和 Github 托管 Hexo 博客。由于 Github 在部署时存在问题，作者建议将博客放在 Coding Pages 上。文章详细说明了如何在 Coding Pages 上创建项目并开启 Pages 服务，并提供了命令行操作步骤。此外，还介绍了如何编辑 Hexo 配置文件以实现同时部署到 Coding 和 Github 的功能。"
+        },
+        {
+            "title": "NETGEAR®WNDR4300 刷 OpenWrt 石像鬼固件",
+            "slug": "netgear-wndr4300-gargoyle",
+            "generated": true,
+            "summary": "文章介绍了 NETGEAR WNDR4300 路由器刷 OpenWrt 石像鬼固件的过程。作者购买了这款支持刷机的路由器，并通过 TFTP 软件将官方固件刷入路由器，然后安装中文包并决定使用第三方固件石像鬼。最后，作者提到可以参考相关教程进行进一步设置。"
+        },
+        {
+            "title": "买了本书 - 《智识分子：做个复杂的现代人》",
+            "slug": "zsfzy",
+            "generated": true,
+            "summary": "文章介绍了作者购买了一本名为《智识分子：做个复杂的现代人》的书，并将其放在床头每晚阅读。作者对这本书产生兴趣是因为封面包装给人以幻想感，同时也提到自己计划在未来多读书。"
+        },
+        {
+            "title": "Hello Hexo",
+            "slug": "hello-hexo",
+            "generated": true,
+            "summary": "文章内容概括：作者换到了 Hexo 平台开始写博客，托管在 GitHub 上。虽然有时候会出问题，但大部分是给自己看的。第一次使用 Markdown 写作，还需要学习和调整格式。转换平台后评论丢失了，但作者会一直保留数据，并感谢多年来的读者们。"
+        },
+        {
+            "title": "Filco 忍者 87 二代侧刻青轴",
+            "slug": "fkbn87mc-efb2",
+            "generated": true,
+            "summary": "文章介绍了作者购买的 Filco 忍者 87 二代侧刻青轴机械键盘的经历。作者先尝试了入门级 60% 布局机械键盘，然后被 Filco 忍者 87 二代吸引，但一开始没货。最后通过日本代购成功购买到，并分享了开箱和使用体验。同时提到个人对于不同轴的喜好以及与其他键盘的比较。文章配有相关图片展示。"
+        },
+        {
+            "title": "DNS 解析换到 CloudXNS",
+            "slug": "cloudxns",
+            "generated": true,
+            "summary": "文章介绍了作者将 DNS 解析服务从 DNSPod 换成 CloudXNS 的经历。CloudXNS 是中国最大的电信中立互联网基础设施服务商，提供多元化智能 DNS 解析服务。作者体验后发现 CloudXNS 支持导入导出记录、自定义线路和开启智能托管解析等功能，并对后台体验给予了好评。此外，作者还提交了私人线路申请并探索免费 CDN 的使用方式。"
+        },
+        {
+            "title": "使用 StartSSL™ 免费 SSL 证书开启整站 HTTPS",
+            "slug": "startssl-https",
+            "generated": true,
+            "summary": "文章介绍了如何使用 StartSSL 免费 SSL 证书开启整站 HTTPS。首先申请证书并获取两个文件 ssl.crt 和 ssl.key，然后通过 Openssl 安装公钥。接着合并 Startssl 的证书，并修改配置文件。同时还介绍了如何开启 spdy 以及监听 443 端口、强制跳转 https 等操作。最后需要让页面内资源支持 https，并解决可能出现的问题。"
+        },
+        {
+            "title": "买了个乐心 S1 体重秤",
+            "slug": "lifesense-s1",
+            "generated": true,
+            "summary": "文章介绍了作者购买了一款名为乐心 S1 的体重秤。作者觉得只需要一个普通的体重秤，不需要太多功能，于是选择了这款价格合适的产品。文章还提到了包装和外观，并进行了称重测试。最后，作者简单介绍了该秤具备蓝牙同步测量数据到微信公众号的功能，但自己并没有使用。"
+        },
+        {
+            "title": "深圳往事",
+            "slug": "memories-of-shenzhen",
+            "generated": true,
+            "summary": "文章讲述了一个年轻人毕业后来到深圳追求自己喜欢的事情，并面临各种困难和挑战的故事。他在深圳租房、找工作，经历了网吧、人才市场等地方，也遇到了被骗和失望的情况。他喜欢去公园休息，观察街头画像摆摊和艺人表演。最后，他感受到城市阳光一面消失，变得悲观起来。"
+        },
+        {
+            "title": "Debian 7 安装 LXDE + VNC + Firefox",
+            "slug": "debian-lxde-vnc-firefox",
+            "generated": true,
+            "summary": "本文介绍了在 Debian 7 上安装 LXDE + VNC + Firefox 的步骤。首先通过命令安装 lxde 和 xorg，然后安装 tightvncserver 并进行配置。接下来编辑 xstartup 文件和创建 tightvncserver 脚本，并设置分辨率。之后重启 VNC 并使用 VNC Viewer 连接到桌面环境。为了解决中文乱码问题，需要重新配置语言区域和安装中文字体。最后添加 Linuxmint 的 Debian 源并安装 Firefox 及相关插件，完成整个过程。"
+        },
+        {
+            "title": "远方的朋友",
+            "slug": "friends-far-away",
+            "generated": true,
+            "summary": "这篇文章讲述了作者与一位远方的朋友之间的回忆和联系断裂后的思念。他们通过游戏相识，分享笑话和生活琐事，互相影响并改变对方。然而，多年来没有再次联系，作者想象着朋友可能在异乡过着不同的生活。最后，作者表达了对朋友的珍重，并希望有一天能再次见面。"
+        },
+        {
+            "title": "2015",
+            "slug": "2015",
+            "generated": true,
+            "summary": "文章主要讲述了作者回顾了 2014 年的一些经历和感受，包括换岗位、考驾照、恋爱经历、做视力矫正手术等。他还提到自己成为房奴并准备装修房子，但也面临着家庭压力和责任。最后，作者规划了 2015 年的目标，包括多看书、尝试戒烟、锻炼身体以及关注理财等。"
+        },
+        {
+            "title": "视力矫正手术",
+            "slug": "lasik",
+            "generated": true,
+            "summary": "文章讲述了作者做视力矫正手术的经历。作者从小就近视，戴眼镜 11 年后决定做手术。他在网上查资料并咨询医生后选择了全飞秒超薄瓣 LASIK 手术方案。手术前进行了检查和准备工作，然后进入手术室接受治疗。整个过程中，作者感到有些紧张但最终成功完成手术，并对自己的决定感到满意。"
+        },
+        {
+            "title": "导入 09 年开始的老数据",
+            "slug": "old-data",
+            "generated": true,
+            "summary": "文章讲述了作者在一个很久不用的网盘中发现了 2009 至 2010 年的数据备份，通过搭建 PHP 环境上传导入，成功恢复了部分丢失的数据。作者回味过去的博客页面和后台截图，并删除了一些无关或转载的文章并优化数据库。然而，评论中大多数博友链接已经打不开，时间过得很快，每个人都有自己的生活。"
+        },
+        {
+            "title": "使用 Prism.js 高亮代码",
+            "slug": "prism",
+            "generated": true,
+            "summary": "文章介绍了使用 Prism.js 来高亮代码的方法。作者选择了轻量级的 Prism.js 作为代码高亮插件，并提供了安装和配置的步骤。文章还介绍了如何在 WordPress 编辑器中使用 Prism.js 来高亮代码，并给出了添加快捷按钮的方法。此外，作者还提到了一些注意事项和自定义样式的修改建议。最后，作者表示对于停止使用该插件可能带来的麻烦感到困扰，并决定休息睡觉。"
+        },
+        {
+            "title": "搬家到 Bandwagonhost",
+            "slug": "move-to-bandwagonhost",
+            "generated": true,
+            "summary": "文章介绍了作者搬家到 Bandwagonhost 的 VPS，并分享了配置和使用体验。虽然速度一般，但稳定性较好。作者选择了简单明了的 kiwiVM 管理面板和 Ubuntu 系统，不折腾环境，直接使用 lnmp 一键包。最后提到自己情绪低落，找到点事做来缓解压力。"
+        },
+        {
+            "title": "VPS 压力测试工具 siege 和 httpbench",
+            "slug": "webserver-test",
+            "generated": true,
+            "summary": "本文介绍了 VPS 压力测试工具 siege 和 httpbench 的使用方法。作者首先介绍了 siege 的安装步骤，并给出了一些常用参数的示例。然后，作者进行了两次不同程度的压力测试，并记录下了各项指标数据。接着，作者介绍了 httpbench 工具的下载和安装过程，并展示了运行结果。最后，文章总结并结束。"
+        },
+        {
+            "title": "学车记",
+            "slug": "learn-to-drive",
+            "generated": true,
+            "summary": "文章讲述了作者学车的经历。作者最初报名学车后一直拖延，直到今年初才开始练习。由于工作忙碌，时间紧张，只去了两天就放弃了。然而，在等待上车的时候，作者遇到了一只小狗给他带来些许乐趣。之后，作者决定挤出时间继续学车，并在考试前十多天进行了紧张的练习。虽然准备不充分，但作者还是通过科目二考试并顺利获得驾照。接下来是科目三和科目四的考试过程以及最后成功领取驾照的情景描述。"
+        },
+        {
+            "title": "使用 Google 身份验证器加锁 CentOS",
+            "slug": "centos-google-authenticator",
+            "generated": true,
+            "summary": "文章介绍了如何使用 Google 身份验证器来加锁 CentOS 系统。首先需要安装相关软件包，然后生成一个 QR 码并在手机上安装 Google 身份验证器，并将 QR 码扫描到应用程序中。接下来，在系统配置文件中添加一行代码以启用 Google 身份验证器的认证功能，并重启 SSH 服务。最后，登录时需要输入实时验证码和密码才能成功登录到 VPS 服务器。"
+        },
+        {
+            "title": "新的开始",
+            "slug": "start",
+            "generated": true,
+            "summary": "文章讲述了作者在更换 VPS 系统时不慎丢失了 2009 年至 2014 年的数据备份，原因是之前的备份脚本出现问题。尽管作者进行了硬盘数据恢复，但由于数据覆盖导致无法成功恢复。虽然作者曾考虑停止更新，但最终决定重新开始，并表示这个网站是他坚持做得最久的事情。"
+        },
+        {
+            "title": "搬家到 AcrosVM",
+            "slug": "move-to-acrosvm",
+            "generated": true,
+            "summary": "文章介绍了作者将虚拟主机搬迁到 AcrosVM 的经历。作者选择 AcrosVM 是因为它支持支付宝、有中文客服，并且提供稳定的线路和较低廉的价格。在使用过程中，作者遇到了一些问题，如支付宝付款困难、重装系统等，但最终成功搭建了自己需要的环境并能够正常使用。"
+        },
+        {
+            "title": "入了 KBC Poker 2",
+            "slug": "kbc-poker2",
+            "generated": true,
+            "summary": "文章介绍了作者购买了 KBC Poker 2 键盘的经历。他在外设论坛上看到这款键盘受到讨论后决定购买，选择了茶轴版本。包裹虽然有些破损，但键盘本身质量良好。作者使用了一段时间后觉得茶轴输入很舒服，只是由于 60% 布局没有一些常用按键需要通过组合按键来代替，需要适应一下。"
+        },
+        {
+            "title": "更换服务器遇到的问题",
+            "slug": "blog-moving-problem",
+            "generated": true,
+            "summary": "文章讲述了更换服务器遇到的问题。作者收到邮件，台湾服务器故障后迁移到香港服务器。虽然域名解析成功，但在新服务器上出现了一些小问题，如后台编辑选项和附件无法展开。通过向主机商提交技术支持工单得知是插件与当前环境冲突导致的，并暂停使用该插件。另外，一些页面出现了 PHP 配置问题导致的报错，作者通过修改配置或添加代码解决了这个问题。最后提到对于访问量不大的博客来说，使用虚拟主机会更方便省事。"
+        },
+        {
+            "title": "安装 anmpp",
+            "slug": "anmpp",
+            "generated": true,
+            "summary": "文章介绍了安装 ANMPP（android nginx mysql php-fpm postgresql）的步骤和注意事项，以及测试其功能。"
+        },
+        {
+            "title": "安卓拨号 “15” 问题及解决方法",
+            "slug": "android-15",
+            "generated": true,
+            "summary": "文章介绍了安卓手机拨号 “15” 出现进入工程模式的问题，并提供了解决方法，即使用力卓工具箱批量禁用 TestService 1.0 和 Factory Mode1.0 两个程序。"
+        },
+        {
+            "title": "Debian 下 SSH 显示中文",
+            "slug": "debian-ssh-zh-cn",
+            "generated": true,
+            "summary": "文章介绍了在 Debian 系统下解决 SSH 显示中文的问题。作者通过设置 putty 或 Xshell 的字符编码为 UTF-8，然后使用 dpkg-reconfigure locales 命令选择 zh_CN.UTF-8 作为默认语言环境，并修改 /etc/environment 文件添加 LANG='zh_CN.UTF-8' 一行来完成设置。最后重新登录并输入 date 命令验证成功。"
+        },
+        {
+            "title": "重装系统 + 常用软件清单",
+            "slug": "reinstall-and-lists-of-software",
+            "generated": true,
+            "summary": "文章介绍了作者重装系统的经历，并分享了一些常用软件清单。其中包括 altrun 快速启动软件、goagent 穿越神器、everything 文件搜索工具、putty 和 xshell 远程管理工具、浏览器插件等。此外，还提到了杀毒软件、Sublime Text 2 编辑器、酷狗音乐下载等其他实用工具。"
+        },
+        {
+            "title": "人间失格",
+            "slug": "nolongerhuman",
+            "generated": true,
+            "summary": "《人间失格》是太宰治的自传体小说，揭示了主角叶藏颓废毁灭的内心世界。文章介绍了作者购买纸质书并记录其中一些句子的经历。引用部分表达了对社会压力、恐惧和人性本质的思考。"
+        },
+        {
+            "title": "AMH 面板安装反向代理模块",
+            "slug": "amh-amproxy",
+            "generated": true,
+            "summary": "文章介绍了 AMH 面板安装反向代理模块的方法和配置步骤，包括普通反向代理和带缓存的反向代理。作者通过命令行或后台面板安装了 AMProxy-1.0 模块，并填写了两个域名进行配置。虽然当前版本没有缓存功能，但作者表示下一版本将会增加该功能。最后，作者认为这个面板适用于喜欢简化操作的人。"
+        },
+        {
+            "title": "装个 AMH 面板",
+            "slug": "amh",
+            "generated": true,
+            "summary": "文章介绍了作者在年三十时安装了 AMH 面板的经历。作者通过 SSH 登录 VPS，下载并安装 AMH 面板，并展示了安装过程中的截图。文章还提到了 AMH 面板的更新内容和常用功能，如虚拟主机设置、MySQL 管理、FTP 管理等。最后，作者表示会继续使用这个面板，并计划将一个域名与之绑定。"
+        },
+        {
+            "title": "博客再次搬家",
+            "slug": "blog-moving-again",
+            "generated": true,
+            "summary": "博主因为原来的虚拟主机出现问题，决定将个人博客搬到新的虚拟主机上。新的主机空间大小为 200MB，月流量 4000MB，可以建立 2 个网站，并且共享 MySQL 空间。虽然容量看似小了些，但对于这里来说足够使用了。后台面板是 DirectAdmin（DA），虽然有点不习惯但很快适应了。文章最后祝大家过年愉快。"
+        },
+        {
+            "title": "Debian 安装 exim4",
+            "slug": "debian-exim4",
+            "generated": true,
+            "summary": "文章介绍了在 Debian 系统上安装 exim4 的过程。首先卸载 sendmail，然后通过 dpkg-reconfigure 命令进行配置。在重启 exim4 时遇到问题，通过删除 paniclog 文件解决。最后测试发送邮件成功，但被识别为垃圾邮件。"
+        },
+        {
+            "title": "精简了一下 vps 系统",
+            "slug": "debian-lite",
+            "generated": true,
+            "summary": "文章介绍了作者对 VPS 系统进行精简的过程。由于使用的 VPS 性能较差，作者决定将系统从 contos 换成 debian 以节省内存。为了达到效果，作者通过升级系统、删除多余软件和组件等步骤进行精简。最后，作者展示了精简后的系统内存占用情况，并附上了一张 putty 截图作为证明。"
+        },
+        {
+            "title": "用了 Incapsula 的 CDN 加速",
+            "slug": "incapsula",
+            "generated": true,
+            "summary": "文章介绍了使用 Incapsula 的 CDN 加速服务，作者在 hostloc 论坛上得知该服务后尝试使用，并分享了注册和设置的简单步骤。作者还提到通过修改 CSS 代码去除弹出广告，并指出可以在 Incapsula 后台进行相关设置。最后，作者展示了通过 Just-Ping 和站长工具进行的网站加速效果测试截图。"
+        },
+        {
+            "title": "更换博客虚拟空间",
+            "slug": "blog-moving",
+            "generated": true,
+            "summary": "文章内容是关于更换博客虚拟空间的经历。作者原本使用的 VPS 到期了，转而选择免费的虚拟空间，但由于没有备份导致一些附件丢失。尽管免费虚拟空间稳定性较好，但速度很慢。作者打算明天找一个自动备份脚本，并分享了一个自动备份到 FTP 空间的脚本。最后，作者提供了一个完整的备份脚本并结束文章。"
+        },
+        {
+            "title": "Y480",
+            "slug": "y480",
+            "generated": true,
+            "summary": "文章内容是关于作者购买了一台联想 Y480 笔记本电脑的经历。作者认为选择电脑时不需要太挑剔，只要性价比高就可以。他购买的 Y480 配置还不错，但硬盘转速较低，屏幕有些泛白。文章列出了电脑的详细配置信息，并附上了相关图片。"
+        },
+        {
+            "title": "更换域名",
+            "slug": "change-domain",
+            "generated": true,
+            "summary": "文章讲述了作者更换域名的经历。作者原本打算在 Godaddy 注册新域名，但由于一些不便之处，最终决定继续使用 NAME.COM。在 lnmp 下更换域名很方便，只需修改 nginx 配置文件并重启即可。对于数据库，作者选择导出.sql 文件，并将旧域名替换为新域名后再导入。至于 301 重定向，则因为禁止搜索引擎爬虫而没有进行设置。最后提到了购买了一个 Y480 的事情。"
+        },
+        {
+            "title": "VPS 命令备忘",
+            "slug": "vps-memo",
+            "generated": true,
+            "summary": "本文是一篇关于 VPS 命令备忘的文章。文章列举了一些常用的 Linux 命令，包括用户管理、文件操作、压缩解压、网络下载和进程查询等方面。通过这些命令，读者可以更好地管理和操作自己的 VPS 服务器。"
+        },
+        {
+            "title": "金甲虫 2 代",
+            "slug": "new-mouse",
+            "generated": true,
+            "summary": "文章介绍了作者购买的金甲虫 2 代鼠标，他发现手感不错但重量太轻，有四档 dpi 设置和可调节回报率。他还提到鼠标按键声音脆弱、滚轮更好用，但侧边透光无法关闭。最后他指出包装盒内附带解说签名照片。"
+        },
+        {
+            "title": "VPS 小折腾",
+            "slug": "freevps",
+            "generated": true,
+            "summary": "文章讲述了作者折腾 VPS 的经历。他申请了一个免费的 VPS，配置很低，但足够练手。他编译 lnmp 花了一个小时，并计划过段时间购买一个性能更好的 VPS。测试数据显示该 VPS 性能较差。最后，作者列举了一些网络延迟数据。"
+        },
+        {
+            "title": "最近",
+            "slug": "recently",
+            "generated": true,
+            "summary": "文章内容主要包括以下几个方面：对于意识形态的警告和害怕、骗子与傻子之间的斗争、《成都，今夜请将我遗忘》一书中作者发泄不满引起读者共鸣、记忆力衰退以及笑话带来的欢乐、对 Kindle 阅读器的渴望、域名续费问题、期待《生活大爆炸》新季开播以及文章流水账般叙述无明确主题。"
+        },
+        {
+            "title": "无题",
+            "slug": "untitled",
+            "generated": true,
+            "summary": "文章讲述了作者在深夜上推时的心情和经历。他使用手机通过 sshtunnel 翻墙上网，常常等待着 TL 刷新而入睡。作者引用 @LivinChanel 的话表示，当别人对你的态度发生变化时，很可能是因为他们终于认识到了你。作者感触颇深，并提醒自己不要想太多，失落时应该多学习东西来忘记不开心的事情。他决定重新阅读一本布满灰尘的书，并计划给艾婶发邮件索取一粒葵花籽以增加勇气面对低落时期。此外，作者还提到了搜索引擎流氓蜘蛛无视 robots.txt 抓取内容的问题，并将域名放在免空上以备消失之日。"
+        },
+        {
+            "title": "德国新教马丁・尼莫拉牧师的忏悔诗",
+            "slug": "martinniemoller",
+            "generated": true,
+            "summary": "本文转载了一首忏悔诗。"
+        },
+        {
+            "title": "Hello World",
+            "slug": "hello-world",
+            "generated": true,
+            "summary": "这是这个网站第一篇文章，用的是 WordPress，默认生成的文章，不删，留念！"
+        }
+    ]
+}

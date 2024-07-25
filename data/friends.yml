@@ -1,0 +1,25 @@
+# 朋友/站点信息例子
+- nickname: skywing
+  avatar: https://gravatar.loli.net/avatar/7d2369a63c161cd9a234fe43ccb5d6f5?s=88&d=mm&r=g
+  url: https://skywing.me/
+  description: 抬头，寻找天空的翅膀…
+
+- nickname: Hostloc
+  avatar: /friends-a/loc-favicon.ico
+  url: https://hostloc.com
+  description: 全球主机交流论坛
+
+- nickname: 阮一峰的网络日志
+  avatar: https://www.ruanyifeng.com/blog/images/person_shot.jpg
+  url: https://www.ruanyifeng.com/blog/
+  description: 阮一峰的网络日志
+
+- nickname: v2ex
+  avatar: https://www.v2ex.com/static/apple-touch-icon-180.png?v=91e795b8b5d9e2cbf2d886c3d4b7d63c
+  url: https://v2ex.com
+  description: 创意工作者的社区。讨论编程、设计、硬件、游戏等令人激动的话题
+
+- nickname: 现代 JavaScript 教程
+  avatar: https://zh.javascript.info/img/favicon/apple-touch-icon-precomposed.png
+  url: https://zh.javascript.info/
+  description: 现代 JavaScript 教程
