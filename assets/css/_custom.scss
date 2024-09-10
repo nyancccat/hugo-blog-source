@@ -4,7 +4,8 @@
 // ==============================
 
 html {
-    font-family: Georgia, -apple-system, 'Nimbus Roman No9 L', 'PingFang SC', 'Hiragino Sans GB', 'Noto Serif SC', 'Microsoft Yahei', 'WenQuanYi Micro Hei', 'ST Heiti', sans-serif;
+    font-family: Georgia, -apple-system, "Nimbus Roman No9 L", "PingFang SC", "Hiragino Sans GB", "Noto Serif SC",
+        "Microsoft Yahei", "WenQuanYi Micro Hei", "ST Heiti", sans-serif;
 }
 body {
     background: url("../background.svg"), hsl(50, 100%, 99%) center;
@@ -69,13 +70,13 @@ body {
     background-repeat: no-repeat;
     background-position: center top;
     // background-size: auto 8rem;
-    // background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg);
-    // [data-theme="dark"] & {
-    //     background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg);
-    // }
-    background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg");
+    background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg);
     [data-theme="dark"] & {
-        background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg");
+        background-image: url(https://raw.githubusercontent.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg);
+        // }
+        // background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake.svg");
+        // [data-theme="dark"] & {
+        //     background-image: url("https://raw.gitmirror.com/nyancccat/hugo-blog-source/output/github-contribution-grid-snake-dark.svg");
     }
 }
 
@@ -120,7 +121,8 @@ footer .footer-container .footer-line .fixit-icon {
 .single .content ul a:hover {
     box-shadow: rgba(139, 195, 199, 0.5) 0 -2rem inset;
 }
-.single .content p .text-secondary,.single .content li p {
+.single .content p .text-secondary,
+.single .content li p {
     text-indent: initial;
 }
 
