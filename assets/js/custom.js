@@ -1,33 +1,48 @@
 /* 站点运行时间 */
 
+// function runtime() {
+//     window.setTimeout(runtime, 1000);
+//     /* 请修改这里的起始时间 */
+//     let startTime = new Date("07/27/2009 20:49:04");
+//     let endTime = new Date();
+//     let usedTime = endTime - startTime;
+//     let days = Math.floor(usedTime / (24 * 3600 * 1000));
+//     let leavel = usedTime % (24 * 3600 * 1000);
+//     let hours = Math.floor(leavel / (3600 * 1000));
+//     let leavel2 = leavel % (3600 * 1000);
+//     let minutes = Math.floor(leavel2 / (60 * 1000));
+//     let leavel3 = leavel2 % (60 * 1000);
+//     let seconds = Math.floor(leavel3 / 1000);
+//     let runbox = document.getElementById("run-time");
+//     runbox.innerHTML =
+//         '<i class="far fa-clock fa-fw"></i> 已运行 ' +
+//         (days < 10 ? "0" : "") +
+//         days +
+//         " 天 " +
+//         (hours < 10 ? "0" : "") +
+//         hours +
+//         " 时 " +
+//         (minutes < 10 ? "0" : "") +
+//         minutes +
+//         " 分 " +
+//         (seconds < 10 ? "0" : "") +
+//         seconds +
+//         " 秒 ";
+// }
+// runtime();
+
 function runtime() {
-    window.setTimeout(runtime, 1000);
-    /* 请修改这里的起始时间 */
-    let startTime = new Date("07/27/2009 20:49:04");
-    let endTime = new Date();
-    let usedTime = endTime - startTime;
-    let days = Math.floor(usedTime / (24 * 3600 * 1000));
-    let leavel = usedTime % (24 * 3600 * 1000);
-    let hours = Math.floor(leavel / (3600 * 1000));
-    let leavel2 = leavel % (3600 * 1000);
-    let minutes = Math.floor(leavel2 / (60 * 1000));
-    let leavel3 = leavel2 % (60 * 1000);
-    let seconds = Math.floor(leavel3 / 1000);
-    let runbox = document.getElementById("run-time");
-    runbox.innerHTML =
-        '<i class="far fa-clock fa-fw"></i> 已运行 ' +
-        (days < 10 ? "0" : "") +
-        days +
-        " 天 " +
-        (hours < 10 ? "0" : "") +
-        hours +
-        " 时 " +
-        (minutes < 10 ? "0" : "") +
-        minutes +
-        " 分 " +
-        (seconds < 10 ? "0" : "") +
-        seconds +
-        " 秒 ";
+    setTimeout(runtime, 1000);
+    const start = new Date('07/27/2009 20:49:04');
+    const diff = new Date() - start;
+    const pad = (n) => (n < 10 ? '0' + n : n);
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    document.getElementById('run-time').innerHTML = `<i class="far fa-clock fa-fw"></i> 已运行 ${pad(d)} 天 ${pad(
+        h
+    )} 时 ${pad(m)} 分 ${pad(s)} 秒`;
 }
 runtime();
 
@@ -404,35 +419,61 @@ runtime();
 
 // FPS 帧
 
-function getRandomNumber(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-// 将面板插入到 body
-// document.body.append(fpsPanel);
-// fps 监测逻辑实现
-let last = Date.now();
-let ticks = 0;
-//循环调用 requestAnimationFrame
-function rafLoop(timestamp) {
-    ticks += 1;
-    //每30帧统计一次帧率
-    if (ticks >= 30) {
-        const now = Date.now();
-        const diff = now - last;
-        const fps = Math.round(1000 / (diff / ticks));
-        last = now;
-        ticks = 0;
-        renderFps(fps); // 刷新帧率数值
+// function getRandomNumber(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// // 将面板插入到 body
+// // document.body.append(fpsPanel);
+// // fps 监测逻辑实现
+// let last = Date.now();
+// let ticks = 0;
+// //循环调用 requestAnimationFrame
+// function rafLoop(timestamp) {
+//     ticks += 1;
+//     //每30帧统计一次帧率
+//     if (ticks >= 30) {
+//         const now = Date.now();
+//         const diff = now - last;
+//         const fps = Math.round(1000 / (diff / ticks));
+//         last = now;
+//         ticks = 0;
+//         renderFps(fps); // 刷新帧率数值
+//     }
+//     requestAnimationFrame(rafLoop);
+// }
+
+// let fpsEl = document.querySelector('#fps');
+// //显示帧率数值到界面上
+// function renderFps(fps) {
+//     let r = getRandomNumber(-5, 5);
+//     fpsEl.textContent = `${fps + r} fps`;
+// }
+// //开始执行
+
+// rafLoop();
+
+const fpsEl = document.querySelector('#fps');
+const SAMPLE_SIZE = 30; // 采样帧数
+
+let frames = 0;
+let lastTime = performance.now();
+
+// 使用 performance.now() 代替 Date.now() 获得更高精度
+function updateFPS(currentTime) {
+    frames++;
+
+    if (frames === SAMPLE_SIZE) {
+        const fps = Math.round((1000 * frames) / (currentTime - lastTime));
+        // 使用常量避免重复计算随机数范围
+        const jitter = fps + ((Math.random() * 11) | 0) - 5;
+        fpsEl.textContent = `${jitter} fps`;
+
+        frames = 0;
+        lastTime = currentTime;
     }
-    requestAnimationFrame(rafLoop);
+
+    requestAnimationFrame(updateFPS);
 }
 
-let fpsEl = document.querySelector("#fps");
-//显示帧率数值到界面上
-function renderFps(fps) {
-    let r = getRandomNumber(-5, 5);
-    fpsEl.textContent = `${fps + r} fps`;
-}
-//开始执行
-
-rafLoop();
+// 启动FPS监测
+requestAnimationFrame(updateFPS);
